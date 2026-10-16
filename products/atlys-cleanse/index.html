@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlys Cleanse: ERP Storage &amp; Cost Cleanup | Atlys Tech</title>
+<meta name="description" content="Atlys Cleanse clears duplicates and compresses data to cut Acumatica or MYOB Acumatica storage and its monthly cost. One-off purchase, no subscription.">
+<link rel="canonical" href="https://www.atlystech.com.au/products/atlys-cleanse">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atlys Tech">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Atlys Cleanse: ERP Storage &amp; Cost Cleanup | Atlys Tech">
+<meta property="og:description" content="A one-off tool that clears duplicates and compresses data to cut your ERP's used storage and the monthly cost that comes with it. No subscription, ever.">
+<meta property="og:url" content="https://www.atlystech.com.au/products/atlys-cleanse">
+<meta property="og:image" content="https://www.atlystech.com.au/og-atlys-cleanse.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Atlys Cleanse: ERP Storage &amp; Cost Cleanup | Atlys Tech">
+<meta name="twitter:description" content="A one-off tool that clears duplicates and compresses data to cut your ERP's used storage and the monthly cost that comes with it. No subscription, ever.">
+<meta name="twitter:image" content="https://www.atlystech.com.au/og-atlys-cleanse.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+<script>window.ATLYS_CFG={"li":"10181724","liDemo":"29568820","ga4":"G-KFT8219FTP","ads":"AW-18509850286","adsLead":"pYh2CLrI55odEK7Nl_pE","adsDemo":"tPuhCL3I55odEK7Nl_pE","form":"4ed2a8b5-c321-48f7-b7da-759c0239d550"};</script>
+<script>if(!(function(){try{return localStorage.getItem('atlys_optout')==='1'}catch(e){return false}})()){(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-KFT8219FTP';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-KFT8219FTP');gtag('config','AW-18509850286');})();}</script>
+<script>if(!(function(){try{return localStorage.getItem('atlys_optout')==='1'}catch(e){return false}})()){window._linkedin_partner_id="10181724";window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];window._linkedin_data_partner_ids.push(window._linkedin_partner_id);(function(l){if(!l){window.lintrk=function(a,b){window.lintrk.q.push([a,b])};window.lintrk.q=[]}var s=document.getElementsByTagName("script")[0];var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";s.parentNode.insertBefore(b,s);})(window.lintrk);}</script>
+<script defer src="/assets/site.01bb49e997.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.atlystech.com.au/#organization","name":"Atlys Tech Pty Ltd","alternateName":"Atlys Tech","brand":{"@type":"Brand","name":"Atlys"},"url":"https://www.atlystech.com.au/","logo":"https://www.atlystech.com.au/atlys-logo.png","email":"admin@atlystech.com.au","telephone":"+61480828047","sameAs":["https://www.linkedin.com/company/atlystech"],"knowsAbout":["MYOB Acumatica","Acumatica","ERP integration","AI automation","Custom ERP development"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my data safe during the cleanse?","acceptedAnswer":{"@type":"Answer","text":"Yes - a full backup is taken before any changes are made, and nothing still in active use is touched. Older records are compressed, not deleted."}},{"@type":"Question","name":"Does this only work with MYOB Acumatica?","acceptedAnswer":{"@type":"Answer","text":"Atlys Cleanse was built in response to MYOB Acumatica's new storage charges, and works there - it also applies to Acumatica and adjacent platforms carrying the same kind of database bloat."}},{"@type":"Question","name":"How is it priced?","acceptedAnswer":{"@type":"Answer","text":"A fixed one-off fee based on your system size and configuration, quoted after a quick scoping conversation. Early-request pricing is available now - contact us before the standard rate applies."}},{"@type":"Question","name":"Can I run it more than once?","acceptedAnswer":{"@type":"Answer","text":"Yes - there's no subscription tying you to a schedule. Many teams run it annually as part of general ERP upkeep."}},{"@type":"Question","name":"How much storage and cost will I actually save?","acceptedAnswer":{"@type":"Answer","text":"It depends on your system. Storage and cost reductions vary by system configuration - how much duplicate data has accumulated, how long the system has been running, and how your modules and attachments are set up - so results are not guaranteed. The initial scan tells you what's recoverable in your database before you commit."}}]}</script>
+<link rel="preload" href="/assets/fonts/dm-sans-latin.9fea608a94.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/spectral-700-latin.5276f202cc.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-mono-400-latin.08949f728d.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext.a5d38fe99f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/dm-sans-latin.9fea608a94.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext.a5d38fe99f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/dm-sans-latin.9fea608a94.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext.a5d38fe99f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/dm-sans-latin.9fea608a94.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext.a5d38fe99f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/dm-sans-latin.9fea608a94.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/spectral-500-latin-ext.747fb031bc.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/spectral-500-latin.2b70215ed4.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/spectral-600-latin-ext.dea6bd9ca6.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/spectral-600-latin.33faca8b57.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/spectral-700-latin-ext.9b5a5be420.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/spectral-700-latin.5276f202cc.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-400-latin-ext.6bc0f226a5.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-400-latin.08949f728d.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-500-latin-ext.6bb06407c9.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-500-latin.01d2854474.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Text size: pixel sizes across the site sit at 105% of the original design (13 Oct 2026); no html zoom rule. */
+dc-if{display:contents}dc-if[hidden]{display:none!important}
+* { box-sizing: border-box; }
+    body { margin: 0; font-family: 'DM Sans', sans-serif; background: #ffffff; color: #3d2f22; line-height: 1.6; }
+    a { color: #8a6220; text-decoration: none; }
+    a:hover { color: #5c4632; }
+    button { font-family: inherit; }
+    summary { list-style: none; cursor: pointer; }
+    summary::-webkit-details-marker { display: none; }
+    details[open] > summary .chev { transform: rotate(90deg); }
+    .chev { display: inline-block; transition: transform 0.15s; }
+    .ac-nav-links { display: flex; align-items: center; gap: 4px; }
+    .ac-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .ac-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .ac-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .ac-hamburger { display: none; }
+    .ac-card { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+    .ac-card:hover { transform: translateY(-4px); box-shadow: 0 14px 28px rgba(61,47,34,0.1); }
+    @media (max-width: 900px) {
+      .ac-nav-links { display: none !important; }
+      .ac-hamburger { display: flex !important; }
+      .ac-steps { grid-template-columns: 1fr !important; }
+      .ac-stats { grid-template-columns: 1fr !important; }
+      .ac-compare { grid-template-columns: 1fr !important; }
+      .ac-hero-grid { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 700px) {
+      main > section { padding-top: 64px !important; padding-bottom: 64px !important; }
+      main > section.ac-flush { padding-top: 0 !important; padding-bottom: 0 !important; }
+    }
+
+    html { scroll-behavior: smooth; }
+    img { max-width: 100%; }
+    p, h1, h2, h3 { text-wrap: pretty; }
+    a, button { transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+    button { white-space: nowrap; }
+    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #8a6220; outline-offset: 3px; border-radius: 4px; }
+    input:focus, textarea:focus, select:focus { border-color: #8a6220 !important; }
+    details > summary:hover { color: #8a6220; }
+    .services-grid details:hover { background: #fdfaf3 !important; }
+    .services-grid summary:hover .chev { transform: translateX(3px); }
+    .tech-grid > div:hover { border-color: #8a6220 !important; box-shadow: 0 10px 22px rgba(61,47,34,0.07); }
+    footer a:hover { color: #8a6220; }
+/* Site theme: dark hero, light body. Atlys pages use brown and gold; Joey pages use the Joey dark teal. */
+  .t-dark { background: radial-gradient(900px 520px at 100% 0%, rgba(169,126,46,0.26), transparent 60%), #2a1a0c; color: #f2ecdc; }
+  .t-teal { background: radial-gradient(1100px 600px at 12% -12%, rgba(90,209,166,.17), transparent 62%), radial-gradient(900px 560px at 105% 0%, rgba(201,154,63,.09), transparent 58%), #1A383F; color: #EEF5F3; }
+  .t-wrap { max-width: 1040px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
+  .t-sec { padding: clamp(64px, 8vw, 104px) 0; }
+  .t-cream { background: #fbf7ee; }
+  .t-kicker { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #8a6220; margin: 0 0 20px; }
+  .t-dark .t-kicker, .t-kicker-gold { color: #e9c46a; }
+  .t-teal .t-kicker { color: #D9AE55; }
+  .t-h1 { font-family: 'Spectral', serif; font-weight: 700; font-size: clamp(36px, 5.6vw, 72px); overflow-wrap: break-word; line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 24px; }
+  .t-h2 { font-family: 'Spectral', serif; font-weight: 700; font-size: clamp(30px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.015em; margin: 0; color: #8a6220; }
+  .t-h2-ink { color: #3d2f22; }
+  .t-gold { color: #e9c46a; }
+  .t-lead { font-size: 17px; line-height: 1.65; margin: 0 0 32px; max-width: 600px; }
+  .t-dark .t-lead { color: #d8c8ab; }
+  .t-teal .t-lead { color: #A8C2BE; }
+  .t-head { display: flex; flex-wrap: wrap; gap: 16px 64px; align-items: flex-end; justify-content: space-between; margin: 0 0 40px; }
+  .t-head p { font-size: 16px; line-height: 1.6; color: #5c4632; max-width: 440px; margin: 0; }
+  .t-btns { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .t-btn { display: inline-block; font-size: 15px; font-weight: 600; padding: 14px 26px; border-radius: 8px; border: 1.5px solid transparent; cursor: pointer; text-align: center; white-space: nowrap; line-height: 1.3; }
+  .t-btn-gold { color: #2a1a0c; background: #e9c46a; }
+  .t-btn-gold:hover { color: #2a1a0c; background: #f0d084; }
+  .t-btn-brown { color: #ffffff; background: #8a6220; }
+  .t-btn-brown:hover { color: #ffffff; background: #6f4e18; }
+  .t-btn-cream { color: #1A383F; background: #F2ECDC; }
+  .t-btn-cream:hover { color: #1A383F; background: #ffffff; }
+  .t-btn-teal { color: #F2ECDC; background: #1A383F; }
+  .t-btn-teal:hover { color: #F2ECDC; background: #24434A; }
+  .t-btn-ghost { color: #f2ecdc; background: transparent; border-color: #6b5338; font-weight: 500; }
+  .t-btn-ghost:hover { color: #ffffff; border-color: #e9c46a; }
+  .t-teal .t-btn-ghost { border-color: #38575E; color: #EEF5F3; }
+  .t-teal .t-btn-ghost:hover { border-color: #F2ECDC; }
+  .t-btn-line { color: #3d2f22; background: #ffffff; border-color: #e6ddc8; font-weight: 500; }
+  .t-btn-line:hover { color: #3d2f22; border-color: #8a6220; }
+  /* top bar: dark and sticky on every page */
+  .t-nav { position: sticky; top: 0; z-index: 200; background: rgba(42,26,12,0.96); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(242,236,220,0.12); }
+  .t-nav.t-nav-teal { background: rgba(26,56,63,0.96); border-bottom-color: rgba(238,245,243,0.12); }
+  .t-nav-in { max-width: 1040px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); height: 84px; display: flex; align-items: center; gap: 12px; }
+  .t-logo { display: flex; align-items: center; background: none; padding: 0; flex-shrink: 0; }
+  .t-logo img { width: 72px; height: 69px; display: block; object-fit: contain; }
+  .t-nav-links { margin-left: auto; display: flex; align-items: center; gap: 4px 20px; }
+  .t-nav-links a, .t-nav-links button, .t-nav-links summary { font-size: 14px; font-weight: 500; color: #f2ecdc; background: none; border: none; cursor: pointer; padding: 8px 2px; font-family: inherit; }
+  .t-nav-links a:hover, .t-nav-links button:hover, .t-nav-links summary:hover { color: #e9c46a; }
+  .t-nav-teal .t-nav-links a:hover { color: #D9AE55; }
+  .t-nav-links .t-nav-cta { font-weight: 600; color: #2a1a0c; background: #e9c46a; padding: 11px 20px; border-radius: 999px; white-space: nowrap; }
+  .t-nav-links .t-nav-cta:hover { color: #2a1a0c; background: #f0d084; }
+  .t-nav-teal .t-nav-links .t-nav-cta { color: #1A383F; background: #F2ECDC; }
+  .t-nav-teal .t-nav-links .t-nav-cta:hover { color: #1A383F; background: #ffffff; }
+  .t-burger { display: none; flex-direction: column; justify-content: center; gap: 5px; margin-left: auto; padding: 10px; background: none; border: none; cursor: pointer; }
+  .t-burger span { display: block; width: 24px; height: 2px; background: #f2ecdc; border-radius: 2px; }
+  /* cards and grids */
+  .t-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; background: #e6ddc8; border: 2px solid #e6ddc8; border-radius: 20px; overflow: hidden; }
+  .t-cards > * { background: #ffffff; padding: 26px; }
+  .t-cards .t-card-title { font-size: 18px; }
+  .t-cards .chev { margin-top: 24px; }
+  .t-label { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.16em; color: #8a7860; margin: 0 0 12px; }
+  .t-card-title { display: block; font-family: 'Spectral', serif; font-size: 20px; font-weight: 700; line-height: 1.2; color: #3d2f22; margin: 0 0 10px; }
+  .t-card-text { font-size: 15px; line-height: 1.6; color: #5c4632; margin: 0; }
+  .t-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+  .t-step { background: #ffffff; border: 1.5px solid #e6ddc8; border-radius: 14px; padding: 22px 20px; }
+  .t-num { font-family: 'Spectral', serif; font-size: 30px; font-weight: 700; color: #c99a3f; line-height: 1; margin: 0 0 10px; }
+  .t-four { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .t-split { display: flex; flex-wrap: wrap; gap: 36px 58px; align-items: center; }
+  .t-split > * { min-width: 0; }
+  .t-ticks p { font-size: 15.5px; font-weight: 600; margin: 0 0 14px; }
+  .t-ticks p:last-child { margin: 0; }
+  .t-ticks span { color: #e9c46a; margin-right: 10px; }
+  .t-svc summary { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; list-style: none; cursor: pointer; }
+  .t-svc summary::-webkit-details-marker { display: none; }
+  .t-svc .chev { font-size: 18px; color: #8a6220; transition: transform .15s; flex-shrink: 0; margin-top: 30px; }
+  .t-svc[open] .chev { transform: rotate(90deg); }
+  .t-svc summary:hover .t-card-title { color: #8a6220; }
+  .t-cards > details { transition: background .15s; }
+  .t-cards > details:hover { background: #fffaf0; }
+  /* FAQ */
+  .t-faq { max-width: 960px; }
+  .t-faq details { border-bottom: 1px solid #e6ddc8; }
+  .t-faq summary { display: flex; justify-content: space-between; gap: 24px; padding: 20px 0; font-size: 17px; font-weight: 600; color: #3d2f22; }
+  .t-faq summary:hover { color: #8a6220; }
+  .t-faq details p { font-size: 15.5px; line-height: 1.7; color: #5c4632; margin: 0; padding: 0 0 26px; max-width: 800px; }
+  /* forms on a dark ground */
+  .t-form-dark label { color: #d8c8ab !important; }
+  .t-form-dark input, .t-form-dark select, .t-form-dark textarea { background: #3a2716 !important; color: #f2ecdc !important; border-color: #6b5338 !important; }
+  .t-form-dark input::placeholder, .t-form-dark textarea::placeholder { color: #a98a63; }
+  .t-form-dark button[type=submit] { background: #e9c46a !important; color: #2a1a0c !important; }
+  .t-form-dark .cf-err { color: #f0d084 !important; }
+  .t-form-teal label { color: #A8C2BE !important; }
+  .t-form-teal input, .t-form-teal select, .t-form-teal textarea { background: #24434A !important; color: #EEF5F3 !important; border-color: #38575E !important; }
+  .t-form-teal input::placeholder, .t-form-teal textarea::placeholder { color: #7f9a96; }
+  .t-form-teal button[type=submit] { background: #F2ECDC !important; color: #1A383F !important; }
+  .t-form-teal .cf-err { color: #D9AE55 !important; }
+  .t-dark a:not(.t-btn):not(.t-nav-cta), .t-dark-links a { color: #e9c46a; }
+  @media (max-width: 960px) {
+    .t-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .t-nav-links { display: none !important; }
+    .t-burger { display: flex !important; }
+    .t-nav-in { height: 76px; }
+    .t-logo img { width: 64px; height: 61px; }
+    .t-steps { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+    .t-step { display: grid; grid-template-columns: 48px minmax(0, 1fr); column-gap: 12px; align-items: start; padding: 18px 20px; }
+    .t-num { grid-row: 1 / span 2; margin: 0; }
+    .t-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 640px) { .sn-hide { display: none !important; } }
+  @media (max-width: 560px) {
+    .t-cards { grid-template-columns: minmax(0, 1fr); }
+    .t-four { grid-template-columns: minmax(0, 1fr); }
+    .t-btns { flex-direction: column; align-items: stretch; }
+    .t-btn { white-space: normal; }
+    .t-cards > * { padding: 24px; }
+  }
+.scp0:hover{background:#f0d084 !important;color:#2a1a0c !important}
+.scp1:hover{opacity:0.88 !important}
+.scp2:hover{border-color:#f2ecdc !important}
+.scp3:hover{color:#8a6220 !important}
+.scp4:hover{opacity:0.85 !important}
+</style>
+<script defer src="/assets/dc-lite.41fc2c49c6.js"></script>
+</head>
+<body>
+<nav class="t-nav">
+  <div class="t-nav-in">
+    <a class="t-logo" href="/" aria-label="Atlys Tech home"><img src="/assets/atlys-logo-light.bab1f29e20.webp" alt="Atlys Tech" width="240" height="230"></a>
+    <div style="margin-left:auto;display:flex;align-items:center;gap:4px 20px;">
+      <a class="sn-hide" href="/" style="font-size:13px;color:#d8c8ab;">← atlystech.com.au</a>
+      <a class="sn-hide" href="/products" style="font-size:14px;font-weight:500;color:#f2ecdc;">Products</a>
+      <a class="scp0" href="/book-a-call" style="font-size:14px;font-weight:600;color:#2a1a0c;background:#e9c46a;padding:12px 22px;border-radius:999px;white-space:nowrap;">Book a Call →</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <section class="t-dark" style="position:relative;overflow:hidden;padding:clamp(48px,7vw,96px) 0 clamp(64px,8vw,104px);">
+    <div style="position:absolute;top:-120px;right:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(47,143,116,0.18),transparent 70%);pointer-events:none;"></div>
+    <div style="position:absolute;bottom:-160px;left:-100px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(169,126,46,0.16),transparent 70%);pointer-events:none;"></div>
+    <div style="position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.18em;color:#a98a63;margin:0 0 24px;"><a href="/products#tools" style="color:#a98a63;">Tools</a> / Atlys Cleanse</p>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:26px;flex-wrap:wrap;">
+                <span class="t-kicker" style="margin:0;">ONE-OFF TOOL · NO SUBSCRIPTION, EVER</span>
+      </div>
+      <div class="ac-hero-grid" style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center;">
+        <div>
+          <h1 style="font-family:'Spectral',serif;font-weight:700;line-height:1.08;letter-spacing:-0.01em;color:#f2ecdc;font-size:clamp(32.13px,4.83vw,56.7px);margin:0 0 28px;">Your ERP is carrying dead weight.</h1>
+          <p style="font-size:clamp(15.12px,1.49vw,17.95px);line-height:1.68;color:#d8c8ab;max-width:560px;margin:0 0 44px;">Trim the bloat out of your Acumatica or MYOB Acumatica database. Atlys Cleanse clears duplicates and compresses data to cut your used storage - and the monthly cost that comes with it. One outright purchase, not an ongoing subscription.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+            <button class="scp1" data-on-click="scrollContact" style="font-size:14px;font-weight:600;color:#3d2612;background:#f2ecdc;padding:14px 28px;border-radius:7px;border:none;cursor:pointer;">Contact us for pricing →</button>
+            <button class="scp2" data-on-click="scrollHow" style="font-size:14px;font-weight:500;color:#f2ecdc;background:transparent;border:1.5px solid rgba(242,236,220,0.35);padding:13px 28px;border-radius:7px;cursor:pointer;">See how it works</button>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div style="background:rgba(242,236,220,0.07);border:1px solid rgba(242,236,220,0.18);border-radius:18px;padding:24px 26px 22px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:0.16em;color:#a98a63;margin-bottom:20px;padding-right:72px;">DATABASE STORAGE</div>
+            <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:18px;height:118px;">
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;">
+                <div style="width:100%;height:106px;border-radius:8px 8px 3px 3px;background:rgba(242,236,220,0.22);"></div>
+                <span style="font-size:10.5px;color:#a98a63;">Before</span>
+              </div>
+              <span style="color:#2f8f74;font-size:17px;margin-bottom:44px;">→</span>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;">
+                <div style="width:100%;height:38px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#3fae8a,#2f8f74);"></div>
+                <span style="font-size:10.5px;color:#f2ecdc;font-weight:600;">After</span>
+              </div>
+            </div>
+          </div>
+          <div style="position:absolute;top:-22px;right:-18px;width:76px;height:76px;border-radius:50%;background:#3d2612;padding:6px;">
+            <div style="width:100%;height:100%;border-radius:50%;background:conic-gradient(#2f8f74 0deg 270deg,rgba(242,236,220,0.18) 270deg 360deg);display:flex;align-items:center;justify-content:center;">
+              <div style="width:50px;height:50px;border-radius:50%;background:#3d2612;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:700;color:#f2ecdc;">75%</div>
+            </div>
+          </div>
+          <div style="position:absolute;bottom:-16px;left:24px;background:#f2ecdc;color:#3d2612;padding:9px 18px;border-radius:999px;font-size:11.5px;font-weight:600;display:flex;align-items:center;gap:6px;">
+            <span style="color:#2f8f74;">✓</span> Backed up first
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(56px,7vw,96px) 0 clamp(24px,3vw,40px);background:#fbf7ee;">
+    <div style="max-width:1040px;margin:0 auto;padding:0 clamp(20px,5vw,48px);">
+      <figure style="margin:0;">
+        <img src="/assets/atlys-cleanse-storage.47fe64ec91.webp" width="1414" height="808" loading="lazy" alt="Atlys Cleanse storage overview: total database storage against the storage limit, split into audit, access and email data" style="display:block;width:100%;height:auto;border-radius:22px;box-shadow:0 30px 60px rgba(61,47,34,0.16);">
+      </figure>
+    </div>
+  </section>
+
+  <section style="padding:64px 0 60px;border-bottom:1px solid #e6ddc8;background:#ffffff;">
+    <div style="max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+      <div class="ac-stats">
+        <div class="ac-card" style="border:1.5px solid #d8ece4;border-radius:14px;padding:20px 22px;background:#f2f9f6;display:flex;align-items:center;gap:16px;">
+          <div style="width:48px;height:48px;flex-shrink:0;border-radius:50%;background:conic-gradient(#2f8f74 0deg 270deg,#e6ddc8 270deg 360deg);display:flex;align-items:center;justify-content:center;">
+            <div style="width:35px;height:35px;border-radius:50%;background:#f2f9f6;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:700;color:#3d2f22;">75%</div>
+          </div>
+          <div>
+            <div style="font-family:'Spectral',serif;font-size:16px;font-weight:700;color:#3d2f22;margin-bottom:2px;">Space freed</div>
+            <div style="font-size:13px;line-height:1.45;color:#5c4632;">Typical result on a first pass*</div>
+          </div>
+        </div>
+        <div class="ac-card" style="border:1.5px solid #e9dcc0;border-radius:14px;padding:20px 22px;background:#fbf3e4;display:flex;align-items:center;gap:16px;">
+          <div style="width:40px;height:44px;flex-shrink:0;border-radius:9px 9px 18px 18px;background:linear-gradient(180deg,#a97e2e,#8a6220);display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:17px;line-height:1;">✓</div>
+          <div>
+            <div style="font-family:'Spectral',serif;font-size:16px;font-weight:700;color:#3d2f22;margin-bottom:2px;">Backed up first</div>
+            <div style="font-size:13px;line-height:1.45;color:#5c4632;">A full backup before anything is touched</div>
+          </div>
+        </div>
+        <div class="ac-card" style="border:1.5px solid #ece3cf;border-radius:14px;padding:20px 22px;background:#faf6ee;display:flex;align-items:center;gap:16px;">
+          <div style="position:relative;width:44px;height:36px;flex-shrink:0;">
+            <div style="position:absolute;bottom:0;left:2px;width:28px;height:8px;border-radius:4px;background:#3d2f22;"></div>
+            <div style="position:absolute;bottom:6px;left:5px;width:28px;height:8px;border-radius:4px;background:#a97e2e;"></div>
+            <div style="position:absolute;bottom:12px;left:8px;width:28px;height:8px;border-radius:4px;background:#8a6220;"></div>
+            <div style="position:absolute;top:0;right:0;width:16px;height:16px;border-radius:50%;background:#2f8f74;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8.5px;font-weight:700;">$</div>
+          </div>
+          <div>
+            <div style="font-family:'Spectral',serif;font-size:16px;font-weight:700;color:#3d2f22;margin-bottom:2px;">One-off cost</div>
+            <div style="font-size:13px;line-height:1.45;color:#5c4632;">No subscription, no recurring fee, ever</div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:10.5px;color:#8a7860;margin:20px 0 0;">*Storage and cost reductions vary by system configuration and are not guaranteed.</p>
+    </div>
+  </section>
+
+  <section class="ac-flush" style="padding:0;">
+    <div style="max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+      <div style="background:#f2f9f6;border:1.5px solid #d8ece4;border-radius:18px;padding:36px 44px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:0 0 20px;">
+        <span style="font-family:'Spectral',serif;font-style:italic;font-size:19px;color:#2b6650;line-height:1.5;flex:1;min-width:min(260px,100%);">"Still time to get ahead of it before the storage charges pile up."</span>
+        <button class="scp1" data-on-click="scrollContact" style="font-size:13px;font-weight:600;color:#fff;background:#1A383F;padding:12px 22px;border-radius:7px;border:none;cursor:pointer;white-space:nowrap;">Get ahead of it →</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="padding:100px 0;border-bottom:1px solid #e6ddc8;">
+    <div style="max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.22em;color:#8a6220;margin:0 0 20px;">HOW IT WORKS</p>
+      <h2 style="font-family:'Spectral',serif;font-size:clamp(28.35px,3.99vw,45.36px);font-weight:700;letter-spacing:-0.01em;color:#8a6220;margin:0 0 56px;">Three passes. Zero guesswork.</h2>
+      <div class="ac-steps">
+        <div class="ac-card" style="border:1.5px solid #d8ece4;border-radius:16px;padding:32px 28px;background:#f2f9f6;position:relative;">
+          <span style="position:absolute;top:22px;right:26px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#a97e2e;">01</span>
+          <div style="width:64px;height:64px;border-radius:50%;background:#ffffff;box-shadow:0 2px 8px rgba(61,47,34,0.06);display:flex;align-items:center;justify-content:center;margin-bottom:22px;">
+            <div style="position:relative;width:40px;height:40px;">
+              <div style="position:absolute;top:16px;left:0;width:32px;height:8px;border-radius:4px;background:#e6ddc8;"></div>
+              <div style="position:absolute;top:16px;left:0;width:20px;height:8px;border-radius:4px;background:#3d2f22;"></div>
+              <div style="position:absolute;top:0;right:0;width:16px;height:16px;border-radius:50%;border:2.5px solid #2f8f74;"></div>
+              <div style="position:absolute;top:14px;right:0px;width:2.5px;height:9px;background:#2f8f74;transform:rotate(45deg);border-radius:2px;"></div>
+            </div>
+          </div>
+          <div style="font-family:'Spectral',serif;font-size:18px;font-weight:700;color:#3d2f22;margin-bottom:10px;">Storage Scan</div>
+          <p style="font-size:13px;line-height:1.65;color:#5c4632;margin:0;">We scan your database to map exactly where the bloat lives - and back it up before anything changes.</p>
+        </div>
+        <div class="ac-card" style="border:1.5px solid #e9dcc0;border-radius:16px;padding:32px 28px;background:#fbf3e4;position:relative;">
+          <span style="position:absolute;top:22px;right:26px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#a97e2e;">02</span>
+          <div style="width:64px;height:64px;border-radius:50%;background:#ffffff;box-shadow:0 2px 8px rgba(61,47,34,0.06);display:flex;align-items:center;justify-content:center;margin-bottom:22px;">
+            <div style="position:relative;width:40px;height:40px;">
+              <div style="position:absolute;top:16px;left:0;width:32px;height:8px;border-radius:4px;background:#3d2f22;"></div>
+              <div style="position:absolute;top:16px;left:18px;width:14px;height:8px;border-radius:4px;border:2px dashed #a97e2e;"></div>
+              <div style="position:absolute;top:0;right:2px;width:14px;height:8px;border-left:2.5px solid #2f8f74;border-bottom:2.5px solid #2f8f74;transform:rotate(-45deg);"></div>
+            </div>
+          </div>
+          <div style="font-family:'Spectral',serif;font-size:18px;font-weight:700;color:#3d2f22;margin-bottom:10px;">Duplicate Cleanup</div>
+          <p style="font-size:13px;line-height:1.65;color:#5c4632;margin:0;">Redundant records and repeated data are identified and cleared, safely and without touching what's still in use.</p>
+        </div>
+        <div class="ac-card" style="border:1.5px solid #ece3cf;border-radius:16px;padding:32px 28px;background:#faf6ee;position:relative;">
+          <span style="position:absolute;top:22px;right:26px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#a97e2e;">03</span>
+          <div style="width:64px;height:64px;border-radius:50%;background:#ffffff;box-shadow:0 2px 8px rgba(61,47,34,0.06);display:flex;align-items:center;justify-content:center;margin-bottom:22px;">
+            <div style="width:40px;height:40px;display:flex;flex-direction:column;justify-content:center;gap:5px;">
+              <div style="width:30px;height:6px;border-radius:3px;background:#e6ddc8;"></div>
+              <div style="width:30px;height:6px;border-radius:3px;background:#3d2f22;"></div>
+              <div style="display:flex;justify-content:center;gap:3px;margin-top:1px;">
+                <div style="width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-right:7px solid #2f8f74;"></div>
+                <div style="width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid #2f8f74;"></div>
+              </div>
+            </div>
+          </div>
+          <div style="font-family:'Spectral',serif;font-size:18px;font-weight:700;color:#3d2f22;margin-bottom:10px;">Archive Compression</div>
+          <p style="font-size:13px;line-height:1.65;color:#5c4632;margin:0;">Older records are compressed rather than deleted, freeing space while keeping your history intact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:100px 0;border-bottom:1px solid #e6ddc8;background:#ffffff;">
+    <div style="max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.22em;color:#8a6220;margin:0 0 20px;">WHY ONE-OFF</p>
+      <h2 style="font-family:'Spectral',serif;font-size:clamp(28.35px,3.99vw,45.36px);font-weight:700;letter-spacing:-0.01em;color:#8a6220;margin:0 0 20px;">The difference adds up fast.</h2>
+      <p style="font-size:16px;line-height:1.68;color:#5c4632;max-width:600px;margin:0 0 56px;">Storage charges are a recurring line item. Atlys Cleanse is a single line item, once.</p>
+
+      <div class="ac-compare">
+        <div style="border-radius:12px;overflow:hidden;border:1px solid #e6ddc8;">
+          <div style="padding:18px 26px;border-bottom:1px solid #e6ddc8;background:#ffffff;">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#8a7860;">SUBSCRIPTION CLEANUP TOOLS</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;padding:15px 26px;border-bottom:1px solid #e6ddc8;font-size:14px;background:#ffffff;color:#5c4632;"><span style="width:18px;height:18px;border-radius:50%;background:#e6ddc8;color:#8a7860;font-size:11.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">-</span><span>Monthly or annual fee, indefinitely</span></div>
+          <div style="display:flex;align-items:center;gap:14px;padding:15px 26px;border-bottom:1px solid #e6ddc8;font-size:14px;background:#ffffff;color:#5c4632;"><span style="width:18px;height:18px;border-radius:50%;background:#e6ddc8;color:#8a7860;font-size:11.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">-</span><span>Cost climbs as your data grows</span></div>
+          <div style="display:flex;align-items:center;gap:14px;padding:15px 26px;font-size:14px;background:#ffffff;color:#5c4632;"><span style="width:18px;height:18px;border-radius:50%;background:#e6ddc8;color:#8a7860;font-size:11.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">-</span><span>Another vendor with standing access to your ERP</span></div>
+        </div>
+        <div style="border-radius:12px;overflow:hidden;border:1px solid #e6ddc8;">
+          <div style="padding:18px 26px;border-bottom:1px solid #e6ddc8;background:#3d2612;display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:rgba(255,255,255,0.65);">ATLYS CLEANSE</span>
+            <span style="font-family:'Spectral',serif;font-size:15px;font-weight:700;color:#f2ecdc;">atlys</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;padding:15px 26px;border-bottom:1px solid #e6ddc8;font-size:14px;background:#ffffff;color:#3d2f22;"><span style="width:18px;height:18px;border-radius:50%;background:#2f8f74;color:#fff;font-size:10.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">✓</span><span>One outright purchase, no subscription, ever</span></div>
+          <div style="display:flex;align-items:center;gap:14px;padding:15px 26px;border-bottom:1px solid #e6ddc8;font-size:14px;background:#ffffff;color:#3d2f22;"><span style="width:18px;height:18px;border-radius:50%;background:#2f8f74;color:#fff;font-size:10.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">✓</span><span>Run it once, or on your own schedule</span></div>
+          <div style="display:flex;align-items:center;gap:14px;padding:15px 26px;font-size:14px;background:#ffffff;color:#3d2f22;"><span style="width:18px;height:18px;border-radius:50%;background:#2f8f74;color:#fff;font-size:10.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">✓</span><span>Delivered by the same certified engineers behind atlys</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding:100px 0;border-bottom:1px solid #e6ddc8;">
+    <div style="max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.22em;color:#8a6220;margin:0 0 20px;">FAQ</p>
+      <h2 style="font-family:'Spectral',serif;font-size:clamp(28.35px,3.99vw,45.36px);font-weight:700;letter-spacing:-0.01em;color:#8a6220;margin:0 0 56px;">Good questions.</h2>
+
+      <div style="border-top:1px solid #e6ddc8;">
+        <details style="border-bottom:1px solid #e6ddc8;">
+          <summary class="scp3" style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding:24px 0;font-size:16px;font-weight:500;color:#3d2f22;">
+            <span>Is my data safe during the cleanse?</span><span class="chev" style="font-size:21px;color:#8a7860;flex-shrink:0;">+</span>
+          </summary>
+          <p style="font-size:15px;line-height:1.72;color:#5c4632;padding-bottom:28px;max-width:760px;margin:0;">Yes - a full backup is taken before any changes are made, and nothing still in active use is touched. Older records are compressed, not deleted.</p>
+        </details>
+        <details style="border-bottom:1px solid #e6ddc8;">
+          <summary class="scp3" style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding:24px 0;font-size:16px;font-weight:500;color:#3d2f22;">
+            <span>Does this only work with MYOB Acumatica?</span><span class="chev" style="font-size:21px;color:#8a7860;flex-shrink:0;">+</span>
+          </summary>
+          <p style="font-size:15px;line-height:1.72;color:#5c4632;padding-bottom:28px;max-width:760px;margin:0;">Atlys Cleanse was built in response to MYOB Acumatica's new storage charges, and works there - it also applies to Acumatica and adjacent platforms carrying the same kind of database bloat.</p>
+        </details>
+        <details style="border-bottom:1px solid #e6ddc8;">
+          <summary class="scp3" style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding:24px 0;font-size:16px;font-weight:500;color:#3d2f22;">
+            <span>How is it priced?</span><span class="chev" style="font-size:21px;color:#8a7860;flex-shrink:0;">+</span>
+          </summary>
+          <p style="font-size:15px;line-height:1.72;color:#5c4632;padding-bottom:28px;max-width:760px;margin:0;">A fixed one-off fee based on your system size and configuration, quoted after a quick scoping conversation. Early-request pricing is available now - contact us before the standard rate applies.</p>
+        </details>
+        <details style="border-bottom:1px solid #e6ddc8;">
+          <summary class="scp3" style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding:24px 0;font-size:16px;font-weight:500;color:#3d2f22;">
+            <span>Can I run it more than once?</span><span class="chev" style="font-size:21px;color:#8a7860;flex-shrink:0;">+</span>
+          </summary>
+          <p style="font-size:15px;line-height:1.72;color:#5c4632;padding-bottom:28px;max-width:760px;margin:0;">Yes - there's no subscription tying you to a schedule. Many teams run it annually as part of general ERP upkeep.</p>
+        </details>
+        <details style="border-bottom:1px solid #e6ddc8;">
+          <summary class="scp3" style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding:24px 0;font-size:16px;font-weight:500;color:#3d2f22;">
+            <span>How much storage and cost will I actually save?</span><span class="chev" style="font-size:21px;color:#8a7860;flex-shrink:0;">+</span>
+          </summary>
+          <p style="font-size:15px;line-height:1.72;color:#5c4632;padding-bottom:28px;max-width:760px;margin:0;">It depends on your system. Storage and cost reductions vary by system configuration - how much duplicate data has accumulated, how long the system has been running, and how your modules and attachments are set up - so results are not guaranteed. The initial scan tells you what's recoverable in your database before you commit.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding:100px 0;">
+    <div style="max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+      <div class="ac-hero-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.22em;color:#8a6220;margin:0 0 20px;">CONTACT ATLYS</p>
+          <h2 style="font-family:'Spectral',serif;font-size:clamp(28.35px,3.99vw,45.36px);font-weight:700;letter-spacing:-0.01em;color:#8a6220;margin:0 0 20px;">Still time to get ahead of it.</h2>
+          <p style="font-size:16px;line-height:1.68;color:#5c4632;max-width:520px;margin:0 0 28px;">Drop us a message for pricing, or ask about our modern UI work while you're in touch - early-request pricing is available now.</p>
+          <a class="scp4" href="/?service=cleanse#contact" style="font-size:14px;font-weight:600;color:#fff;background:#8a6220;padding:14px 28px;border-radius:7px;display:inline-block;">Send us a message →</a>
+          <a href="mailto:admin@atlystech.com.au?subject=Atlys%20Cleanse%20pricing" style="font-size:13px;font-weight:600;color:#8a6220;display:block;margin-top:20px;">Or email admin@atlystech.com.au →</a>
+          <a href="/book-a-call" style="font-size:13px;font-weight:600;color:#8a6220;display:block;margin-top:10px;">Prefer to talk it through? Book a call →</a>
+        </div>
+        <div style="border:1.5px solid #e6ddc8;border-radius:12px;padding:36px 32px;background:#fbf5ea;">
+          <div style="font-family:'Spectral',serif;font-size:19px;font-weight:700;color:#3d2f22;margin-bottom:16px;">What to send us</div>
+          <p style="font-size:13px;line-height:1.65;color:#5c4632;margin:0;">Your current database size, which platform you're on (Acumatica or MYOB Acumatica), and roughly how far over your storage limit you are. We'll come back with a fixed quote.</p>
+        </div>
+      </div>
+    </div>
+  </section></main><footer style="padding:56px 0 40px;border-top:3px solid #8a6220;background:#ffffff;">
+  <div style="max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+    <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+      <img src="/assets/atlys-logo-208.8d4c7d22fb.webp" alt="Atlys Tech" style="width:70px;height:60px;display:block;object-fit:contain;" width="208" height="180">
+      <nav aria-label="Footer" style="display:flex;align-items:center;gap:8px 20px;flex-wrap:wrap;">
+        <a href="/products" style="font-size:12.5px;color:#8a7860;">Products</a>
+        <a href="/joey" style="font-size:12.5px;color:#8a7860;">Atlys Joey</a>
+        <a href="/book-a-call" style="font-size:12.5px;color:#8a7860;">Book a Call</a>
+        <a href="/privacy" style="font-size:12.5px;color:#8a7860;">Privacy policy</a>
+        <a href="https://www.linkedin.com/company/atlystech" rel="noopener" target="_blank" style="font-size:12.5px;color:#8a7860;">LinkedIn</a>
+        <a href="mailto:admin@atlystech.com.au" style="font-size:12.5px;color:#8a7860;">admin@atlystech.com.au</a>
+        <a href="tel:+61480828047" style="font-size:12.5px;color:#8a7860;">+61 480 828 047</a>
+      </nav>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.08em;color:#8a7860;margin-left:auto;">© 2026 Atlys Tech Pty Ltd · ABN 46 701 607 829</span>
+    </div>
+    <hr style="border:none;border-top:1px solid #e6ddc8;margin:24px 0 16px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.12em;color:#8a7860;margin:0;">*Storage &amp; cost reductions vary by system configuration and are not guaranteed.</p>
+  </div>
+</footer>
+<noscript><img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=10181724&amp;fmt=gif"></noscript>
+<script type="text/x-dc" id="dc-logic" data-props="{}">
+class Component extends DCLogic {
+  state = { mobileOpen: false };
+
+  scrollTo(id) {
+    this.setState({ mobileOpen: false });
+    const el = document.getElementById(id);
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - 88;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
+
+  renderVals() {
+    return {
+      mobileOpen: this.state.mobileOpen,
+      toggleMobile: () => this.setState(s => ({ mobileOpen: !s.mobileOpen })),
+      closeMobile: () => this.setState({ mobileOpen: false }),
+      scrollHow: () => this.scrollTo('how'),
+      scrollFaq: () => this.scrollTo('faq'),
+      scrollContact: () => this.scrollTo('contact')
+    };
+  }
+}
+</script>
+</body>
+</html>
