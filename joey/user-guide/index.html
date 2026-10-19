@@ -386,11 +386,11 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <tr><td><b>Where</b></td><td>Your company's chat page: your Joey address with <code>/chat</code> on the end</td><td>Claude, ChatGPT, Microsoft Copilot, Google Gemini, Cursor and other apps that take custom connectors</td></tr>
 <tr><td><b>You need</b></td><td>Your MYOB login, nothing else</td><td>An AI app plan that allows custom connectors, and your MYOB login</td></tr>
 <tr><td><b>The AI</b></td><td>Comes with Joey, with a monthly allowance for your company</td><td>Your app's own, under your company's plan with that app</td></tr>
-<tr><td><b>Your conversations</b></td><td>Kept by Joey, encrypted for you alone, and <b>deleted when you sign out, or at the latest when your MYOB sign-in ends</b> (7 days without use, 30 days at most)</td><td>Kept by your AI app, as its settings and your company's plan say, until you delete them there</td></tr>
+<tr><td><b>Your conversations</b></td><td>Kept by Joey, encrypted for you alone, and <b>deleted when you sign out, or 30 days after you signed in at the latest</b></td><td>Kept by your AI app, as its settings and your company's plan say, until you delete them there</td></tr>
 <tr><td><b>Files</b></td><td>Attach pictures, PDFs, Excel, Word, PowerPoint and text files; ask for charts and Excel, Word, PowerPoint or PDF files back. All deleted with your chats, from the AI service's store too</td><td>As your AI app allows, kept by your AI app</td></tr>
 <tr><td><b>Changes in MYOB</b></td><td>On a card: you press <b class="ui">Confirm</b> or <b class="ui">Cancel</b></td><td>You say yes in the chat</td></tr>
 </table></div>
-<p class="tip"><b>JoeyAI Chat keeps the least.</b> Your questions, the answers and the files you add or get back are kept by Joey, encrypted with a key of your own, and deleted when you sign out, after 7 days without use, or 30 days after you signed in at the most. Working copies in the AI's own sandbox (where it makes charts and files) expire there within 30 days too. Sensitive or large changes are confirmed on Joey's own page either way.</p>
+<p class="tip"><b>JoeyAI Chat keeps the least.</b> Your questions, the answers and the files you add or get back are kept by Joey, encrypted with a key of your own, and deleted when you sign out, or 30 days after you signed in at the latest. Working copies in the AI's own sandbox (where it makes charts and files) expire there within 30 days too. Sensitive or large changes are confirmed on Joey's own page either way.</p>
 
 <h2 id="chat">JoeyAI Chat</h2>
 <p>JoeyAI Chat is your company's own chat page for Joey: your Joey address with <code>/chat</code> on the end, such as <code>https://joey.atlystech.com.au/your-company/chat</code>. Your Atlys team switches it on for your company and tells you. It works in any browser, and as an app on your phone (see <a href="#chat-phone">JoeyAI Chat on your phone</a>).</p>
@@ -441,7 +441,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 </ol>
 <ul>
 <li><b>One browser and one phone.</b> Signing in on another phone signs out the one before, and another browser does the same for your computer. That device's next page says why; your chats stay.</li>
-<li><b>Staying signed in.</b> As on your computer: after 7 days without a question from you, or 30 days after you signed in at the most, you sign in again. A question from either device counts.</li>
+<li><b>Staying signed in.</b> As on your computer: 30 days after you signed in, you sign in again, whether you've used Joey or not.</li>
 <li><b>Nothing kept on the phone.</b> Your chats stay with Joey, encrypted for you; the app keeps only a page that says you're offline when there's no internet.</li>
 <li><b>Links to MYOB and printed forms</b> open in your phone's browser. MYOB asks you to sign in there the first time, then opens them straight away; Joey never hands its MYOB sign-in to a browser.</li>
 </ul>
@@ -505,7 +505,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <ul>
 <li><b>Two keys, kept apart.</b> MYOB gives Joey a key to act for you, and Joey keeps it, encrypted. Your AI app only ever gets a key to Joey, so nothing it holds can reach MYOB without Joey. JoeyAI Chat works the same way inside Joey.</li>
 <li><b>Your Session Memory starts</b> (see <a href="#memory">Speed and Session Memory</a>). You can ask straight away; answers come live from MYOB until it is ready.</li>
-<li><b>Your MYOB login stays connected</b> while you use it (opening your AI app with Joey connected counts): it ends after 7 days without use, and after 30 days at most, when you connect or sign in again. Joey's own work at night doesn't count as use.</li>
+<li><b>Your MYOB login stays connected</b> for 30 days from when you signed in, whether you use it or not. Then you connect or sign in again.</li>
 </ul>
 
 <h2 id="ask">Asking Joey</h2>
@@ -642,7 +642,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><b>It holds what you can see:</b> up to two years of every kind of record your MYOB role can read (payroll is never read through Joey), filled in the background, most asked first, and older months when you ask about them. Small inquiries your administrator protects with an access list are kept too.</li>
 <li><b>It stays current.</b> Before answering from memory Joey reads what changed in MYOB since it last looked, as you; it re-checks what you've been asking about every few minutes, each night from 3 am (your site's time), and in full from midnight on Saturday night.</li>
 <li><b>When MYOB is busy</b>, or Joey is reading more of your data into memory just then (older months, more fields), Joey answers from memory at once and says how fresh the answer is ("checked 12 minutes ago").</li>
-<li><b>It is only yours, and it ends.</b> It lasts as long as your connection: signing out of Joey, your MYOB login ending (7 days without use, 30 days at most), or a change to your MYOB access deletes it at once. It is brought up to date every night while you have used Joey in the last 4 days, and read again in full on Saturday night while you have used it in the last 7.</li>
+<li><b>It is only yours, and it ends.</b> It lasts as long as your connection: signing out of Joey, your MYOB login ending (30 days after you signed in), or a change to your MYOB access deletes it at once. It is brought up to date every night while you have used Joey in the last 4 days, and read again in full on Saturday night while you have used it in the last 7.</li>
 </ul>
 <p class="note">Ask <i>"What's in my Joey memory?"</i> to see which data is ready and whether the warm-up has finished (<code>joey_status</code>).</p>
 <p class="note">Before a meeting or a busy stretch, say <i>"Joey, warm up"</i> (or pick <b>Joey warm up</b>, <code>/joeywarmup</code>, where your AI app lists prompts). Joey brings your memory up to date with MYOB straight away, in the background, and tells you what it is reading and roughly how long; ask again to see how far it has got. Your own questions still go first, and it can run once every 10 minutes (<code>joey_warmup</code>).</p>
@@ -653,11 +653,12 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <ul>
 <li><b>MYOB decides.</b> Every read is made as you, with your own MYOB login, so MYOB's roles, restriction groups and screen rights apply. If MYOB refuses you something, Joey refuses it too, by every route.</li>
 <li><b>Nothing changes without you.</b> Each change waits for you to confirm it; MYOB records you as the person who made it. Joey keeps a record of what kind of change was made and when, never the values.</li>
-<li><b>What Joey keeps:</b> your own encrypted Session Memory and, in JoeyAI Chat, your chats and files, encrypted for you alone and deleted when you sign out, or at the latest when your MYOB sign-in ends (7 days without use, 30 days at most), files from the AI service's store too. The AI's sandbox, where it works on files and charts, has no internet and expires within 30 days of being made. Joey's logs and learning keep the shape of questions (which fields, how long a period), never names, amounts or records.</li>
+<li><b>What Joey keeps:</b> your own encrypted Session Memory and, in JoeyAI Chat, your chats and files, encrypted for you alone and deleted when you sign out, or 30 days after you signed in at the latest, files from the AI service's store too. The AI's sandbox, where it works on files and charts, has no internet and expires within 30 days of being made. Joey's logs and learning keep the shape of questions (which fields, how long a period), never names, amounts or records.</li>
 <li><b>In your own AI app,</b> the conversation is kept by that app, under its settings and your company's plan with it, until you delete it there.</li>
 <li><b>Keys stay with Joey.</b> Your MYOB key never leaves Joey; your AI app holds only a key to Joey, which Joey can end at any time.</li>
 <li><b>One company per connection.</b> Joey can't switch to another company or another person's data.</li>
 <li><b>Payroll stays in MYOB.</b> Joey never reads pays, payslips, leave or superannuation, for anyone, so no one's pay can reach another person through Joey.</li>
+<li><b>Sensitive fields stay out.</b> Bank account details, tax file numbers and pay rates are never passed to the AI. Your company's administrator can allow them for chosen roles.</li>
 </ul>
 <figure><img src="/assets/joey/guide/chat-refused.1a944d80d7.webp" alt="JoeyAI Chat refusing to show payslips, because Joey never reads payroll" loading="lazy" width="1280" height="824">
 <figcaption>Asked for payslips, Joey says it doesn't read payroll, for anyone, and points to MYOB's own payroll screens.</figcaption></figure>
@@ -667,13 +668,13 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><b>JoeyAI Chat:</b> choose <b class="ui">Sign out</b> under your name at the top right. When it's your only device, your chats and every file you attached or got back are deleted at once, from the AI service's store too; signed in on your phone as well, <b class="ui">Sign out on this device</b> signs out only there and your chats stay on the other (the menu's list signs out the other one). Your AI apps stay connected. While Joey is still answering, making a change or uploading a file, Sign out waits: stop the answer or let it finish first. To keep a chat, <b class="ui">Export</b> it first.
 <figure class="narrow"><img src="/assets/joey/guide/chat-sign-out.bf30756d3a.webp" alt="JoeyAI Chat's account menu with Sign out" loading="lazy" width="630" height="390">
 <figcaption>Your name's menu in JoeyAI Chat, with Sign out.</figcaption></figure></li>
-<li><b>Your own AI app:</b> ask <i>"Sign me out of Joey."</i> (<code>joey_sign_out</code>). It ends every connection you have to this Joey address, JoeyAI Chat included, hands MYOB's key back and deletes your Session Memory. To use Joey again, choose <b class="ui">Connect</b> on the connector. Removing the connector in your AI app doesn't tell Joey; your MYOB login through Joey then runs out after 7 days without use.</li>
+<li><b>Your own AI app:</b> ask <i>"Sign me out of Joey."</i> (<code>joey_sign_out</code>). It ends every connection you have to this Joey address, JoeyAI Chat included, hands MYOB's key back and deletes your Session Memory. To use Joey again, choose <b class="ui">Connect</b> on the connector. Removing the connector in your AI app doesn't tell Joey; your MYOB login through Joey then runs out 30 days after you signed in.</li>
 </ul>
 
 <h2 id="trouble">When something goes wrong</h2>
 <div class="table-wrap"><table>
 <tr><th>You see</th><th>What it means</th><th>What to do</th></tr>
-<tr><td>You're asked to sign in again, or the connector shows as disconnected</td><td>Your MYOB login through Joey ended (7 days without use, 30 days at most, a password change or sign-out)</td><td>Sign in again in JoeyAI Chat, or choose <b class="ui">Connect</b> on Atlys Joey in your AI app</td></tr>
+<tr><td>You're asked to sign in again, or the connector shows as disconnected</td><td>Your MYOB login through Joey ended (30 days after you signed in, a password change or sign-out)</td><td>Sign in again in JoeyAI Chat, or choose <b class="ui">Connect</b> on Atlys Joey in your AI app</td></tr>
 <tr><td>"JoeyAI Chat isn't turned on"</td><td>Your company's Joey address works through your own AI app, not JoeyAI Chat</td><td>Connect Joey in your AI app (see <a href="#connect">Joey in your own AI app</a>), or ask your Atlys team</td></tr>
 <tr><td>"This Joey address works through JoeyAI Chat", when connecting an AI app</td><td>Your company uses JoeyAI Chat at this address, so AI apps can't connect there</td><td>Open your Joey address with <code>/chat</code> on the end and sign in there</td></tr>
 <tr><td>"JoeyAI Chat isn't ready yet"</td><td>JoeyAI Chat's AI isn't set up for your company yet</td><td>Try later, or ask your Atlys team</td></tr>
