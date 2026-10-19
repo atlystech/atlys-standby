@@ -441,7 +441,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 </ol>
 <ul>
 <li><b>One browser and one phone.</b> Signing in on another phone signs out the one before, and another browser does the same for your computer. That device's next page says why; your chats stay.</li>
-<li><b>Staying signed in.</b> As on your computer: 30 days after you signed in, you sign in again, whether you've used Joey or not.</li>
+<li><b>Staying signed in.</b> As on your computer: you stay signed in for 30 days from when you signed in, used or not, and then sign in again.</li>
 <li><b>Nothing kept on the phone.</b> Your chats stay with Joey, encrypted for you; the app keeps only a page that says you're offline when there's no internet.</li>
 <li><b>Links to MYOB and printed forms</b> open in your phone's browser. MYOB asks you to sign in there the first time, then opens them straight away; Joey never hands its MYOB sign-in to a browser.</li>
 </ul>
@@ -505,7 +505,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <ul>
 <li><b>Two keys, kept apart.</b> MYOB gives Joey a key to act for you, and Joey keeps it, encrypted. Your AI app only ever gets a key to Joey, so nothing it holds can reach MYOB without Joey. JoeyAI Chat works the same way inside Joey.</li>
 <li><b>Your Session Memory starts</b> (see <a href="#memory">Speed and Session Memory</a>). You can ask straight away; answers come live from MYOB until it is ready.</li>
-<li><b>Your MYOB login stays connected</b> for 30 days from when you signed in, whether you use it or not. Then you connect or sign in again.</li>
+<li><b>Your MYOB login stays connected for 30 days</b> from when you signed in, whether you use it or not; then you connect or sign in again.</li>
 </ul>
 
 <h2 id="ask">Asking Joey</h2>
@@ -532,6 +532,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <div class="card"><h3>Documents</h3><p>"Look up sales order SO012345 and tell me its status and total."<br>"Does it have a PDF attached? Summarise it in two lines."</p></div>
 <div class="card"><h3>Charts, files and MYOB links</h3><p>"Chart our sales by month this year."<br>"Give me an Excel file of last quarter's invoices."<br>"Open sales order SO012345 in MYOB" or "Print it".</p></div>
 </div>
+<p class="note">Not sure where to start? Ask <i>"What can I ask Joey?"</i> or <i>"Starter questions for accounts payable"</i> (or sales, warehouse, management, a new starter, construction and the like). In an AI app that lists prompts, Joey's starter questions are there too.</p>
 <p>Your MYOB may also have generic inquiries (saved enquiry screens). Ask <i>"Which MYOB inquiries can I use through Joey?"</i> and then <i>"Run the one about open orders for this week."</i></p>
 <figure><img src="/assets/joey/guide/chat-welcome.2e579e0e63.webp" alt="JoeyAI Chat's first page with three suggested questions" loading="lazy" width="1280" height="824">
 <figcaption>A new chat in JoeyAI Chat starts with a few suggestions; pick one or ask your own.</figcaption></figure>
@@ -650,15 +651,16 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <figcaption>What a Session Memory holds: each kind of record, whether it is ready, how many and from which month.</figcaption></figure>
 
 <h2 id="safe">Your data and your rights</h2>
+<p>The short version, what Joey keeps and for how long, and who can see what are on one page: <a href="/joey/data-handling">How Atlys Joey handles your data</a>.</p>
 <ul>
 <li><b>MYOB decides.</b> Every read is made as you, with your own MYOB login, so MYOB's roles, restriction groups and screen rights apply. If MYOB refuses you something, Joey refuses it too, by every route.</li>
 <li><b>Nothing changes without you.</b> Each change waits for you to confirm it; MYOB records you as the person who made it. Joey keeps a record of what kind of change was made and when, never the values.</li>
-<li><b>What Joey keeps:</b> your own encrypted Session Memory and, in JoeyAI Chat, your chats and files, encrypted for you alone and deleted when you sign out, or 30 days after you signed in at the latest, files from the AI service's store too. The AI's sandbox, where it works on files and charts, has no internet and expires within 30 days of being made. Joey's logs and learning keep the shape of questions (which fields, how long a period), never names, amounts or records.</li>
+<li><b>What Joey keeps:</b> your own encrypted Session Memory and, in JoeyAI Chat, your chats and files, encrypted for you alone and deleted when you sign out, or 30 days after you signed in at the latest (a chat is never kept longer than 30 days), files from the AI service's store too. The AI's sandbox, where it works on files and charts, has no internet and expires within 30 days of being made. Joey's logs and learning keep the shape of questions (which fields, how long a period), never names, amounts or records.</li>
 <li><b>In your own AI app,</b> the conversation is kept by that app, under its settings and your company's plan with it, until you delete it there.</li>
 <li><b>Keys stay with Joey.</b> Your MYOB key never leaves Joey; your AI app holds only a key to Joey, which Joey can end at any time.</li>
 <li><b>One company per connection.</b> Joey can't switch to another company or another person's data.</li>
 <li><b>Payroll stays in MYOB.</b> Joey never reads pays, payslips, leave or superannuation, for anyone, so no one's pay can reach another person through Joey.</li>
-<li><b>Sensitive fields stay out.</b> Bank account details, tax file numbers and pay rates are never passed to the AI. Your company's administrator can allow them for chosen roles.</li>
+<li><b>Bank and card details stay in MYOB too.</b> Bank account numbers, BSBs, payment instructions and card numbers are never passed to your AI assistant. Your company's administrator can allow them for chosen people, who then see only what MYOB lets them see.</li>
 </ul>
 <figure><img src="/assets/joey/guide/chat-refused.1a944d80d7.webp" alt="JoeyAI Chat refusing to show payslips, because Joey never reads payroll" loading="lazy" width="1280" height="824">
 <figcaption>Asked for payslips, Joey says it doesn't read payroll, for anyone, and points to MYOB's own payroll screens.</figcaption></figure>
@@ -713,6 +715,9 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <tr><td><code>joey_inquiry</code></td><td>Runs your company's generic inquiries (where your site allows them)</td></tr>
 <tr><td><code>joey_files</code></td><td>Lists and reads files attached to a record in MYOB: PDFs, Word and Excel documents, pictures</td></tr>
 <tr><td><code>joey_erp_help</code></td><td>Help with MYOB itself: where a screen is, what it does and how to do a task, with links on your own site</td></tr>
+<tr><td><code>joey_forecast</code></td><td>Where your company has it switched on: cash flow for the next 4, 8 or 13 weeks, what to reorder and how much, and a GST check for a period (for review; Joey never lodges a BAS). Every forecast says its assumptions</td></tr>
+<tr><td><code>joey_insights</code></td><td>Where switched on: what needs attention (overdue customers, bills due, stock under its reorder point, price rises, duplicate-looking or unusual bills and claims, journals that stand out, projects over budget), each with why and a link to the record; what a customer usually buys, what sells together and margins against cost</td></tr>
+<tr><td><code>joey_bill_check</code></td><td>Where switched on: checks a supplier invoice or receipt you give your assistant before anything is entered (the supplier, an invoice entered already, a matching purchase order, how past bills were coded) and prepares the bill on hold for you to confirm</td></tr>
 <tr><td><code>joey_export</code></td><td>Makes a link to an Excel or CSV file of a long list. Open it within 10 minutes; MYOB asks who you are, and only you get the file</td></tr>
 <tr><td><code>joey_write_propose</code></td><td>Where write access is on: proposes a new record or an edit, with the record's MYOB link (and a confirm link, with the reason, for a sensitive or large change). Nothing changes until you confirm</td></tr>
 <tr><td><code>joey_write_confirm</code></td><td>In your own AI app: makes an everyday write once you have said yes, or cancels it. JoeyAI Chat never uses it: you press Confirm on the card</td></tr>

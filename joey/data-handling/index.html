@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Atlys Joey handles your data | Atlys Tech</title>
+<meta name="description" content="How Atlys Joey handles your data: what it reads, what it keeps and for how long, who can see it, and what never reaches the AI.">
+<link rel="canonical" href="https://www.atlystech.com.au/joey/data-handling">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atlys Tech">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="How Atlys Joey handles your data | Atlys Tech">
+<meta property="og:description" content="How Atlys Joey handles your data: what it reads, what it keeps and for how long, who can see it, and what never reaches the AI.">
+<meta property="og:url" content="https://www.atlystech.com.au/joey/data-handling">
+<meta property="og:image" content="https://www.atlystech.com.au/og-joey.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Atlys Joey handles your data | Atlys Tech">
+<meta name="twitter:description" content="How Atlys Joey handles your data: what it reads, what it keeps and for how long, who can see it, and what never reaches the AI.">
+<meta name="twitter:image" content="https://www.atlystech.com.au/og-joey.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+<script>window.ATLYS_CFG={"li":"10181724","liDemo":"29568820","ga4":"G-KFT8219FTP","ads":"AW-18509850286","adsLead":"pYh2CLrI55odEK7Nl_pE","adsDemo":"tPuhCL3I55odEK7Nl_pE","form":"4ed2a8b5-c321-48f7-b7da-759c0239d550"};</script>
+<script>if(!(function(){try{return localStorage.getItem('atlys_optout')==='1'}catch(e){return false}})()){(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-KFT8219FTP';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-KFT8219FTP');gtag('config','AW-18509850286');})();}</script>
+<script>if(!(function(){try{return localStorage.getItem('atlys_optout')==='1'}catch(e){return false}})()){window._linkedin_partner_id="10181724";window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];window._linkedin_data_partner_ids.push(window._linkedin_partner_id);(function(l){if(!l){window.lintrk=function(a,b){window.lintrk.q.push([a,b])};window.lintrk.q=[]}var s=document.getElementsByTagName("script")[0];var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";s.parentNode.insertBefore(b,s);})(window.lintrk);}</script>
+<script defer src="/assets/site.01bb49e997.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.atlystech.com.au/#organization","name":"Atlys Tech Pty Ltd","alternateName":"Atlys Tech","brand":{"@type":"Brand","name":"Atlys"},"url":"https://www.atlystech.com.au/","logo":"https://www.atlystech.com.au/atlys-logo.png","email":"admin@atlystech.com.au","telephone":"+61480828047","sameAs":["https://www.linkedin.com/company/atlystech"],"knowsAbout":["MYOB Acumatica","Acumatica","ERP integration","AI automation","Custom ERP development"]}</script>
+<link rel="preload" href="/assets/fonts/dm-sans-latin.9fea608a94.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/spectral-700-latin.5276f202cc.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-mono-400-latin.08949f728d.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext.a5d38fe99f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/dm-sans-latin.9fea608a94.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext.a5d38fe99f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/dm-sans-latin.9fea608a94.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext.a5d38fe99f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/dm-sans-latin.9fea608a94.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext.a5d38fe99f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/dm-sans-latin.9fea608a94.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/spectral-500-latin-ext.747fb031bc.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/spectral-500-latin.2b70215ed4.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/spectral-600-latin-ext.dea6bd9ca6.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/spectral-600-latin.33faca8b57.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/spectral-700-latin-ext.9b5a5be420.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Spectral';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/spectral-700-latin.5276f202cc.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-400-latin-ext.6bc0f226a5.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-400-latin.08949f728d.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-500-latin-ext.6bb06407c9.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-500-latin.01d2854474.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Text size: pixel sizes across the site sit at 105% of the original design (13 Oct 2026); no html zoom rule. */
+dc-if{display:contents}dc-if[hidden]{display:none!important}
+* { box-sizing: border-box; }
+  body { margin: 0; font-family: 'DM Sans', sans-serif; background: #ffffff; color: #3d2f22; line-height: 1.6; }
+  a { color: #8a6220; text-decoration: none; }
+  a:hover { color: #5c4632; }
+  button, input, select, textarea { font-family: inherit; }
+  html { scroll-behavior: smooth; }
+  img { max-width: 100%; }
+  p, h1, h2, h3 { text-wrap: pretty; }
+  a, button { transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+  a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #8a6220; outline-offset: 3px; border-radius: 4px; }
+  nav a:hover, footer a:hover { color: #8a6220; }
+  .prose h2 { font-family: 'Spectral', serif; font-size: clamp(20.79px, 2.73vw, 26.46px); font-weight: 700; color: #8a6220; margin: 48px 0 12px; letter-spacing: -0.01em; line-height: 1.25; }
+  .prose p, .prose li { font-size: 15px; line-height: 1.72; color: #5c4632; }
+  .prose ul { padding-left: 20px; margin: 0 0 16px; }
+  .prose li { margin: 6px 0; }
+  .prose a { text-decoration: underline; text-underline-offset: 3px; }
+  .prose strong { color: #3d2f22; }
+  @media (max-width: 640px) { .sn-hide { display: none !important; } }
+/* Site theme: dark hero, light body. Atlys pages use brown and gold; Joey pages use the Joey dark teal. */
+  .t-dark { background: radial-gradient(900px 520px at 100% 0%, rgba(169,126,46,0.26), transparent 60%), #2a1a0c; color: #f2ecdc; }
+  .t-teal { background: radial-gradient(1100px 600px at 12% -12%, rgba(90,209,166,.17), transparent 62%), radial-gradient(900px 560px at 105% 0%, rgba(201,154,63,.09), transparent 58%), #1A383F; color: #EEF5F3; }
+  .t-wrap { max-width: 1040px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
+  .t-sec { padding: clamp(64px, 8vw, 104px) 0; }
+  .t-cream { background: #fbf7ee; }
+  .t-kicker { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #8a6220; margin: 0 0 20px; }
+  .t-dark .t-kicker, .t-kicker-gold { color: #e9c46a; }
+  .t-teal .t-kicker { color: #D9AE55; }
+  .t-h1 { font-family: 'Spectral', serif; font-weight: 700; font-size: clamp(36px, 5.6vw, 72px); overflow-wrap: break-word; line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 24px; }
+  .t-h2 { font-family: 'Spectral', serif; font-weight: 700; font-size: clamp(30px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.015em; margin: 0; color: #8a6220; }
+  .t-h2-ink { color: #3d2f22; }
+  .t-gold { color: #e9c46a; }
+  .t-lead { font-size: 17px; line-height: 1.65; margin: 0 0 32px; max-width: 600px; }
+  .t-dark .t-lead { color: #d8c8ab; }
+  .t-teal .t-lead { color: #A8C2BE; }
+  .t-head { display: flex; flex-wrap: wrap; gap: 16px 64px; align-items: flex-end; justify-content: space-between; margin: 0 0 40px; }
+  .t-head p { font-size: 16px; line-height: 1.6; color: #5c4632; max-width: 440px; margin: 0; }
+  .t-btns { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .t-btn { display: inline-block; font-size: 15px; font-weight: 600; padding: 14px 26px; border-radius: 8px; border: 1.5px solid transparent; cursor: pointer; text-align: center; white-space: nowrap; line-height: 1.3; }
+  .t-btn-gold { color: #2a1a0c; background: #e9c46a; }
+  .t-btn-gold:hover { color: #2a1a0c; background: #f0d084; }
+  .t-btn-brown { color: #ffffff; background: #8a6220; }
+  .t-btn-brown:hover { color: #ffffff; background: #6f4e18; }
+  .t-btn-cream { color: #1A383F; background: #F2ECDC; }
+  .t-btn-cream:hover { color: #1A383F; background: #ffffff; }
+  .t-btn-teal { color: #F2ECDC; background: #1A383F; }
+  .t-btn-teal:hover { color: #F2ECDC; background: #24434A; }
+  .t-btn-ghost { color: #f2ecdc; background: transparent; border-color: #6b5338; font-weight: 500; }
+  .t-btn-ghost:hover { color: #ffffff; border-color: #e9c46a; }
+  .t-teal .t-btn-ghost { border-color: #38575E; color: #EEF5F3; }
+  .t-teal .t-btn-ghost:hover { border-color: #F2ECDC; }
+  .t-btn-line { color: #3d2f22; background: #ffffff; border-color: #e6ddc8; font-weight: 500; }
+  .t-btn-line:hover { color: #3d2f22; border-color: #8a6220; }
+  /* top bar: dark and sticky on every page */
+  .t-nav { position: sticky; top: 0; z-index: 200; background: rgba(42,26,12,0.96); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(242,236,220,0.12); }
+  .t-nav.t-nav-teal { background: rgba(26,56,63,0.96); border-bottom-color: rgba(238,245,243,0.12); }
+  .t-nav-in { max-width: 1040px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); height: 84px; display: flex; align-items: center; gap: 12px; }
+  .t-logo { display: flex; align-items: center; background: none; padding: 0; flex-shrink: 0; }
+  .t-logo img { width: 72px; height: 69px; display: block; object-fit: contain; }
+  .t-nav-links { margin-left: auto; display: flex; align-items: center; gap: 4px 20px; }
+  .t-nav-links a, .t-nav-links button, .t-nav-links summary { font-size: 14px; font-weight: 500; color: #f2ecdc; background: none; border: none; cursor: pointer; padding: 8px 2px; font-family: inherit; }
+  .t-nav-links a:hover, .t-nav-links button:hover, .t-nav-links summary:hover { color: #e9c46a; }
+  .t-nav-teal .t-nav-links a:hover { color: #D9AE55; }
+  .t-nav-links .t-nav-cta { font-weight: 600; color: #2a1a0c; background: #e9c46a; padding: 11px 20px; border-radius: 999px; white-space: nowrap; }
+  .t-nav-links .t-nav-cta:hover { color: #2a1a0c; background: #f0d084; }
+  .t-nav-teal .t-nav-links .t-nav-cta { color: #1A383F; background: #F2ECDC; }
+  .t-nav-teal .t-nav-links .t-nav-cta:hover { color: #1A383F; background: #ffffff; }
+  .t-burger { display: none; flex-direction: column; justify-content: center; gap: 5px; margin-left: auto; padding: 10px; background: none; border: none; cursor: pointer; }
+  .t-burger span { display: block; width: 24px; height: 2px; background: #f2ecdc; border-radius: 2px; }
+  /* cards and grids */
+  .t-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; background: #e6ddc8; border: 2px solid #e6ddc8; border-radius: 20px; overflow: hidden; }
+  .t-cards > * { background: #ffffff; padding: 26px; }
+  .t-cards .t-card-title { font-size: 18px; }
+  .t-cards .chev { margin-top: 24px; }
+  .t-label { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.16em; color: #8a7860; margin: 0 0 12px; }
+  .t-card-title { display: block; font-family: 'Spectral', serif; font-size: 20px; font-weight: 700; line-height: 1.2; color: #3d2f22; margin: 0 0 10px; }
+  .t-card-text { font-size: 15px; line-height: 1.6; color: #5c4632; margin: 0; }
+  .t-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+  .t-step { background: #ffffff; border: 1.5px solid #e6ddc8; border-radius: 14px; padding: 22px 20px; }
+  .t-num { font-family: 'Spectral', serif; font-size: 30px; font-weight: 700; color: #c99a3f; line-height: 1; margin: 0 0 10px; }
+  .t-four { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .t-split { display: flex; flex-wrap: wrap; gap: 36px 58px; align-items: center; }
+  .t-split > * { min-width: 0; }
+  .t-ticks p { font-size: 15.5px; font-weight: 600; margin: 0 0 14px; }
+  .t-ticks p:last-child { margin: 0; }
+  .t-ticks span { color: #e9c46a; margin-right: 10px; }
+  .t-svc summary { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; list-style: none; cursor: pointer; }
+  .t-svc summary::-webkit-details-marker { display: none; }
+  .t-svc .chev { font-size: 18px; color: #8a6220; transition: transform .15s; flex-shrink: 0; margin-top: 30px; }
+  .t-svc[open] .chev { transform: rotate(90deg); }
+  .t-svc summary:hover .t-card-title { color: #8a6220; }
+  .t-cards > details { transition: background .15s; }
+  .t-cards > details:hover { background: #fffaf0; }
+  /* FAQ */
+  .t-faq { max-width: 960px; }
+  .t-faq details { border-bottom: 1px solid #e6ddc8; }
+  .t-faq summary { display: flex; justify-content: space-between; gap: 24px; padding: 20px 0; font-size: 17px; font-weight: 600; color: #3d2f22; }
+  .t-faq summary:hover { color: #8a6220; }
+  .t-faq details p { font-size: 15.5px; line-height: 1.7; color: #5c4632; margin: 0; padding: 0 0 26px; max-width: 800px; }
+  /* forms on a dark ground */
+  .t-form-dark label { color: #d8c8ab !important; }
+  .t-form-dark input, .t-form-dark select, .t-form-dark textarea { background: #3a2716 !important; color: #f2ecdc !important; border-color: #6b5338 !important; }
+  .t-form-dark input::placeholder, .t-form-dark textarea::placeholder { color: #a98a63; }
+  .t-form-dark button[type=submit] { background: #e9c46a !important; color: #2a1a0c !important; }
+  .t-form-dark .cf-err { color: #f0d084 !important; }
+  .t-form-teal label { color: #A8C2BE !important; }
+  .t-form-teal input, .t-form-teal select, .t-form-teal textarea { background: #24434A !important; color: #EEF5F3 !important; border-color: #38575E !important; }
+  .t-form-teal input::placeholder, .t-form-teal textarea::placeholder { color: #7f9a96; }
+  .t-form-teal button[type=submit] { background: #F2ECDC !important; color: #1A383F !important; }
+  .t-form-teal .cf-err { color: #D9AE55 !important; }
+  .t-dark a:not(.t-btn):not(.t-nav-cta), .t-dark-links a { color: #e9c46a; }
+  @media (max-width: 960px) {
+    .t-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .t-nav-links { display: none !important; }
+    .t-burger { display: flex !important; }
+    .t-nav-in { height: 76px; }
+    .t-logo img { width: 64px; height: 61px; }
+    .t-steps { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+    .t-step { display: grid; grid-template-columns: 48px minmax(0, 1fr); column-gap: 12px; align-items: start; padding: 18px 20px; }
+    .t-num { grid-row: 1 / span 2; margin: 0; }
+    .t-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 640px) { .sn-hide { display: none !important; } }
+  @media (max-width: 560px) {
+    .t-cards { grid-template-columns: minmax(0, 1fr); }
+    .t-four { grid-template-columns: minmax(0, 1fr); }
+    .t-btns { flex-direction: column; align-items: stretch; }
+    .t-btn { white-space: normal; }
+    .t-cards > * { padding: 24px; }
+  }
+:root { --bg: #F4F7F4; --card: #FFFFFF; --raised: #E8EFE9; --border: #DCE5DE; --ink: #16241C; --muted: #5B6A61; --green: #2E8F6C; --gold-text: #8C6623; --shadow: 0 1px 2px rgba(22,36,28,.05), 0 6px 18px rgba(22,36,28,.06); }
+    body { background: var(--bg); color: var(--ink); }
+    .dh-hero { background: radial-gradient(700px 360px at 100% 0%, rgba(90,209,166,.17), transparent 62%), #1A383F; color: #F2ECDC; padding: clamp(48px, 7vw, 88px) 0 clamp(48px, 6vw, 72px); }
+    .dh-wrap { max-width: 860px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 48px); }
+    .dh-hero .t-kicker { color: #e9c46a; }
+    .dh-hero h1 { font-family: 'Spectral', serif; font-weight: 700; font-size: clamp(32px, 5vw, 56px); line-height: 1.06; letter-spacing: -0.02em; margin: 0 0 18px; }
+    .dh-hero p { font-size: 17px; line-height: 1.65; color: #C9DAD6; margin: 0; }
+    .dh { padding: clamp(16px, 3vw, 32px) 0 clamp(72px, 9vw, 110px); }
+    .dh h2 { font-family: 'Spectral', serif; font-weight: 700; font-size: clamp(22px, 2.8vw, 27px); color: var(--ink); letter-spacing: -0.01em; line-height: 1.25; margin: 44px 0 14px; padding-top: 20px; border-top: 1px solid var(--border); }
+    .dh h3 { font-family: 'Spectral', serif; font-size: 18px; color: var(--ink); margin: 22px 0 6px; }
+    .dh p, .dh li { font-size: 15px; line-height: 1.7; color: #33443A; }
+    .dh p { margin: 0 0 14px; }
+    .dh ul { padding-left: 20px; margin: 0 0 16px; }
+    .dh li { margin: 8px 0; }
+    .dh b { color: var(--ink); }
+    .dh a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 14px; background: var(--card); box-shadow: var(--shadow); margin: 0 0 16px; }
+    .dh table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+    .dh th, .dh td { border-bottom: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; line-height: 1.55; color: #33443A; }
+    .dh tr:last-child td { border-bottom: 0; }
+    .dh th { background: var(--raised); color: var(--muted); font-weight: 600; font-size: 12.5px; }
+    .dh td:first-child { color: var(--ink); font-weight: 600; }
+    .dh-more { margin-top: 40px; padding: 16px 18px; border-radius: 12px; background: #E3F1EA; border-left: 3px solid var(--green); }
+    .dh-more p { margin: 0; }
+    /* the page sits under the Joey dark teal, like the user guide */
+    .t-nav { background: rgba(26,56,63,0.96) !important; }
+    .t-nav a[href="/book-a-call"] { background: #F2ECDC !important; color: #1A383F !important; }
+    @media (max-width: 600px) {
+      /* The table stacks on a phone: one row per block, each cell labelled. */
+      .dh table, .dh tbody, .dh tr, .dh td { display: block; }
+      .dh tr:first-child { display: none; }
+      .dh tr { border-bottom: 1px solid var(--border); padding: 12px 14px; }
+      .dh tr:last-child { border-bottom: none; }
+      .dh td { padding: 3px 0; border: none; }
+      .dh td:nth-child(2)::before { content: "Kept"; }
+      .dh td:nth-child(3)::before { content: "Gone"; }
+      .dh td:not(:first-child)::before { display: block; font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 6px 0 2px; font-weight: 400; }
+    }
+.scp0:hover{background:#f0d084 !important;color:#2a1a0c !important}
+</style>
+</head>
+<body>
+<nav class="t-nav">
+  <div class="t-nav-in">
+    <a class="t-logo" href="/" aria-label="Atlys Tech home"><img src="/assets/atlys-logo-light.bab1f29e20.webp" alt="Atlys Tech" width="240" height="230"></a>
+    <div style="margin-left:auto;display:flex;align-items:center;gap:4px 20px;">
+      <a class="sn-hide" href="/" style="font-size:13px;color:#d8c8ab;">← atlystech.com.au</a>
+      <a class="sn-hide" href="/products" style="font-size:14px;font-weight:500;color:#f2ecdc;">Products</a>
+      <a class="scp0" href="/book-a-call" style="font-size:14px;font-weight:600;color:#2a1a0c;background:#e9c46a;padding:12px 22px;border-radius:999px;white-space:nowrap;">Book a Call →</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <section class="dh-hero">
+    <div class="dh-wrap">
+      <p class="t-kicker">ATLYS JOEY · YOUR DATA</p>
+      <h1>How Atlys Joey handles your data</h1>
+      <p>What Joey reads, what it keeps and for how long, and who can see it.</p>
+    </div>
+  </section>
+
+  <section class="dh">
+    <div class="dh-wrap">
+
+      <h2 style="border-top:0;">The short version</h2>
+      <ul>
+        <li><b>Your MYOB rights decide everything.</b> Joey signs in to MYOB as you and reads only what your own MYOB role lets you see. If MYOB says no, Joey says no.</li>
+        <li><b>Joey changes nothing without you.</b> Every change is shown to you first and made only when you confirm it; sensitive or large changes are confirmed on Joey's own page. Payments are never released and records are never deleted through Joey.</li>
+        <li><b>Payroll, bank and card details stay in MYOB.</b> Pay, payslips, leave and superannuation are never read. Bank account numbers, BSBs, payment instructions and card numbers are never passed to the AI; your administrator can allow them for chosen people, who then see only what MYOB lets them see.</li>
+        
+        <li><b>No training on your data.</b> Joey doesn't train AI models on your data, and JoeyAI Chat uses an AI service under commercial terms that don't train on it either.</li>
+      </ul>
+
+      <h2>What Joey keeps, and for how long</h2>
+      <div class="table-wrap"><table>
+        <tr><th>What</th><th>Kept</th><th>Gone</th></tr>
+        <tr><td>Your MYOB sign-in through Joey</td><td>Encrypted, for your connection only</td><td>30 days after you signed in, or when you sign out</td></tr>
+        <tr><td>Session Memory (a working copy of the records you can see, so answers are fast)</td><td>Encrypted with a key of your own, on Joey's server</td><td>When your sign-in ends or you sign out, at once</td></tr>
+        <tr><td>JoeyAI Chat conversations and the files you add</td><td>Encrypted for you alone</td><td>When you sign out, or 30 days after the chat began at the latest</td></tr>
+        <tr><td>Joey's audit log</td><td>Who used which tool on which kind of record, and the outcome; <b>never a value</b></td><td>After 180 days</td></tr>
+        <tr><td>Logs and learning</td><td>The shape of questions (which fields, how long a period), never names, amounts or records</td><td>Rolling</td></tr>
+        <tr><td>The call record, only where your company agrees</td><td>Each call in full, encrypted, for Atlys to improve Joey</td><td>30 days after the call</td></tr>
+      </table></div>
+      <p>In your own AI app, what the app keeps of your conversations is set by that app and your company's plan with it, not by Joey.</p>
+
+      <h2>Who can see what</h2>
+      <ul>
+        <li><b>You</b> see what your MYOB role allows, through Joey or in MYOB itself.</li>
+        <li><b>Your company's administrator</b> can be named to read Joey's audit log of your company: who used Joey, which tool and kind of record, and whether it worked. It holds no values.</li>
+        <li><b>Atlys</b> sees counts, timings and outcomes to keep Joey running well, never your Session Memory or your chats. Only where your company agrees (test sites so far), Atlys keeps an encrypted record of each call for 30 days to improve Joey, then deletes it; it is never public.</li>
+      </ul>
+
+      <h2>Questions people ask</h2>
+      <h3>Can Joey see more than I can in MYOB?</h3>
+      <p>No. Every read is made with your own MYOB sign-in, and Joey never uses a shared or service login to answer you.</p>
+      <h3>Does Joey write to MYOB by itself?</h3>
+      <p>No. Joey Watch and the forecasts only read. The bill check prepares a bill on hold for you to confirm; nothing is entered until you say yes.</p>
+      <h3>What happens when I leave the company?</h3>
+      <p>When your MYOB access is removed, your sign-in through Joey stops working and everything Joey held for you is deleted.</p>
+
+      <div class="dh-more"><p>How to sign in, sign out and more is in the <a href="/joey/user-guide#safe">Atlys Joey user guide</a>. For what our website itself collects, see our <a href="/privacy">privacy policy</a>.</p></div>
+    </div>
+  </section></main><footer style="padding:56px 0 40px;border-top:3px solid #8a6220;background:#ffffff;">
+  <div style="max-width:1040px;margin:0 auto;padding:0 clamp(28px,5vw,48px);">
+    <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+      <img src="/assets/atlys-logo-208.8d4c7d22fb.webp" alt="Atlys Tech" style="width:70px;height:60px;display:block;object-fit:contain;" width="208" height="180">
+      <nav aria-label="Footer" style="display:flex;align-items:center;gap:8px 20px;flex-wrap:wrap;">
+        <a href="/products" style="font-size:12.5px;color:#8a7860;">Products</a>
+        <a href="/joey" style="font-size:12.5px;color:#8a7860;">Atlys Joey</a>
+        <a href="/book-a-call" style="font-size:12.5px;color:#8a7860;">Book a Call</a>
+        <a href="/privacy" style="font-size:12.5px;color:#8a7860;">Privacy policy</a>
+        <a href="https://www.linkedin.com/company/atlystech" rel="noopener" target="_blank" style="font-size:12.5px;color:#8a7860;">LinkedIn</a>
+        <a href="mailto:admin@atlystech.com.au" style="font-size:12.5px;color:#8a7860;">admin@atlystech.com.au</a>
+        <a href="tel:+61480828047" style="font-size:12.5px;color:#8a7860;">+61 480 828 047</a>
+      </nav>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.08em;color:#8a7860;margin-left:auto;">© 2026 Atlys Tech Pty Ltd · ABN 46 701 607 829</span>
+    </div>
+    <hr style="border:none;border-top:1px solid #e6ddc8;margin:24px 0 16px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.12em;color:#8a7860;margin:0;">Atlys Joey · MYOB Acumatica · Acumatica</p>
+  </div>
+</footer>
+<noscript><img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=10181724&amp;fmt=gif"></noscript>
+</body>
+</html>
