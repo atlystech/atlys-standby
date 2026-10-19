@@ -328,7 +328,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><a href="#happens">What happens when you connect</a></li>
 <li><a href="#ask">Asking Joey</a></li>
 <li><a href="#examples">Questions to try</a></li>
-<li><a href="#erp-help">Help with MYOB itself</a></li>
+<li><a href="#erp-help">Help with your ERP itself</a></li>
 <li><a href="#write">Write access</a></li>
 <li><a href="#tips">Tips for good answers</a></li>
 <li><a href="#memory">Speed and Session Memory</a></li>
@@ -344,60 +344,61 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <div>
 <div class="eyebrow">Atlys Joey · user guide</div>
 <h1>Ask your ERP anything, in plain English</h1>
-<p class="lead">Atlys Joey connects AI to your company's MYOB Advanced (MYOB Acumatica) site. You ask a question the way you would ask a colleague, and the answer comes with figures read from MYOB, as you, a moment ago. Use it in JoeyAI Chat, your company's own chat page, or in the AI app you already use.</p>
-<p style="font-size:15px;line-height:1.6;color:#3b5247;margin:4px 0 0;">Demos available now on <b style="color:#1A383F;">MYOB Acumatica</b> and <b style="color:#1A383F;">Acumatica</b>. Using another ERP? Ask us.</p>
+<p class="lead">Atlys Joey connects AI to your company's ERP site. You ask a question the way you would ask a colleague, and the answer comes with figures read from your ERP, as you, a moment ago. Use it in JoeyAI Chat, your company's own chat page, or in the AI app you already use.</p>
+<p style="font-size:15px;line-height:1.6;color:#3b5247;margin:4px 0 0;">Works with any ERP. Ready for an instant demo on <b style="color:#1A383F;">MYOB Acumatica</b> and <b style="color:#1A383F;">Acumatica</b>; for another ERP, ask us.</p>
 </div>
 <div><img src="/assets/joey/guide/atlys-joey-logo.4cbc94e057.webp" alt="" width="380" height="288"></div>
 </div>
 
 <h2 id="what">What Joey is</h2>
-<p>Joey is a small service run by Atlys that sits between an AI assistant and your MYOB site. While the assistant works on your question, it asks Joey to look things up in MYOB, total them and explain them. Joey plugs into AI apps as a custom connector, the standard way they reach outside tools.</p>
+<p>Joey is run by Atlys and sits between an AI assistant and your ERP site. While the assistant works on your question, it asks Joey to look things up in your ERP, total them and explain them. Joey plugs into AI apps as a custom connector, the standard way they reach outside tools.</p>
+<p class="note">This guide shows Joey on MYOB Acumatica, so the buttons, screens and messages quoted here are MYOB's. On another ERP they carry that ERP's own names; everything else works the same way.</p>
 <div class="cards">
-<div class="card"><h3>As you</h3><p>You sign in with your own MYOB login. Joey sees exactly what your MYOB role lets you see, and nothing more.</p></div>
+<div class="card"><h3>As you</h3><p>You sign in with your own ERP login. Joey sees exactly what your ERP role lets you see, and nothing more.</p></div>
 <div class="card"><h3>You confirm every change</h3><p>Joey reads. Where your company has write access switched on, it can also create and change records, but only after you confirm each one. It never deletes.</p></div>
-<div class="card"><h3>Live and quick</h3><p>Answers come from MYOB itself, and a private, encrypted memory of your recent data makes common questions answer in about a second.</p></div>
-<div class="card"><h3>Your company only</h3><p>Each company has its own Joey address. One connection reaches one MYOB company.</p></div>
+<div class="card"><h3>Live and quick</h3><p>Answers come from your ERP itself, and a private, encrypted memory of your recent data makes common questions answer in about a second.</p></div>
+<div class="card"><h3>Your company only</h3><p>Each company has its own Joey address. One connection reaches one ERP company.</p></div>
 </div>
 
-<div class="diagram" role="img" aria-label="You ask the AI assistant, it asks Joey, Joey reads MYOB as you and the assistant answers">
+<div class="diagram" role="img" aria-label="You ask the AI assistant, it asks Joey, Joey reads your ERP as you and the assistant answers">
 <svg viewbox="0 0 900 170">
 <defs><marker id="ga" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="8" markerheight="8" orient="auto"><path class="arrow" d="M0,0 L10,5 L0,10 z"></path></marker>
 <marker id="gb" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="8" markerheight="8" orient="auto"><path class="arrow2" d="M0,0 L10,5 L0,10 z"></path></marker></defs>
 <rect class="box" x="10" y="45" width="150" height="70" rx="12"></rect><text x="85" y="76" text-anchor="middle" font-weight="600">You</text><text class="lbl" x="85" y="96" text-anchor="middle">a question in words</text>
 <rect class="box" x="250" y="45" width="170" height="70" rx="12"></rect><text x="335" y="76" text-anchor="middle" font-weight="600">AI assistant</text><text class="lbl" x="335" y="96" text-anchor="middle">works out what to look up</text>
-<rect class="hi" x="510" y="45" width="160" height="70" rx="12"></rect><text x="590" y="76" text-anchor="middle" font-weight="600">Atlys Joey</text><text class="lbl" x="590" y="96" text-anchor="middle">reads MYOB as you</text>
-<rect class="box" x="760" y="45" width="130" height="70" rx="12"></rect><text x="825" y="76" text-anchor="middle" font-weight="600">MYOB</text><text class="lbl" x="825" y="96" text-anchor="middle">your company</text>
+<rect class="hi" x="510" y="45" width="160" height="70" rx="12"></rect><text x="590" y="76" text-anchor="middle" font-weight="600">Atlys Joey</text><text class="lbl" x="590" y="96" text-anchor="middle">reads your ERP as you</text>
+<rect class="box" x="760" y="45" width="130" height="70" rx="12"></rect><text x="825" y="76" text-anchor="middle" font-weight="600">Your ERP</text><text class="lbl" x="825" y="96" text-anchor="middle">your company</text>
 <path class="line" d="M160,68 L246,68" marker-end="url(#ga)"></path><path class="line" d="M420,68 L506,68" marker-end="url(#ga)"></path><path class="line" d="M670,68 L756,68" marker-end="url(#ga)"></path>
 <path class="dash" d="M756,96 L674,96" marker-end="url(#gb)"></path><path class="dash" d="M506,96 L424,96" marker-end="url(#gb)"></path><path class="dash" d="M246,96 L164,96" marker-end="url(#gb)"></path>
-<text class="lbl" x="450" y="150" text-anchor="middle">Green: the question on its way. Gold: the answer coming back. MYOB decides what you may see at every step.</text>
+<text class="lbl" x="450" y="150" text-anchor="middle">Green: the question on its way. Gold: the answer coming back. Your ERP decides what you may see at every step.</text>
 </svg>
 <p class="swipe">Swipe sideways to see the whole picture.</p>
 </div>
 <ul>
 <li><b>Answers in seconds, not reports in hours.</b> "Who were our top 10 customers this financial year?" is one question instead of an export and a spreadsheet.</li>
 <li><b>Follow-ups in the same chat.</b> The biggest customer, then their largest orders, then what the PDF on the largest one says.</li>
-<li><b>Everyone asks in their own words.</b> Sales, accounts, purchasing and the warehouse ask the same system in plain language, and each person sees only what their own MYOB login allows.</li>
+<li><b>Everyone asks in their own words.</b> Sales, accounts, purchasing and the warehouse ask the same system in plain language, and each person sees only what their own ERP login allows.</li>
 </ul>
 
 <h2 id="two-ways">Two ways to use Joey</h2>
-<p>Joey comes in two ways. Your company chooses one for its Joey address with your Atlys team: <b>JoeyAI Chat</b>, Joey's own chat page, or <b>your own AI app</b> connected to Joey. Both read MYOB as you, with the same rights, the same memory and the same checks on every change. They differ in where you chat and who keeps the conversation.</p>
+<p>Joey comes in two ways. Your company chooses one for its Joey address with your Atlys team: <b>JoeyAI Chat</b>, Joey's own chat page, or <b>your own AI app</b> connected to Joey. Both read your ERP as you, with the same rights, the same memory and the same checks on every change. They differ in where you chat and who keeps the conversation.</p>
 <div class="table-wrap"><table>
 <tr><th></th><th>JoeyAI Chat</th><th>Your own AI app</th></tr>
 <tr><td><b>Where</b></td><td>Your company's chat page: your Joey address with <code>/chat</code> on the end</td><td>Claude, ChatGPT, Microsoft Copilot, Google Gemini, Cursor and other apps that take custom connectors</td></tr>
-<tr><td><b>You need</b></td><td>Your MYOB login, nothing else</td><td>An AI app plan that allows custom connectors, and your MYOB login</td></tr>
+<tr><td><b>You need</b></td><td>Your ERP login, nothing else</td><td>An AI app plan that allows custom connectors, and your ERP login</td></tr>
 <tr><td><b>The AI</b></td><td>Comes with Joey, with a monthly allowance for your company</td><td>Your app's own, under your company's plan with that app</td></tr>
 <tr><td><b>Your conversations</b></td><td>Kept by Joey, encrypted for you alone, and <b>deleted when you sign out, or 30 days after you signed in at the latest</b></td><td>Kept by your AI app, as its settings and your company's plan say, until you delete them there</td></tr>
 <tr><td><b>Files</b></td><td>Attach pictures, PDFs, Excel, Word, PowerPoint and text files; ask for charts and Excel, Word, PowerPoint or PDF files back. All deleted with your chats, from the AI service's store too</td><td>As your AI app allows, kept by your AI app</td></tr>
-<tr><td><b>Changes in MYOB</b></td><td>On a card: you press <b class="ui">Confirm</b> or <b class="ui">Cancel</b></td><td>You say yes in the chat</td></tr>
+<tr><td><b>Changes in your ERP</b></td><td>On a card: you press <b class="ui">Confirm</b> or <b class="ui">Cancel</b></td><td>You say yes in the chat</td></tr>
 </table></div>
 <p class="tip"><b>JoeyAI Chat keeps the least.</b> Your questions, the answers and the files you add or get back are kept by Joey, encrypted with a key of your own, and deleted when you sign out, or 30 days after you signed in at the latest. Working copies in the AI's own sandbox (where it makes charts and files) expire there within 30 days too. Sensitive or large changes are confirmed on Joey's own page either way.</p>
 
 <h2 id="chat">JoeyAI Chat</h2>
 <p>JoeyAI Chat is your company's own chat page for Joey: your Joey address with <code>/chat</code> on the end, such as <code>https://joey.atlystech.com.au/your-company/chat</code>. Your Atlys team switches it on for your company and tells you. It works in any browser, and as an app on your phone (see <a href="#chat-phone">JoeyAI Chat on your phone</a>).</p>
 <ol class="steps">
-<li><b>Sign in.</b> Open the address and choose <b class="ui">Sign in with MYOB</b>. MYOB's own page asks for your login, as always, and brings you back to the chat. Joey never sees your password.
+<li><b>Sign in.</b> Open the address and choose <b class="ui">Sign in with MYOB</b>. Your ERP's own page asks for your login, as always, and brings you back to the chat. Joey never sees your password.
 <figure class="narrow"><img src="/assets/joey/guide/chat-sign-in.8a6e8b8e38.webp" alt="JoeyAI Chat's sign-in page with Sign in with MYOB" loading="lazy" width="1280" height="824">
-<figcaption>JoeyAI Chat's own page for your company. MYOB's sign-in follows, then you are in the chat.</figcaption></figure></li>
+<figcaption>JoeyAI Chat's own page for your company. The ERP's sign-in follows, then you are in the chat.</figcaption></figure></li>
 <li><b>Ask.</b> Type in the box at the bottom, or pick a suggestion. <b class="ui">Enter</b> sends; <b class="ui">Shift+Enter</b> starts a new line. Joey's steps show as it works, each with what it looked up (for example <i>Summary · Sales order, by status</i>), then the answer. Tables have <b class="ui">Copy table</b> and <b class="ui">CSV</b>, and every answer has <b class="ui">Copy</b>.
 <figure><img src="/assets/joey/guide/chat-answer.b903bcae5e.webp" alt="An answer in JoeyAI Chat with Joey's step and a table of sales orders by status" loading="lazy" width="1280" height="824">
 <figcaption>An answer in JoeyAI Chat: Joey's step with what it looked up, then a table to copy or save as CSV.</figcaption></figure></li>
@@ -406,11 +407,11 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <ul>
 <li><b>Files you attach.</b> Use the clip, drop files on the box, or paste a picture: up to 5 a question. Pictures (up to 5 MB) and PDFs (up to 20 MB) are read directly; Excel, Word and PowerPoint files (<code>.xlsx</code>, <code>.xls</code>, <code>.docx</code>, <code>.pptx</code>, up to 20 MB) and large CSV files are opened in the AI's own sandbox; small text files go into your question.</li>
 <li><b>Files and charts you get back.</b> Ask for a chart, or for an Excel, Word, PowerPoint or PDF file ("Put this in a spreadsheet", "Make a one-page PDF of it"). Pictures show in the answer; other files appear under it to download. Each chat keeps its own sandbox, so a follow-up can change what was made before.</li>
-<li><b>Pages beside the chat.</b> Ask for a dashboard or a one-page view ("Make a dashboard of our open orders"); choose <b class="ui">Open</b> and it shows in a panel beside the chat, where its buttons work. It runs sealed off there: it can't reach your MYOB, Joey, this page or the internet. <b class="ui">Download</b> keeps a copy; <b class="ui">Esc</b> or the cross closes it.</li>
+<li><b>Pages beside the chat.</b> Ask for a dashboard or a one-page view ("Make a dashboard of our open orders"); choose <b class="ui">Open</b> and it shows in a panel beside the chat, where its buttons work. It runs sealed off there: it can't reach your ERP, Joey, this page or the internet. <b class="ui">Download</b> keeps a copy; <b class="ui">Esc</b> or the cross closes it.</li>
 <li><b>Speak and listen.</b> The microphone in the box (where your browser offers one) types what you say; check it, then send. Your browser asks once if JoeyAI Chat may use the microphone. <b class="ui">Listen</b> under an answer reads it aloud. Both use your browser's own speech: some browsers send the sound to their maker's online service to turn it into words. Nothing goes to Joey until you press send.</li>
-<li><b>The web, where your company allows it.</b> If your Atlys team switches it on for your company, JoeyAI Chat can also search the public web and read public pages for facts that aren't in MYOB (a tax rate, a public rule, a published price). Joey is told never to put your company's data in a search, and the searches show as steps. It is off unless your company asks for it.</li>
+<li><b>The web, where your company allows it.</b> If your Atlys team switches it on for your company, JoeyAI Chat can also search the public web and read public pages for facts that aren't in your ERP (a tax rate, a public rule, a published price). Joey is told never to put your company's data in a search, and the searches show as steps. It is off unless your company asks for it.</li>
 <li><b>Your allowance.</b> The foot of the chat list shows how much of your JoeyAI Chat allowance you've used in the last 5 hours, the last 7 days and this month, and at 80% of the month Joey tells you once. If you reach a limit for now, Joey tells you when you can ask again; when the month's allowance is used, your chats stay to read until it renews on the 1st.</li>
-<li><b>Everyday questions too.</b> Joey takes every question as one about your business and MYOB first. Something unrelated, such as wording an email or a general question, it answers like any AI assistant, from the same allowance.</li>
+<li><b>Everyday questions too.</b> Joey takes every question as one about your business and your ERP first. Something unrelated, such as wording an email or a general question, it answers like any AI assistant, from the same allowance.</li>
 <li><b>Light or dark.</b> JoeyAI Chat opens light; the switch at the top changes it for that browser tab.</li>
 </ul>
 <figure><img src="/assets/joey/guide/chat-files.a89fd2a604.webp" alt="A chart made in JoeyAI Chat, with a CSV file attached in the box for the next question" loading="lazy" width="1280" height="824">
@@ -423,11 +424,11 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <ol class="steps">
 <li><b>Add it to your home screen.</b> Open your JoeyAI Chat address on your phone. On an iPhone, in Safari tap <b class="ui">Share</b>, then <b class="ui">Add to Home Screen</b>, and open <b>JoeyAI</b> from your home screen to sign in there (an iPhone keeps the app's sign-in separate from Safari's). On Android, choose <b class="ui">Add JoeyAI to your home screen</b> on the sign-in page, or <b class="ui">Install app</b> in the browser's menu.
 <figure class="narrow"><img src="/assets/joey/guide/chat-phone-sign-in.3088898f15.webp" alt="JoeyAI Chat's sign-in page on an iPhone, with the tip to add it to the home screen and the link to scan a code" loading="lazy" width="720" height="1207">
-<figcaption>The sign-in page on a phone: add it to your home screen, then sign in with MYOB or with a code from your computer.</figcaption></figure></li>
+<figcaption>The sign-in page on a phone: add it to your home screen, then sign in with your ERP or with a code from your computer.</figcaption></figure></li>
 <li><b>Sign in</b> one of two ways:
 <ul>
-<li><b>With MYOB</b>, as on your computer: <b class="ui">Sign in with MYOB</b> and MYOB's own page.</li>
-<li><b>With a code from your computer</b>, if you're signed in to JoeyAI Chat there: on your computer choose your name, then <b class="ui">Sign in on your phone</b>. On your phone tap <i>Signed in on your computer? Scan its code instead</i>, then <b class="ui">Scan the code</b> (the camera opens inside JoeyAI) or type the ten letters and numbers shown. Your computer then asks <i>Allow your iPhone to use JoeyAI Chat?</i>: choose <b class="ui">Allow</b> only if it's your phone in your hand. No MYOB password is typed on the phone. A code lasts two minutes and works once.</li>
+<li><b>With your ERP login</b>, as on your computer: <b class="ui">Sign in with MYOB</b> and your ERP's own page.</li>
+<li><b>With a code from your computer</b>, if you're signed in to JoeyAI Chat there: on your computer choose your name, then <b class="ui">Sign in on your phone</b>. On your phone tap <i>Signed in on your computer? Scan its code instead</i>, then <b class="ui">Scan the code</b> (the camera opens inside JoeyAI) or type the ten letters and numbers shown. Your computer then asks <i>Allow your iPhone to use JoeyAI Chat?</i>: choose <b class="ui">Allow</b> only if it's your phone in your hand. No ERP password is typed on the phone. A code lasts two minutes and works once.</li>
 </ul>
 <figure><img src="/assets/joey/guide/chat-phone-code.b8a277ab90.webp" alt="Sign in on your phone in JoeyAI Chat on a computer, with a QR code and a code to type" loading="lazy" width="1280" height="824">
 <figcaption>On your computer: the code to scan or type, for two minutes.</figcaption></figure>
@@ -443,14 +444,14 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><b>One browser and one phone.</b> Signing in on another phone signs out the one before, and another browser does the same for your computer. That device's next page says why; your chats stay.</li>
 <li><b>Staying signed in.</b> As on your computer: you stay signed in for 30 days from when you signed in, used or not, and then sign in again.</li>
 <li><b>Nothing kept on the phone.</b> Your chats stay with Joey, encrypted for you; the app keeps only a page that says you're offline when there's no internet.</li>
-<li><b>Links to MYOB and printed forms</b> open in your phone's browser. MYOB asks you to sign in there the first time, then opens them straight away; Joey never hands its MYOB sign-in to a browser.</li>
+<li><b>Links to your ERP and printed forms</b> open in your phone's browser. Your ERP asks you to sign in there the first time, then opens them straight away; Joey never hands its ERP sign-in to a browser.</li>
 </ul>
 <p><b>Changes on a card.</b> Where your company has switched on changes in JoeyAI Chat, a change Joey proposes shows as a card with each field now and after and the record's link. Nothing changes until you press <b class="ui">Confirm</b>; <b class="ui">Cancel</b> drops it. Typing "yes" doesn't confirm a change. A sensitive or large one shows <b class="ui">Open Joey's page</b> instead (see <a href="#write">Write access</a>).</p>
 <figure><img src="/assets/joey/guide/chat-card.4b119495f1.webp" alt="A change to a sales order on a card in JoeyAI Chat, with Confirm and Cancel" loading="lazy" width="1280" height="824">
-<figcaption>A change on a card: each field now and after, how long it waits, the record's link in MYOB, and Confirm or Cancel.</figcaption></figure>
+<figcaption>A change on a card: each field now and after, how long it waits, the record's link in your ERP, and Confirm or Cancel.</figcaption></figure>
 
 <h2 id="connect">Joey in your own AI app</h2>
-<p>You need an AI app that can add a <b>custom connector</b> with its own sign-in: Claude, ChatGPT, Microsoft Copilot, Google Gemini, Cursor and others follow the standard; most need a paid or business plan, and on a company plan an administrator may add it for everyone first. You also need your MYOB login and your company's Joey address from your Atlys team, such as <code>https://joey.atlystech.com.au/your-company</code> (nothing after the company's name). Open the address in a browser to check it: Joey says it is ready to be added as a connector.</p>
+<p>You need an AI app that can add a <b>custom connector</b> with its own sign-in: Claude, ChatGPT, Microsoft Copilot, Google Gemini, Cursor and others follow the standard; most need a paid or business plan, and on a company plan an administrator may add it for everyone first. You also need your ERP login and your company's Joey address from your Atlys team, such as <code>https://joey.atlystech.com.au/your-company</code> (nothing after the company's name). Open the address in a browser to check it: Joey says it is ready to be added as a connector.</p>
 <figure class="narrow"><img src="/assets/joey/guide/address-page.3c5ee044ec.webp" alt="Joey's page for a company address" loading="lazy" width="1184" height="1124">
 <figcaption>What your Joey address shows in a browser.</figcaption></figure>
 <p>You connect once in the AI app; after that Joey is there in every chat, and in most apps on your phone too.</p>
@@ -458,20 +459,20 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><b>Add Joey.</b> In the app's settings find <b class="ui">Connectors</b>, <b class="ui">Integrations</b>, <b class="ui">Apps</b> or <b class="ui">MCP servers</b>, add a custom connector named <b class="ui">Atlys Joey</b> and paste your Joey address as the server address. Leave any advanced settings (client ID, secret, headers) empty: Joey has its own sign-in.
 <figure><div class="mock" aria-hidden="true"><div class="bar">Add custom connector</div><div class="body"><div class="field">Name</div><div class="input">Atlys Joey</div><div class="field"><span class="ui">Remote MCP server URL</span></div><div class="input">https://joey.atlystech.com.au/your-company</div><div class="btns"><span class="btn">Cancel</span><span class="btn go">Add</span></div></div></div>
 <figcaption>An illustration: each app's own screen looks a little different and changes over time.</figcaption></figure></li>
-<li><b>Connect.</b> Choose <b class="ui">Connect</b> (or <b class="ui">Sign in</b>) next to Atlys Joey. Joey's own page opens, naming the app and your MYOB site. Check the site is your company's and choose <b class="ui">Continue to MYOB sign-in</b>.
-<figure><img src="/assets/joey/guide/consent.3f59daa14e.webp" alt="Joey's page asking you to connect your AI app to your MYOB login" loading="lazy" width="1184" height="1520">
-<figcaption>Joey's connect page. It names the app and the MYOB site, and says Joey only sees what your MYOB account can see.</figcaption></figure></li>
-<li><b>Sign in to MYOB</b> on your site's own sign-in page, as always. Your password goes into MYOB, never into Joey or your AI app.
-<figure><img src="/assets/joey/guide/myob-sign-in.279f3790fc.webp" alt="MYOB's own sign-in page" loading="lazy" width="936" height="704">
-<figcaption>MYOB's own sign-in page. Your company's page may carry your company's own look.</figcaption></figure></li>
-<li><b>Allow the access.</b> MYOB lists what Atlys Joey asks for: who you are, MYOB's web services, and offline access so the connection lasts between chats. Choose <b class="ui">Yes, Allow</b>.
-<figure><img src="/assets/joey/guide/myob-consent.3d63dd49e6.webp" alt="MYOB asking whether Atlys Joey may use your login" loading="lazy" width="1280" height="1172">
-<figcaption>MYOB asks you to allow Atlys Joey.</figcaption></figure></li>
+<li><b>Connect.</b> Choose <b class="ui">Connect</b> (or <b class="ui">Sign in</b>) next to Atlys Joey. Joey's own page opens, naming the app and your ERP site. Check the site is your company's and choose <b class="ui">Continue to MYOB sign-in</b>.
+<figure><img src="/assets/joey/guide/consent.3f59daa14e.webp" alt="Joey's page asking you to connect your AI app to your ERP login" loading="lazy" width="1184" height="1520">
+<figcaption>Joey's connect page. It names the app and the ERP site, and says Joey only sees what your ERP account can see.</figcaption></figure></li>
+<li><b>Sign in to your ERP</b> on your site's own sign-in page, as always. Your password goes into your ERP, never into Joey or your AI app.
+<figure><img src="/assets/joey/guide/myob-sign-in.279f3790fc.webp" alt="Your ERP's own sign-in page, here MYOB Acumatica" loading="lazy" width="936" height="704">
+<figcaption>Your ERP's own sign-in page, here MYOB Acumatica. Your company's page may carry your company's own look.</figcaption></figure></li>
+<li><b>Allow the access.</b> Your ERP lists what Atlys Joey asks for: who you are, the ERP's web services, and offline access so the connection lasts between chats. Choose <b class="ui">Yes, Allow</b>.
+<figure><img src="/assets/joey/guide/myob-consent.3d63dd49e6.webp" alt="MYOB Acumatica asking whether Atlys Joey may use your login" loading="lazy" width="1280" height="1172">
+<figcaption>Your ERP asks you to allow Atlys Joey.</figcaption></figure></li>
 <li><b>Back to your AI app.</b> Joey finishes the sign-in (you see Joey hop for a few seconds) and the app shows Atlys Joey as connected.
-<figure><img src="/assets/joey/guide/finishing.8da713d331.webp" alt="Joey finishing the MYOB sign-in" loading="lazy" width="1184" height="1042">
-<figcaption>Joey finishing your MYOB sign-in before it returns you to your AI app.</figcaption></figure></li>
+<figure><img src="/assets/joey/guide/finishing.8da713d331.webp" alt="Joey finishing the ERP sign-in" loading="lazy" width="1184" height="1042">
+<figcaption>Joey finishing your ERP sign-in before it returns you to your AI app.</figcaption></figure></li>
 </ol>
-<p class="tip">To check it worked, start a new chat and ask: <i>"Which MYOB company am I connected to through Joey?"</i></p>
+<p class="tip">To check it worked, start a new chat and ask: <i>"Which ERP company am I connected to through Joey?"</i></p>
 
 <h2 id="other-apps">Where to add it in each app</h2>
 <p>Any app that can add a custom connector with sign-in (OAuth 2.1) can use Joey. Menu names change as the apps are updated; the steps below are their makers' own, as of writing.</p>
@@ -480,36 +481,36 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <tr><td><b>Claude</b> (web, desktop and mobile; Pro, Max, Team or Enterprise)</td><td><b class="ui">Settings</b> › <b class="ui">Connectors</b> › <b class="ui">Add custom connector</b>: name it Atlys Joey, paste the address. On Team and Enterprise plans an owner adds it for the organisation.</td><td><b class="ui">Connect</b> next to Atlys Joey; once connected on the web or desktop it is in the mobile app too.</td></tr>
 <tr><td><b>ChatGPT</b> (Plus, Pro, Business, Enterprise or Edu) and <b>Codex</b></td><td>In ChatGPT: <b class="ui">Settings</b> › <b class="ui">Apps &amp; Connectors</b> (or <b class="ui">Connectors</b>) › <b class="ui">Create</b> a custom connector with the address; custom connectors need <b class="ui">Developer mode</b> switched on under the advanced settings, or an administrator adds it for the workspace. In the Codex command line: <code>codex mcp add atlys-joey --url https://joey.atlystech.com.au/your-company</code>, then <code>codex mcp login atlys-joey</code>.</td><td>Turn Atlys Joey on in the chat (the <b class="ui">+</b> or tools menu), then sign in when asked.</td></tr>
 <tr><td><b>Microsoft Copilot</b> (Microsoft 365 Copilot; GitHub Copilot in Visual Studio Code)</td><td>Microsoft 365 Copilot takes custom connectors through an agent your administrator builds in <b class="ui">Copilot Studio</b> (add an <b class="ui">MCP server</b> tool with the address and its sign-in) and shares with you. In Visual Studio Code: <b class="ui">MCP: Add Server</b> from the command palette, choose <b class="ui">HTTP</b>, paste the address.</td><td>Open the shared agent in Copilot, or in Visual Studio Code allow the sign-in it offers for Atlys Joey.</td></tr>
-<tr><td><b>Google Gemini</b> (the Gemini command line; the Gemini app where it offers custom connectors)</td><td>In the Gemini command line: <code>gemini mcp add --transport http atlys-joey https://joey.atlystech.com.au/your-company</code>.</td><td>Run <code>/mcp auth atlys-joey</code> (or sign in when prompted) and the same Joey and MYOB pages open.</td></tr>
+<tr><td><b>Google Gemini</b> (the Gemini command line; the Gemini app where it offers custom connectors)</td><td>In the Gemini command line: <code>gemini mcp add --transport http atlys-joey https://joey.atlystech.com.au/your-company</code>.</td><td>Run <code>/mcp auth atlys-joey</code> (or sign in when prompted) and the same Joey and ERP pages open.</td></tr>
 <tr><td><b>Cursor</b> (and other code editors that take custom connectors)</td><td><b class="ui">Settings</b> › <b class="ui">MCP</b> › <b class="ui">Add new MCP server</b>: name it, choose a remote (URL) server, paste the address.</td><td>Choose <b class="ui">Needs login</b> / <b class="ui">Sign in</b> on Atlys Joey in the list.</td></tr>
 <tr><td><b>Claude Code</b> (terminal)</td><td><code>claude mcp add --transport http atlys-joey https://joey.atlystech.com.au/your-company</code></td><td>Type <code>/mcp</code>, choose <b class="ui">atlys-joey</b> and <b class="ui">Authenticate</b>.</td></tr>
 </table></div>
-<p class="note">In every app the browser then shows the same three pages: Joey's connect page, MYOB's sign-in and MYOB's allow page.</p>
+<p class="note">In every app the browser then shows the same three pages: Joey's connect page, the ERP's sign-in and the ERP's allow page.</p>
 
 <h2 id="happens">What happens when you connect</h2>
-<div class="diagram" role="img" aria-label="The connect flow: your AI app, Joey's connect page, MYOB sign-in, MYOB allow, Joey, back to your AI app">
+<div class="diagram" role="img" aria-label="The connect flow: your AI app, Joey's connect page, ERP sign-in, ERP allow page, Joey, back to your AI app">
 <svg viewbox="0 0 900 250">
 <defs><marker id="gc" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="8" markerheight="8" orient="auto"><path class="arrow" d="M0,0 L10,5 L0,10 z"></path></marker></defs>
 <rect class="box" x="10" y="30" width="150" height="60" rx="10"></rect><text x="85" y="56" text-anchor="middle" font-weight="600">1 · Your AI app</text><text class="lbl" x="85" y="75" text-anchor="middle">you choose Connect</text>
 <rect class="hi" x="200" y="30" width="160" height="60" rx="10"></rect><text x="280" y="56" text-anchor="middle" font-weight="600">2 · Joey</text><text class="lbl" x="280" y="75" text-anchor="middle">connect page</text>
-<rect class="box" x="400" y="30" width="160" height="60" rx="10"></rect><text x="480" y="56" text-anchor="middle" font-weight="600">3 · MYOB</text><text class="lbl" x="480" y="75" text-anchor="middle">you sign in</text>
-<rect class="box" x="600" y="30" width="140" height="60" rx="10"></rect><text x="670" y="56" text-anchor="middle" font-weight="600">4 · MYOB</text><text class="lbl" x="670" y="75" text-anchor="middle">you allow Joey</text>
-<rect class="hi" x="780" y="30" width="110" height="60" rx="10"></rect><text x="835" y="56" text-anchor="middle" font-weight="600">5 · Joey</text><text class="lbl" x="835" y="75" text-anchor="middle">keeps MYOB's key</text>
+<rect class="box" x="400" y="30" width="160" height="60" rx="10"></rect><text x="480" y="56" text-anchor="middle" font-weight="600">3 · Your ERP</text><text class="lbl" x="480" y="75" text-anchor="middle">you sign in</text>
+<rect class="box" x="600" y="30" width="140" height="60" rx="10"></rect><text x="670" y="56" text-anchor="middle" font-weight="600">4 · Your ERP</text><text class="lbl" x="670" y="75" text-anchor="middle">you allow Joey</text>
+<rect class="hi" x="780" y="30" width="110" height="60" rx="10"></rect><text x="835" y="56" text-anchor="middle" font-weight="600">5 · Joey</text><text class="lbl" x="835" y="75" text-anchor="middle">keeps the ERP key</text>
 <path class="line" d="M160,60 L196,60" marker-end="url(#gc)"></path><path class="line" d="M360,60 L396,60" marker-end="url(#gc)"></path><path class="line" d="M560,60 L596,60" marker-end="url(#gc)"></path><path class="line" d="M740,60 L776,60" marker-end="url(#gc)"></path>
 <path class="line" d="M835,90 L835,150 L90,150 L90,94" marker-end="url(#gc)"></path>
-<text class="lbl" x="460" y="142" text-anchor="middle">6 · back to your AI app with a Joey key only: MYOB's key never leaves Joey</text>
+<text class="lbl" x="460" y="142" text-anchor="middle">6 · back to your AI app with a Joey key only: the ERP's key never leaves Joey</text>
 <rect class="box" x="200" y="178" width="500" height="54" rx="10"></rect><text x="450" y="201" text-anchor="middle" font-weight="600">7 · Joey starts your Session Memory</text><text class="lbl" x="450" y="220" text-anchor="middle">your recent data, read as you, encrypted, private to you</text>
 </svg>
 <p class="swipe">Swipe sideways to see the whole picture.</p>
 </div>
 <ul>
-<li><b>Two keys, kept apart.</b> MYOB gives Joey a key to act for you, and Joey keeps it, encrypted. Your AI app only ever gets a key to Joey, so nothing it holds can reach MYOB without Joey. JoeyAI Chat works the same way inside Joey.</li>
-<li><b>Your Session Memory starts</b> (see <a href="#memory">Speed and Session Memory</a>). You can ask straight away; answers come live from MYOB until it is ready.</li>
-<li><b>Your MYOB login stays connected for 30 days</b> from when you signed in, whether you use it or not; then you connect or sign in again.</li>
+<li><b>Two keys, kept apart.</b> Your ERP gives Joey a key to act for you, and Joey keeps it, encrypted. Your AI app only ever gets a key to Joey, so nothing it holds can reach your ERP without Joey. JoeyAI Chat works the same way inside Joey.</li>
+<li><b>Your Session Memory starts</b> (see <a href="#memory">Speed and Session Memory</a>). You can ask straight away; answers come live from your ERP until it is ready.</li>
+<li><b>Your ERP login stays connected for 30 days</b> from when you signed in, whether you use it or not; then you connect or sign in again.</li>
 </ul>
 
 <h2 id="ask">Asking Joey</h2>
-<p>Just ask. In your own AI app you don't need to name Joey or MYOB once the connector is on, but saying "in MYOB" helps it choose Joey when a chat is about many things.</p>
+<p>Just ask. In your own AI app you don't need to name Joey or your ERP once the connector is on, but saying "in MYOB" (or your ERP's name) helps it choose Joey when a chat is about many things.</p>
 <div class="chat" aria-label="An example chat">
 <p class="who">You</p><div class="you">Who were our top 5 customers by sales order value this financial year?</div>
 <p class="who">Assistant</p><div class="ai"><span class="tool">joey_guide</span><span class="tool">joey_summary</span>
@@ -520,7 +521,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 </div>
 <figure><img src="/assets/joey/guide/chat-answer.b903bcae5e.webp" alt="The same kind of question answered in JoeyAI Chat" loading="lazy" width="1280" height="824">
 <figcaption>The same kind of question in JoeyAI Chat: Joey's step shows what it looked up, and the table can be copied or saved.</figcaption></figure>
-<p>The assistant often reads <code>joey_guide</code> first: the Atlys team's notes on what business words mean in MYOB (debtors, overdue, open orders, stock on hand) and plans that answer common questions well.</p>
+<p>The assistant often reads <code>joey_guide</code> first: the Atlys team's notes on what business words mean in your ERP (debtors, overdue, open orders, stock on hand) and plans that answer common questions well.</p>
 
 <h2 id="examples">Questions to try</h2>
 <div class="cards">
@@ -530,33 +531,33 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <div class="card"><h3>Inventory</h3><p>"How much stock do we hold in each warehouse?"<br>"Which items sold the most units in August?"</p></div>
 <div class="card"><h3>Finance</h3><p>"What were our bank account balances at the end of last month?"<br>"How much did customers pay us in August?"</p></div>
 <div class="card"><h3>Documents</h3><p>"Look up sales order SO012345 and tell me its status and total."<br>"Does it have a PDF attached? Summarise it in two lines."</p></div>
-<div class="card"><h3>Charts, files and MYOB links</h3><p>"Chart our sales by month this year."<br>"Give me an Excel file of last quarter's invoices."<br>"Open sales order SO012345 in MYOB" or "Print it".</p></div>
+<div class="card"><h3>Charts, files and ERP links</h3><p>"Chart our sales by month this year."<br>"Give me an Excel file of last quarter's invoices."<br>"Open sales order SO012345 in MYOB" or "Print it".</p></div>
 </div>
 <p class="note">Not sure where to start? Ask <i>"What can I ask Joey?"</i> or <i>"Starter questions for accounts payable"</i> (or sales, warehouse, management, a new starter, construction and the like). In an AI app that lists prompts, Joey's starter questions are there too.</p>
-<p>Your MYOB may also have generic inquiries (saved enquiry screens). Ask <i>"Which MYOB inquiries can I use through Joey?"</i> and then <i>"Run the one about open orders for this week."</i></p>
+<p>Your ERP may also have generic inquiries (saved enquiry screens). Ask <i>"Which inquiries can I use through Joey?"</i> and then <i>"Run the one about open orders for this week."</i></p>
 <figure><img src="/assets/joey/guide/chat-welcome.2e579e0e63.webp" alt="JoeyAI Chat's first page with three suggested questions" loading="lazy" width="1280" height="824">
 <figcaption>A new chat in JoeyAI Chat starts with a few suggestions; pick one or ask your own.</figcaption></figure>
 
-<h2 id="erp-help">Help with MYOB itself</h2>
-<p>Joey also knows MYOB Acumatica itself: where a screen is on the menu, what it is for and how to do a task. Ask the way you would ask a colleague who knows MYOB well.</p>
-<div class="chat" aria-label="An example chat about using MYOB">
+<h2 id="erp-help">Help with your ERP itself</h2>
+<p>Joey also knows your ERP itself: where a screen is on the menu, what it is for and how to do a task. Ask the way you would ask a colleague who knows your ERP well.</p>
+<div class="chat" aria-label="An example chat about using MYOB Acumatica">
 <p class="who">You</p><div class="you">How do I raise a credit note for a customer?</div>
 <p class="who">Assistant</p><div class="ai"><span class="tool">joey_erp_help</span>
-<p>In MYOB a credit note is a <b>credit memo</b>. Open <b>Invoices and Memos</b> (Financials &gt; Receivables &gt; Transactions) and either use <b>Reverse</b> on the released invoice, or add a new record of type Credit Memo for the customer. Take it off hold and release it, then apply it to the invoice on Payments and Applications. Goods coming back are better done as a return order, so the stock comes back in too.</p>
+<p>In MYOB Acumatica a credit note is a <b>credit memo</b>. Open <b>Invoices and Memos</b> (Financials &gt; Receivables &gt; Transactions) and either use <b>Reverse</b> on the released invoice, or add a new record of type Credit Memo for the customer. Take it off hold and release it, then apply it to the invoice on Payments and Applications. Goods coming back are better done as a return order, so the stock comes back in too.</p>
 <p>Open Invoices and Memos · MYOB's help page · MYOB's article "To Create a Credit Memo"</p></div>
-<p class="small muted">An illustration. In a real answer the last line holds links that open on your own MYOB site.</p>
+<p class="small muted">An illustration on MYOB Acumatica. In a real answer the last line holds links that open on your own ERP site.</p>
 </div>
 <figure><img src="/assets/joey/guide/chat-help.6d6b5c1d01.webp" alt="JoeyAI Chat answering how to raise a credit note, with the steps, the screen's place on MYOB's menu and links to MYOB's help" loading="lazy" width="1280" height="824">
-<figcaption>The same kind of question in JoeyAI Chat: the steps, the screen and where it is on MYOB's menu, whether your role opens it, and MYOB's own help.</figcaption></figure>
+<figcaption>The same kind of question in JoeyAI Chat: the steps, the screen and where it is on the ERP's menu, whether your role opens it, and your ERP's own help.</figcaption></figure>
 <ul>
-<li><b>Where things are, and how to do it:</b> the screen, where it sits on MYOB's menu and a link that opens it on your site, with the Atlys team's steps and what to watch out for. Where your company has its own screens or its own way, the Atlys team adds it at your site's review and Joey gives that first.</li>
-<li><b>MYOB's own help:</b> answers link to MYOB's help for each screen and its articles on the task, on your own site, for its version.</li>
-<li><b>Your access:</b> Joey asks MYOB whether your role opens each screen it suggests, and says so when it doesn't.</li>
+<li><b>Where things are, and how to do it:</b> the screen, where it sits on the ERP's menu and a link that opens it on your site, with the Atlys team's steps and what to watch out for. Where your company has its own screens or its own way, the Atlys team adds it at your site's review and Joey gives that first.</li>
+<li><b>Your ERP's own help:</b> answers link to the ERP's help for each screen and its articles on the task, on your own site, for its version.</li>
+<li><b>Your access:</b> Joey asks your ERP whether your role opens each screen it suggests, and says so when it doesn't.</li>
 </ul>
 <p class="note">Try: <i>"Where are customer statements?"</i>, <i>"How do I enter a supplier's credit note?"</i>, <i>"How do I lodge the BAS?"</i> or <i>"What does the Prepare Payments screen do?"</i></p>
 
 <h2 id="write">Write access</h2>
-<p>Where your company has write access switched on, you can ask Joey to create and change records the way you would in MYOB, as your MYOB role allows and nothing more. Your Atlys team switches it on after your site's review and tells you; in JoeyAI Chat it has a switch of its own. Nothing changes until you confirm.</p>
+<p>Where your company has write access switched on, you can ask Joey to create and change records the way you would in your ERP, as your ERP role allows and nothing more. Your Atlys team switches it on after your site's review and tells you; in JoeyAI Chat it has a switch of its own. Nothing changes until you confirm.</p>
 <div class="chat" aria-label="An example chat that changes a record">
 <p class="who">You</p><div class="you">Add 5 of item WIDGET to sales order SO012345 and change its description to Rush order.</div>
 <p class="who">Assistant</p><div class="ai"><span class="tool">joey_write_propose</span>
@@ -565,7 +566,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <p>Shall I make it?</p></div>
 <p class="who">You</p><div class="you">Yes</div>
 <p class="who">Assistant</p><div class="ai"><span class="tool">joey_write_confirm</span>
-<p>Done. MYOB saved the new description and the line (5 × WIDGET, $62.50). Open SO012345 in MYOB to see it.</p></div>
+<p>Done. Your ERP saved the new description and the line (5 × WIDGET, $62.50). Open SO012345 in your ERP to see it.</p></div>
 <p class="small muted">An illustration, in your own AI app. In JoeyAI Chat the change shows as a card and you press Confirm.</p>
 </div>
 
@@ -579,14 +580,14 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 
 <h3>How a write is made</h3>
 <ol class="steps">
-<li><b>Joey proposes.</b> You see the change (each field and line before and after) and the record's link in MYOB. Nothing has changed yet.</li>
-<li><b>An everyday change: you confirm in the chat.</b> In your own AI app you say yes (<i>"No"</i> cancels it); in JoeyAI Chat you press <b class="ui">Confirm</b> or <b class="ui">Cancel</b> on the card. Joey makes exactly that change in MYOB as you, reads the record back and tells you what MYOB saved.
+<li><b>Joey proposes.</b> You see the change (each field and line before and after) and the record's link in your ERP. Nothing has changed yet.</li>
+<li><b>An everyday change: you confirm in the chat.</b> In your own AI app you say yes (<i>"No"</i> cancels it); in JoeyAI Chat you press <b class="ui">Confirm</b> or <b class="ui">Cancel</b> on the card. Joey makes exactly that change in your ERP as you, reads the record back and tells you what your ERP saved.
 <figure><img src="/assets/joey/guide/chat-card.4b119495f1.webp" alt="A change waiting on a card in JoeyAI Chat" loading="lazy" width="1280" height="824">
 <figcaption>In JoeyAI Chat an everyday change waits on a card until you press Confirm or Cancel.</figcaption></figure></li>
-<li><b>A sensitive or large change: you confirm on Joey's page.</b> You get a <b>confirm link</b> with the reason. MYOB checks it is you, and the page shows every change waiting for you from Joey's own record, under a <b>SANDBOX</b> or <b>LIVE</b> banner. You press Confirm (or Cancel).</li>
+<li><b>A sensitive or large change: you confirm on Joey's page.</b> You get a <b>confirm link</b> with the reason. Your ERP checks it is you, and the page shows every change waiting for you from Joey's own record, under a <b>SANDBOX</b> or <b>LIVE</b> banner. You press Confirm (or Cancel).</li>
 </ol>
-<figure class="narrow"><img src="/assets/joey/guide/confirm-page.7998105b88.webp" alt="Joey's page for confirming a change in MYOB" loading="lazy" width="1184" height="2306">
-<figcaption>Joey's confirm page for a sensitive change: which MYOB it is (SANDBOX or LIVE), each field now and after, a link to the record in MYOB, the number to type, and Confirm or Cancel.</figcaption></figure>
+<figure class="narrow"><img src="/assets/joey/guide/confirm-page.7998105b88.webp" alt="Joey's page for confirming a change in your ERP" loading="lazy" width="1184" height="2306">
+<figcaption>Joey's confirm page for a sensitive change: which ERP site it is (SANDBOX or LIVE), each field now and after, a link to the record in your ERP, the number to type, and Confirm or Cancel.</figcaption></figure>
 
 <h3>Where you confirm</h3>
 <div class="table-wrap"><table>
@@ -595,39 +596,39 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 </table></div>
 
 <h3 id="actions">Actions, emails and printed forms</h3>
-<p>Actions are the buttons on MYOB's screens and in their <b class="ui">…</b> menus: <b class="ui">Remove Hold</b>, <b class="ui">Release</b>, <b class="ui">Create Shipment</b>, <b class="ui">Prepare Invoice</b>, <b class="ui">Email</b> and many more, across MYOB. Ask for one in your own words. Each is confirmed on Joey's page, where you type the document's number, and MYOB runs it as you, with its own checks.</p>
+<p>Actions are the buttons on the ERP's screens and in their <b class="ui">…</b> menus: <b class="ui">Remove Hold</b>, <b class="ui">Release</b>, <b class="ui">Create Shipment</b>, <b class="ui">Prepare Invoice</b>, <b class="ui">Email</b> and many more, across your ERP. Ask for one in your own words. Each is confirmed on Joey's page, where you type the document's number, and your ERP runs it as you, with its own checks.</p>
 <ul>
-<li><b>Emailing a document</b> is the screen's own <b class="ui">Email</b> action: MYOB sends its own template with the printed form attached, to the contacts set for that kind of document on the customer or supplier (Mailing &amp; Printing). Joey's page links the printed form so you can look first; afterwards you're told who MYOB emailed and the email's status, and MYOB keeps it on the document's activities.</li>
-<li><b>Printing:</b> ask for the printed form and you get its link, which opens in MYOB, as you, to print or save as PDF.</li>
-<li><b>Receipts, bills and payments from other documents:</b> Joey makes in one step what MYOB's <b class="ui">Enter PO Receipt</b>, <b class="ui">Enter AP Bill</b> and <b class="ui">Pay</b> buttons start: a receipt from an order's lines, a bill from a receipt's, payments against bills or invoices, an invoice from a shipment. New documents start on hold, except a supplier payment, which MYOB only saves balanced.</li>
-<li><b>MYOB's own steps still apply.</b> A released purchase order may wait at <i>Pending Printing</i> or <i>Pending Email</i>; an order for a customer with overdue invoices goes on credit hold when released. "The … button is disabled" means MYOB doesn't allow that action in the document's state, and you're told MYOB's reason.</li>
+<li><b>Emailing a document</b> is the screen's own <b class="ui">Email</b> action: your ERP sends its own template with the printed form attached, to the contacts set for that kind of document on the customer or supplier (Mailing &amp; Printing). Joey's page links the printed form so you can look first; afterwards you're told who your ERP emailed and the email's status, and your ERP keeps it on the document's activities.</li>
+<li><b>Printing:</b> ask for the printed form and you get its link, which opens in your ERP, as you, to print or save as PDF.</li>
+<li><b>Receipts, bills and payments from other documents:</b> Joey makes in one step what the ERP's <b class="ui">Enter PO Receipt</b>, <b class="ui">Enter AP Bill</b> and <b class="ui">Pay</b> buttons start: a receipt from an order's lines, a bill from a receipt's, payments against bills or invoices, an invoice from a shipment. New documents start on hold, except a supplier payment, which your ERP only saves balanced.</li>
+<li><b>Your ERP's own steps still apply.</b> A released purchase order may wait at <i>Pending Printing</i> or <i>Pending Email</i>; an order for a customer with overdue invoices goes on credit hold when released. "The … button is disabled" means your ERP doesn't allow that action in the document's state, and you're told the ERP's reason.</li>
 <li><b>Several at once:</b> holds, releases, approvals and emails can run on up to 50 documents in one change (you type how many). Voids, reversals, cancellations and write-offs go one at a time.</li>
 </ul>
-<figure class="narrow"><img src="/assets/joey/guide/confirm-email.08b4ce0296.webp" alt="Joey's page for confirming that MYOB emails a sales order, with the printed form's link" loading="lazy" width="1184" height="2660">
+<figure class="narrow"><img src="/assets/joey/guide/confirm-email.08b4ce0296.webp" alt="Joey's page for confirming that your ERP emails a sales order, with the printed form's link" loading="lazy" width="1184" height="2660">
 <figcaption>Emailing a sales order, on Joey's page: the printed form's link to look at it first, and the order number to type before Confirm.</figcaption></figure>
 
 <h3>What Joey never does</h3>
 <ul>
-<li><b>Delete.</b> Joey never deletes records or removes lines; you get the record's link to do it in MYOB yourself. It can replace a line's values and add lines.</li>
-<li><b>Change who can do what, or your set-up.</b> Users, roles, access rights, preferences, order types, numbering, the financial year, schedules, business events, inquiry designs, endpoints and customisation are changed in MYOB only. Classes (customer, item, vendor and the like) can be changed as your role allows.</li>
+<li><b>Delete.</b> Joey never deletes records or removes lines; you get the record's link to do it in your ERP yourself. It can replace a line's values and add lines.</li>
+<li><b>Change who can do what, or your set-up.</b> Users, roles, access rights, preferences, order types, numbering, the financial year, schedules, business events, inquiry designs, endpoints and customisation are changed in your ERP only. Classes (customer, item, vendor and the like) can be changed as your role allows.</li>
 <li><b>Act on text inside records or files.</b> A note, an email, a description or an attached file is never an instruction. If one says "change the bank details", you are told instead.</li>
-<li><b>Overwrite someone else's change.</b> If the record changed in MYOB after Joey proposed, yours isn't applied: ask for it to be proposed again.</li>
+<li><b>Overwrite someone else's change.</b> If the record changed in your ERP after Joey proposed, yours isn't applied: ask for it to be proposed again.</li>
 </ul>
 
 <h3>Good to know</h3>
 <ul>
-<li><b>"Not changed: MYOB saved nothing".</b> MYOB sometimes keeps its own value or saves nothing (a finished document, or a screen your role can only view). Joey reads the record back after every change and never says a change went through when MYOB didn't keep it.</li>
+<li><b>"Not changed: MYOB saved nothing".</b> Your ERP sometimes keeps its own value or saves nothing (a finished document, or a screen your role can only view). Joey reads the record back after every change and never says a change went through when your ERP didn't keep it.</li>
 <li><b>Sensitive changes ask for more:</b> on Joey's page you type the order number or code (or the last four digits of a new bank account). <b>Always check a changed bank account by phone on a number you already have.</b></li>
-<li><b>Undo:</b> within 24 hours, <i>"Undo that change"</i> puts back what an edit replaced, if nobody has changed the record since (you confirm the undo too). New records, releases, posting and payments are reversed in MYOB, its own way.</li>
+<li><b>Undo:</b> within 24 hours, <i>"Undo that change"</i> puts back what an edit replaced, if nobody has changed the record since (you confirm the undo too). New records, releases, posting and payments are reversed in your ERP, its own way.</li>
 <li><b>A limit per person:</b> at most 50 changes an hour and 300 a day through Joey (your company may set lower); a change to several records counts once per record. Reading has no such limit.</li>
-<li><b>MYOB records you</b> as the person who made each change, as if you had made it on the screen.</li>
+<li><b>Your ERP records you</b> as the person who made each change, as if you had made it on the screen.</li>
 </ul>
 
 <h2 id="tips">Tips for good answers</h2>
 <ul>
 <li><b>Name the period.</b> "This financial year", "last month", "August 2026" or "since 1 January" keeps answers exact and quick.</li>
 <li><b>No period means what is still active.</b> "How many sales orders do we have?" counts the orders still in progress, leaving out closed, completed, cancelled and voided ones, and says so. For sales, revenue or payments over time, name the period.</li>
-<li><b>Joey suggests rather than guesses.</b> If a question is vague or would take MYOB minutes, Joey answers at once with a suggestion (a period, or what it can answer quickly) or a question back.</li>
+<li><b>Joey suggests rather than guesses.</b> If a question is vague or would take your ERP minutes, Joey answers at once with a suggestion (a period, or what it can answer quickly) or a question back.</li>
 <li><b>Say what counts, and mind currencies.</b> "Sales" can mean every order, or real sales without quotes, credits and cancelled orders; the answer says which it used. With several currencies, ask for totals per currency.</li>
 <li><b>Ask for totals, not pages of records.</b> "How many and how much" answers in one step; Joey returns at most 100 records at a time.</li>
 <li><b>Build on the last answer,</b> by code or name: "and their three biggest orders?"</li>
@@ -637,46 +638,46 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <figcaption>A question with no period: Joey asks which one, and says which answer quickly from memory.</figcaption></figure>
 
 <h2 id="memory">Speed and Session Memory</h2>
-<p>MYOB answers big questions slowly when every record has to be read. Joey keeps a private, encrypted memory of your own data so the questions people ask most answer in well under a second.</p>
+<p>Your ERP answers big questions slowly when every record has to be read. Joey keeps a private, encrypted memory of your own data so the questions people ask most answer in well under a second.</p>
 <ul>
-<li><b>First answers come live</b> from MYOB while your memory warms up; a whole-table question on a very large company can take a minute or two the first time.</li>
-<li><b>It holds what you can see:</b> up to two years of every kind of record your MYOB role can read (payroll is never read through Joey), filled in the background, most asked first, and older months when you ask about them. Small inquiries your administrator protects with an access list are kept too.</li>
-<li><b>It stays current.</b> Before answering from memory Joey reads what changed in MYOB since it last looked, as you; it re-checks what you've been asking about every few minutes, each night from 3 am (your site's time), and in full from midnight on Saturday night.</li>
-<li><b>When MYOB is busy</b>, or Joey is reading more of your data into memory just then (older months, more fields), Joey answers from memory at once and says how fresh the answer is ("checked 12 minutes ago").</li>
-<li><b>It is only yours, and it ends.</b> It lasts as long as your connection: signing out of Joey, your MYOB login ending (30 days after you signed in), or a change to your MYOB access deletes it at once. It is brought up to date every night while you have used Joey in the last 4 days, and read again in full on Saturday night while you have used it in the last 7.</li>
+<li><b>First answers come live</b> from your ERP while your memory warms up; a whole-table question on a very large company can take a minute or two the first time.</li>
+<li><b>It holds what you can see:</b> up to two years of every kind of record your ERP role can read (payroll is never read through Joey), filled in the background, most asked first, and older months when you ask about them. Small inquiries your administrator protects with an access list are kept too.</li>
+<li><b>It stays current.</b> Before answering from memory Joey reads what changed in your ERP since it last looked, as you; it re-checks what you've been asking about every few minutes, each night from 3 am (your site's time), and in full from midnight on Saturday night.</li>
+<li><b>When your ERP is busy</b>, or Joey is reading more of your data into memory just then (older months, more fields), Joey answers from memory at once and says how fresh the answer is ("checked 12 minutes ago").</li>
+<li><b>It is only yours, and it ends.</b> It lasts as long as your connection: signing out of Joey, your ERP login ending (30 days after you signed in), or a change to your ERP access deletes it at once. It is brought up to date every night while you have used Joey in the last 4 days, and read again in full on Saturday night while you have used it in the last 7.</li>
 </ul>
 <p class="note">Ask <i>"What's in my Joey memory?"</i> to see which data is ready and whether the warm-up has finished (<code>joey_status</code>).</p>
-<p class="note">Before a meeting or a busy stretch, say <i>"Joey, warm up"</i> (or pick <b>Joey warm up</b>, <code>/joeywarmup</code>, where your AI app lists prompts). Joey brings your memory up to date with MYOB straight away, in the background, and tells you what it is reading and roughly how long; ask again to see how far it has got. Your own questions still go first, and it can run once every 10 minutes (<code>joey_warmup</code>).</p>
+<p class="note">Before a meeting or a busy stretch, say <i>"Joey, warm up"</i> (or pick <b>Joey warm up</b>, <code>/joeywarmup</code>, where your AI app lists prompts). Joey brings your memory up to date with your ERP straight away, in the background, and tells you what it is reading and roughly how long; ask again to see how far it has got. Your own questions still go first, and it can run once every 10 minutes (<code>joey_warmup</code>).</p>
 <figure><img src="/assets/joey/guide/chat-memory.d2e3bb06c5.webp" alt="JoeyAI Chat listing what the Session Memory holds: each kind of record, its state, how many and which months" loading="lazy" width="1280" height="824">
 <figcaption>What a Session Memory holds: each kind of record, whether it is ready, how many and from which month.</figcaption></figure>
 
 <h2 id="safe">Your data and your rights</h2>
 <p>The short version, what Joey keeps and for how long, and who can see what are on one page: <a href="/joey/data-handling">How Atlys Joey handles your data</a>.</p>
 <ul>
-<li><b>MYOB decides.</b> Every read is made as you, with your own MYOB login, so MYOB's roles, restriction groups and screen rights apply. If MYOB refuses you something, Joey refuses it too, by every route.</li>
-<li><b>Nothing changes without you.</b> Each change waits for you to confirm it; MYOB records you as the person who made it. Joey keeps a record of what kind of change was made and when, never the values.</li>
+<li><b>Your ERP decides.</b> Every read is made as you, with your own ERP login, so the ERP's roles, restriction groups and screen rights apply. If your ERP refuses you something, Joey refuses it too, by every route.</li>
+<li><b>Nothing changes without you.</b> Each change waits for you to confirm it; your ERP records you as the person who made it. Joey keeps a record of what kind of change was made and when, never the values.</li>
 <li><b>What Joey keeps:</b> your own encrypted Session Memory and, in JoeyAI Chat, your chats and files, encrypted for you alone and deleted when you sign out, or 30 days after you signed in at the latest (a chat is never kept longer than 30 days), files from the AI service's store too. The AI's sandbox, where it works on files and charts, has no internet and expires within 30 days of being made. Joey's logs and learning keep the shape of questions (which fields, how long a period), never names, amounts or records.</li>
 <li><b>In your own AI app,</b> the conversation is kept by that app, under its settings and your company's plan with it, until you delete it there.</li>
-<li><b>Keys stay with Joey.</b> Your MYOB key never leaves Joey; your AI app holds only a key to Joey, which Joey can end at any time.</li>
+<li><b>Keys stay with Joey.</b> Your ERP key never leaves Joey; your AI app holds only a key to Joey, which Joey can end at any time.</li>
 <li><b>One company per connection.</b> Joey can't switch to another company or another person's data.</li>
-<li><b>Payroll stays in MYOB.</b> Joey never reads pays, payslips, leave or superannuation, for anyone, so no one's pay can reach another person through Joey.</li>
-<li><b>Bank and card details stay in MYOB too.</b> Bank account numbers, BSBs, payment instructions and card numbers are never passed to your AI assistant. Your company's administrator can allow them for chosen people, who then see only what MYOB lets them see.</li>
+<li><b>Payroll stays in your ERP.</b> Joey never reads pays, payslips, leave or superannuation, for anyone, so no one's pay can reach another person through Joey.</li>
+<li><b>Bank and card details stay in your ERP too.</b> Bank account numbers, BSBs, payment instructions and card numbers are never passed to your AI assistant. Your company's administrator can allow them for chosen people, who then see only what your ERP lets them see.</li>
 </ul>
 <figure><img src="/assets/joey/guide/chat-refused.1a944d80d7.webp" alt="JoeyAI Chat refusing to show payslips, because Joey never reads payroll" loading="lazy" width="1280" height="824">
-<figcaption>Asked for payslips, Joey says it doesn't read payroll, for anyone, and points to MYOB's own payroll screens.</figcaption></figure>
+<figcaption>Asked for payslips, Joey says it doesn't read payroll, for anyone, and points to your ERP's own payroll screens.</figcaption></figure>
 
 <h2 id="sign-out">Signing out</h2>
 <ul>
 <li><b>JoeyAI Chat:</b> choose <b class="ui">Sign out</b> under your name at the top right. When it's your only device, your chats and every file you attached or got back are deleted at once, from the AI service's store too; signed in on your phone as well, <b class="ui">Sign out on this device</b> signs out only there and your chats stay on the other (the menu's list signs out the other one). Your AI apps stay connected. While Joey is still answering, making a change or uploading a file, Sign out waits: stop the answer or let it finish first. To keep a chat, <b class="ui">Export</b> it first.
 <figure class="narrow"><img src="/assets/joey/guide/chat-sign-out.bf30756d3a.webp" alt="JoeyAI Chat's account menu with Sign out" loading="lazy" width="630" height="390">
 <figcaption>Your name's menu in JoeyAI Chat, with Sign out.</figcaption></figure></li>
-<li><b>Your own AI app:</b> ask <i>"Sign me out of Joey."</i> (<code>joey_sign_out</code>). It ends every connection you have to this Joey address, JoeyAI Chat included, hands MYOB's key back and deletes your Session Memory. To use Joey again, choose <b class="ui">Connect</b> on the connector. Removing the connector in your AI app doesn't tell Joey; your MYOB login through Joey then runs out 30 days after you signed in.</li>
+<li><b>Your own AI app:</b> ask <i>"Sign me out of Joey."</i> (<code>joey_sign_out</code>). It ends every connection you have to this Joey address, JoeyAI Chat included, hands the ERP's key back and deletes your Session Memory. To use Joey again, choose <b class="ui">Connect</b> on the connector. Removing the connector in your AI app doesn't tell Joey; your ERP login through Joey then runs out 30 days after you signed in.</li>
 </ul>
 
 <h2 id="trouble">When something goes wrong</h2>
 <div class="table-wrap"><table>
 <tr><th>You see</th><th>What it means</th><th>What to do</th></tr>
-<tr><td>You're asked to sign in again, or the connector shows as disconnected</td><td>Your MYOB login through Joey ended (30 days after you signed in, a password change or sign-out)</td><td>Sign in again in JoeyAI Chat, or choose <b class="ui">Connect</b> on Atlys Joey in your AI app</td></tr>
+<tr><td>You're asked to sign in again, or the connector shows as disconnected</td><td>Your ERP login through Joey ended (30 days after you signed in, a password change or sign-out)</td><td>Sign in again in JoeyAI Chat, or choose <b class="ui">Connect</b> on Atlys Joey in your AI app</td></tr>
 <tr><td>"JoeyAI Chat isn't turned on"</td><td>Your company's Joey address works through your own AI app, not JoeyAI Chat</td><td>Connect Joey in your AI app (see <a href="#connect">Joey in your own AI app</a>), or ask your Atlys team</td></tr>
 <tr><td>"This Joey address works through JoeyAI Chat", when connecting an AI app</td><td>Your company uses JoeyAI Chat at this address, so AI apps can't connect there</td><td>Open your Joey address with <code>/chat</code> on the end and sign in there</td></tr>
 <tr><td>"JoeyAI Chat isn't ready yet"</td><td>JoeyAI Chat's AI isn't set up for your company yet</td><td>Try later, or ask your Atlys team</td></tr>
@@ -689,16 +690,16 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <tr><td>"You signed in to JoeyAI Chat on another phone" (or "in another browser")</td><td>You can use one phone and one browser at a time, and signed in on another</td><td>Sign in again here if you want this one; the other is then signed out. Your chats are still there</td></tr>
 <tr><td>"That code didn't work"</td><td>The code was typed wrong, has been used, or is over two minutes old</td><td>On your computer close the box and choose <b class="ui">Sign in on your phone</b> again for a new code</td></tr>
 <tr><td>The camera doesn't open on the scan page</td><td>JoeyAI isn't allowed to use the camera</td><td>Allow the camera for JoeyAI in your phone's settings, or type the code instead</td></tr>
-<tr><td>"MYOB denied" or "you don't have access"</td><td>Your MYOB role doesn't allow that data</td><td>Ask your MYOB administrator if you should have access. Joey can't widen it</td></tr>
-<tr><td>"MYOB is busy" or "unavailable"</td><td>MYOB is slow or busy, or Joey is pacing requests to protect your MYOB site</td><td>Ask again in a minute. A narrower period answers faster</td></tr>
+<tr><td>"MYOB denied" or "you don't have access"</td><td>Your ERP role doesn't allow that data</td><td>Ask your ERP administrator if you should have access. Joey can't widen it</td></tr>
+<tr><td>"MYOB is busy" or "unavailable"</td><td>Your ERP is slow or busy, or Joey is pacing requests to protect your ERP site</td><td>Ask again in a minute. A narrower period answers faster</td></tr>
 <tr><td>"Too large", or a slow first answer</td><td>The question covers more records than can be totalled live, or memory is still warming up</td><td>Add a period or a filter; <i>"What's in my Joey memory?"</i> shows progress</td></tr>
-<tr><td>"Changing records through Joey isn't switched on", or "Joey hasn't been set up to change … records at this site"</td><td>Write access isn't on here, or your site's review hasn't covered that kind of record</td><td>Make it in MYOB from the link given, and tell your Atlys team if you'd like it through Joey</td></tr>
+<tr><td>"Changing records through Joey isn't switched on", or "Joey hasn't been set up to change … records at this site"</td><td>Write access isn't on here, or your site's review hasn't covered that kind of record</td><td>Make it in your ERP from the link given, and tell your Atlys team if you'd like it through Joey</td></tr>
 <tr><td>"Changes are already waiting"</td><td>Five changes are waiting for you to confirm or cancel</td><td>Open Joey's page from the last confirm link and confirm or cancel them</td></tr>
 <tr><td>"The record was changed in MYOB first"</td><td>Someone changed it after your change was proposed</td><td>Ask for it to be proposed again</td></tr>
-<tr><td>"Not changed: MYOB answered but saved nothing"</td><td>MYOB won't change that record, or your role only lets you view it</td><td>Open the record in MYOB; ask your MYOB administrator if you should be able to change it</td></tr>
-<tr><td>"The most this site allows"</td><td>You reached your limit of changes through Joey for the hour or the day</td><td>Wait a while, split a change to many records, or make it in MYOB</td></tr>
-<tr><td>"Email recipient should be defined", or "Notification Settings … not found"</td><td>The customer or supplier has no email for that kind of document, or your MYOB has no email set up for it yet</td><td>Your MYOB administrator adds it (Mailing &amp; Printing on the customer, supplier or module's preferences), then ask again</td></tr>
-<tr><td>"MYOB refused a new API sign-in", or "Your MYOB login type doesn't allow API requests"</td><td>Your MYOB login or your site's licence has no API sign-in free, or none at all</td><td>Ask again in a minute; if it keeps happening, your MYOB administrator can change it on the Users screen</td></tr>
+<tr><td>"Not changed: MYOB answered but saved nothing"</td><td>Your ERP won't change that record, or your role only lets you view it</td><td>Open the record in your ERP; ask your ERP administrator if you should be able to change it</td></tr>
+<tr><td>"The most this site allows"</td><td>You reached your limit of changes through Joey for the hour or the day</td><td>Wait a while, split a change to many records, or make it in your ERP</td></tr>
+<tr><td>"Email recipient should be defined", or "Notification Settings … not found"</td><td>The customer or supplier has no email for that kind of document, or your ERP has no email set up for it yet</td><td>Your ERP administrator adds it (Mailing &amp; Printing on the customer, supplier or module's preferences), then ask again</td></tr>
+<tr><td>"MYOB refused a new API sign-in", or "Your MYOB login type doesn't allow API requests"</td><td>Your ERP login or your site's licence has no API sign-in free, or none at all</td><td>Ask again in a minute; if it keeps happening, your ERP administrator can change it on the Users screen</td></tr>
 <tr><td>A figure you think is wrong</td><td>A different reading of the question (which orders count, which currency), or a problem to fix</td><td>Ask which records were counted; say "tell the Atlys team" to send feedback</td></tr>
 </table></div>
 <figure><img src="/assets/joey/guide/chat-file-refused.b06c469d6d.webp" alt="An old Word file refused in JoeyAI Chat's box, with the reason" loading="lazy" width="1280" height="824">
@@ -708,22 +709,22 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <p>The assistant chooses these itself; you never need to call them by name. They are listed so you know what it is doing when it shows one (JoeyAI Chat shows them as its steps).</p>
 <div class="table-wrap"><table>
 <tr><th>Tool</th><th>What it does</th></tr>
-<tr><td><code>joey_guide</code></td><td>The Atlys team's notes: what business words mean in MYOB and plans that answer common questions well</td></tr>
-<tr><td><code>joey_schema</code></td><td>Which MYOB entities (customers, sales orders, stock items and so on) you can read, and their fields</td></tr>
-<tr><td><code>joey_get</code></td><td>Reads records: one by its key, or a filtered, sorted list of up to 100 (500 as a table), each with a link that opens it in MYOB, and printable documents with links to their printed forms</td></tr>
+<tr><td><code>joey_guide</code></td><td>The Atlys team's notes: what business words mean in your ERP and plans that answer common questions well</td></tr>
+<tr><td><code>joey_schema</code></td><td>Which ERP entities (customers, sales orders, stock items and so on) you can read, and their fields</td></tr>
+<tr><td><code>joey_get</code></td><td>Reads records: one by its key, or a filtered, sorted list of up to 100 (500 as a table), each with a link that opens it in your ERP, and printable documents with links to their printed forms</td></tr>
 <tr><td><code>joey_summary</code></td><td>Counts and totals, grouped by any field or by day, month or year, from memory when it can</td></tr>
 <tr><td><code>joey_inquiry</code></td><td>Runs your company's generic inquiries (where your site allows them)</td></tr>
-<tr><td><code>joey_files</code></td><td>Lists and reads files attached to a record in MYOB: PDFs, Word and Excel documents, pictures</td></tr>
-<tr><td><code>joey_erp_help</code></td><td>Help with MYOB itself: where a screen is, what it does and how to do a task, with links on your own site</td></tr>
+<tr><td><code>joey_files</code></td><td>Lists and reads files attached to a record in your ERP: PDFs, Word and Excel documents, pictures</td></tr>
+<tr><td><code>joey_erp_help</code></td><td>Help with your ERP itself: where a screen is, what it does and how to do a task, with links on your own site</td></tr>
 <tr><td><code>joey_forecast</code></td><td>Where your company has it switched on: cash flow for the next 4, 8 or 13 weeks, what to reorder and how much, and a GST check for a period (for review; Joey never lodges a BAS). Every forecast says its assumptions</td></tr>
 <tr><td><code>joey_insights</code></td><td>Where switched on: what needs attention (overdue customers, bills due, stock under its reorder point, price rises, duplicate-looking or unusual bills and claims, journals that stand out, projects over budget), each with why and a link to the record; what a customer usually buys, what sells together and margins against cost</td></tr>
 <tr><td><code>joey_bill_check</code></td><td>Where switched on: checks a supplier invoice or receipt you give your assistant before anything is entered (the supplier, an invoice entered already, a matching purchase order, how past bills were coded) and prepares the bill on hold for you to confirm</td></tr>
-<tr><td><code>joey_export</code></td><td>Makes a link to an Excel or CSV file of a long list. Open it within 10 minutes; MYOB asks who you are, and only you get the file</td></tr>
-<tr><td><code>joey_write_propose</code></td><td>Where write access is on: proposes a new record or an edit, with the record's MYOB link (and a confirm link, with the reason, for a sensitive or large change). Nothing changes until you confirm</td></tr>
+<tr><td><code>joey_export</code></td><td>Makes a link to an Excel or CSV file of a long list. Open it within 10 minutes; your ERP asks who you are, and only you get the file</td></tr>
+<tr><td><code>joey_write_propose</code></td><td>Where write access is on: proposes a new record or an edit, with the record's ERP link (and a confirm link, with the reason, for a sensitive or large change). Nothing changes until you confirm</td></tr>
 <tr><td><code>joey_write_confirm</code></td><td>In your own AI app: makes an everyday write once you have said yes, or cancels it. JoeyAI Chat never uses it: you press Confirm on the card</td></tr>
 <tr><td><code>joey_write_status</code>, <code>joey_write_undo</code></td><td>What happened to a proposed write; putting back what a write replaced, within 24 hours</td></tr>
 <tr><td><code>joey_whoami</code>, <code>joey_status</code></td><td>Who you are connected as, and what your Session Memory holds</td></tr>
-<tr><td><code>joey_warmup</code></td><td>Brings your Session Memory up to date with MYOB now ("Joey, warm up")</td></tr>
+<tr><td><code>joey_warmup</code></td><td>Brings your Session Memory up to date with your ERP now ("Joey, warm up")</td></tr>
 <tr><td><code>joey_feedback</code></td><td>Sends your feedback to the Atlys team (without your figures)</td></tr>
 <tr><td><code>joey_sign_out</code></td><td>Ends your Joey connections and deletes your Session Memory (AI apps only; JoeyAI Chat has its own Sign out)</td></tr>
 </table></div>
@@ -732,13 +733,13 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 
 <h2 id="faq">Questions people ask</h2>
 <h3>Should I use JoeyAI Chat or my own AI app?</h3>
-<p>Your company chooses one for its Joey address with your Atlys team, and both answer the same way from the same MYOB. JoeyAI Chat needs no AI app of your own and keeps the least (see <a href="#two-ways">Two ways to use Joey</a>); your own AI app keeps Joey beside your other tools and conversations.</p>
+<p>Your company chooses one for its Joey address with your Atlys team, and both answer the same way from the same ERP. JoeyAI Chat needs no AI app of your own and keeps the least (see <a href="#two-ways">Two ways to use Joey</a>); your own AI app keeps Joey beside your other tools and conversations.</p>
 <h3>Can a colleague see my questions or my data?</h3>
-<p>No. Each person signs in with their own MYOB login and gets their own memory and, in JoeyAI Chat, their own chats, encrypted for them alone. Joey's records of questions hold no values and are seen only by the Atlys team.</p>
+<p>No. Each person signs in with their own ERP login and gets their own memory and, in JoeyAI Chat, their own chats, encrypted for them alone. Joey's records of questions hold no values and are seen only by the Atlys team.</p>
 <h3>Does the AI learn my company's figures?</h3>
 <p>Joey hands the AI the answer to your question, like a report you asked for. In your own AI app, what the app keeps of your chats is set by its plan and settings (a business plan usually keeps chats out of training). In JoeyAI Chat, Joey holds the chat and deletes it as above. Joey itself keeps no figures outside your encrypted Session Memory, and what it learns from use holds field names and question shapes only.</p>
 <h3>Why does the same question sometimes answer faster?</h3>
-<p>The second time it usually comes from your Session Memory, after a quick check with MYOB for anything that changed.</p>
+<p>The second time it usually comes from your Session Memory, after a quick check with your ERP for anything that changed.</p>
 <h3>Does it work on my phone?</h3>
 <p>Yes. JoeyAI Chat works as an app on your phone, Atlys JoeyAI, added to your home screen from its browser (see <a href="#chat-phone">JoeyAI Chat on your phone</a>), or simply in the browser. In your own AI app it depends on the app: in Claude, for example, once connected on the web or desktop Atlys Joey is in the mobile app too.</p>
 <figure class="narrow"><img src="/assets/joey/guide/chat-phone.401cf00141.webp" alt="JoeyAI Chat on a phone, with an answer and its table" loading="lazy" width="780" height="1688">
@@ -764,7 +765,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.08em;color:#8a7860;margin-left:auto;">© 2026 Atlys Tech Pty Ltd · ABN 46 701 607 829</span>
     </div>
     <hr style="border:none;border-top:1px solid #e6ddc8;margin:24px 0 16px;">
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.12em;color:#8a7860;margin:0;">Atlys Joey · Screenshots show sample data from a test company · MYOB Acumatica · Acumatica</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.12em;color:#8a7860;margin:0;">Atlys Joey · Screenshots show sample data from a MYOB Acumatica demo company · Works with any ERP</p>
   </div>
 </footer>
 <noscript><img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=10181724&amp;fmt=gif"></noscript>
