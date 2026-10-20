@@ -329,7 +329,9 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><a href="#ask">Asking Joey</a></li>
 <li><a href="#examples">Questions to try</a></li>
 <li><a href="#erp-help">Help with your ERP itself</a></li>
+<li><a href="#watch">Joey Watch and forecasts</a></li>
 <li><a href="#write">Write access</a></li>
+<li><a href="#rules">Rules and digests</a></li>
 <li><a href="#tips">Tips for good answers</a></li>
 <li><a href="#memory">Speed and Session Memory</a></li>
 <li><a href="#safe">Your data and your rights</a></li>
@@ -530,6 +532,8 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <div class="card"><h3>Purchasing</h3><p>"How many purchase orders are open, and with which vendors?"<br>"What did we order from suppliers last month, per currency?"</p></div>
 <div class="card"><h3>Inventory</h3><p>"How much stock do we hold in each warehouse?"<br>"Which items sold the most units in August?"</p></div>
 <div class="card"><h3>Finance</h3><p>"What were our bank account balances at the end of last month?"<br>"How much did customers pay us in August?"</p></div>
+<div class="card"><h3>Reports, month end and compliance</h3><p>"Show the P&amp;L against budget for March, by branch."<br>"Are we ready to close last month?"<br>"Work out our BAS figures for the last quarter." (for review; your ERP's tax report is what you lodge)<br>"What goes on this year's TPAR?"</p></div>
+<div class="card"><h3>Stock and sales performance</h3><p>"What stock hasn't sold in six months?"<br>"Which items make us the most margin?"<br>"How many of our quotes become orders?"<br>"What's our DSO?"</p></div>
 <div class="card"><h3>Documents</h3><p>"Look up sales order SO012345 and tell me its status and total."<br>"Does it have a PDF attached? Summarise it in two lines."</p></div>
 <div class="card"><h3>Charts, files and ERP links</h3><p>"Chart our sales by month this year."<br>"Give me an Excel file of last quarter's invoices."<br>"Open sales order SO012345 in MYOB" or "Print it".</p></div>
 </div>
@@ -555,6 +559,32 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><b>Your access:</b> Joey asks your ERP whether your role opens each screen it suggests, and says so when it doesn't.</li>
 </ul>
 <p class="note">Try: <i>"Where are customer statements?"</i>, <i>"How do I enter a supplier's credit note?"</i>, <i>"How do I lodge the BAS?"</i> or <i>"What does the Prepare Payments screen do?"</i></p>
+
+<h2 id="watch">Joey Watch, forecasts and the bill check</h2>
+<p>Joey can also look ahead and look out for you. These read only: they never change a record, and they see only what your ERP role lets you see, like every other answer. They are on for every company unless your Atlys team has switched them off for yours.</p>
+<div class="cards">
+<div class="card"><h3>Joey Watch</h3><p>What needs your attention today: customers overdue, bills falling due, stock under its reorder point, price rises from suppliers, bills that look like ones already entered, unusual bills, expense claims and journals, projects over budget and work not yet billed. Each item says why it was flagged and links to the record in your ERP.</p></div>
+<div class="card"><h3>Forecasts</h3><p>Cash flow for the next 4, 8 or 13 weeks from what is owed to you and what you owe, with regular customers and suppliers allowed for; what to reorder and how much; a GST check for a period. Every forecast says its assumptions. The GST check is for your review: Joey never lodges a BAS.</p></div>
+<div class="card"><h3>Sales insights</h3><p>What a customer usually buys and is due to buy again, what sells with an item, and the margin on an order's lines against cost.</p></div>
+<div class="card"><h3>The bill check</h3><p>Give your assistant a supplier's invoice or a receipt and Joey checks it before anything is entered: the supplier, whether the invoice is entered already, a matching purchase order and how past bills were coded. Then it prepares the bill or expense claim on hold, for you to confirm like any other change.</p></div>
+</div>
+<div class="chat" aria-label="An example chat with Joey Watch">
+<p class="who">You</p><div class="you">What needs my attention today?</div>
+<p class="who">Assistant</p><div class="ai"><span class="tool">joey_insights</span>
+<p>Three things stand out:</p>
+<ul><li><b>Overdue:</b> 4 customers are more than 30 days overdue, $18,420 in all; the largest is C000123 at $9,150, 47 days.</li>
+<li><b>Possible duplicate:</b> bill 000566 from V000045 has the same amount and a reference like bill 000563 entered last week.</li>
+<li><b>Reorder:</b> WIDGET is under its reorder point in MAIN, with 9 days of stock left at its usual rate.</li></ul>
+<p>Shall I show the overdue customers' invoices?</p></div>
+<p class="small muted">An illustration with made-up records. In a real answer each item links to the record in your ERP.</p>
+</div>
+<figure><img src="/assets/joey/guide/chat-watch.99246deb2b.webp" alt="Joey Watch in JoeyAI Chat: overdue customers, stock under its reorder point and projects over budget, each linked to its record" loading="lazy" width="1280" height="824">
+<figcaption>Joey Watch in JoeyAI Chat: each check that found something, the reason, and a link to the record in your ERP.</figcaption></figure>
+<p class="note">Try: <i>"What needs my attention today?"</i>, <i>"What does our cash flow look like for the next 13 weeks?"</i>, <i>"What should we reorder?"</i>, <i>"Check this supplier invoice before I enter it"</i> (with the PDF) or <i>"What does customer C000123 usually buy?"</i></p>
+<ul>
+<li><b>Unusual means unusual for that supplier, item or category:</b> Joey learns each one's normal range from your own history, and says nothing where there is too little history to judge.</li>
+<li><b>Suggestions only:</b> anything Joey suggests changing goes through the usual write steps and your confirmation, where write access is on.</li>
+</ul>
 
 <h2 id="write">Write access</h2>
 <p>Where your company has write access switched on, you can ask Joey to create and change records the way you would in your ERP, as your ERP role allows and nothing more. Your Atlys team switches it on after your site's review and tells you; in JoeyAI Chat it has a switch of its own. Nothing changes until you confirm.</p>
@@ -624,6 +654,31 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><b>Your ERP records you</b> as the person who made each change, as if you had made it on the screen.</li>
 </ul>
 
+<h2 id="rules">Rules and digests</h2>
+<p>Where your company has write access on, Joey can keep an eye on things for you and email you on a schedule: a weekly digest, or a rule such as <i>"every weekday at 7, email me the customers more than 30 days overdue"</i> or <i>"every hour, tell me if a bill comes in that looks like a duplicate"</i>. Each email is read from your ERP as you, with exactly what your ERP role lets you see, and sent through your ERP's own email.</p>
+<div class="chat" aria-label="An example chat that sets up a rule">
+<p class="who">You</p><div class="you">Every Monday at 8, email me who owes us more than 60 days.</div>
+<p class="who">Assistant</p><div class="ai"><span class="tool">joey_rules</span>
+<p>Here it is: <b>every Monday at 08:00</b>, the aged debtors over 60 days, emailed to you. Open this link to confirm it on Joey's page; your ERP asks you to sign in, and nothing is set up until you confirm.</p></div>
+<p class="small muted">An illustration. The link opens Joey's own page in your browser.</p>
+</div>
+<div class="cards">
+<div class="card"><h3>Only to you</h3><p>A rule emails only you, at the email of your ERP login, which your ERP gives Joey when you confirm. It never emails a customer, supplier or colleague. If your email changes in your ERP, your rules pause until you confirm them again.</p></div>
+<div class="card"><h3>Never a change</h3><p>A rule only reads and emails you. Changing a record, or emailing anyone else, is always proposed for you to confirm, like any write.</p></div>
+<div class="card"><h3>Your weekly digest</h3><p>Say <i>"set up my weekly digest"</i>: what needs attention, cash flow for the next four weeks, overdue receivables and last week's sales, every Monday at 7:30 am (or when you choose).</p></div>
+<div class="card"><h3>When it emails</h3><p>Daily, weekly, monthly, or checked every hour between two times. A rule can email every time, or only when it finds something, or when a figure passes a level you set.</p></div>
+</div>
+<figure class="narrow"><img src="/assets/joey/guide/rule-confirm.339953c207.webp" alt="Joey's page for confirming a weekly digest: its name, when, what, and sent to you only" loading="lazy" width="1184" height="2474">
+<figcaption>Confirming your weekly digest on Joey's page: when it runs, what it reads, and that it goes to you only. Nothing runs until you press Confirm.</figcaption></figure>
+<figure class="narrow"><img src="/assets/joey/guide/digest-email.a33fa445a9.webp" alt="The top of a weekly digest email: what needs attention, with each item linked to its record" loading="lazy" width="1280" height="1272">
+<figcaption>The top of a weekly digest email: the headline figures, then what needs attention, each item linked to its record. Further down come the other checks, cash flow for the next four weeks, overdue receivables and last week's sales.</figcaption></figure>
+<ul>
+<li><b>Yours alone:</b> your rules are yours. Nobody else sees, changes or stops them, and you can't see theirs.</li>
+<li><b>Ask Joey to manage them:</b> <i>"list my rules"</i>, <i>"send my digest now"</i>, <i>"pause my overdue rule"</i>, <i>"stop it"</i>. Up to 20 rules each.</li>
+<li><b>They carry on while you're signed in:</b> they pause if your Joey sign-in ends and carry on when you sign in again. Near the end of your sign-in, your emails say when it ends.</li>
+<li><b>Your ERP's email:</b> the emails are sent and kept by your ERP like any email it sends, private to you. If your company hasn't set up its ERP's email, nothing is sent; your ERP administrator sets it up.</li>
+</ul>
+
 <h2 id="tips">Tips for good answers</h2>
 <ul>
 <li><b>Name the period.</b> "This financial year", "last month", "August 2026" or "since 1 January" keeps answers exact and quick.</li>
@@ -682,7 +737,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <tr><td>"This Joey address works through JoeyAI Chat", when connecting an AI app</td><td>Your company uses JoeyAI Chat at this address, so AI apps can't connect there</td><td>Open your Joey address with <code>/chat</code> on the end and sign in there</td></tr>
 <tr><td>"JoeyAI Chat isn't ready yet"</td><td>JoeyAI Chat's AI isn't set up for your company yet</td><td>Try later, or ask your Atlys team</td></tr>
 <tr><td>"You've used a lot of JoeyAI Chat in the last few hours" (or "this week")</td><td>You reached your limit for 5 hours or for the week</td><td>Ask again at the time shown; your chats stay to read meanwhile</td></tr>
-<tr><td>"This month's chat allowance is used"</td><td>Your share of JoeyAI Chat for the month is used</td><td>Your chats stay to read; it renews on the 1st. Ask your Atlys team if you need more</td></tr>
+<tr><td>"This month's chat allowance is used"</td><td>Your JoeyAI Chat allowance for this month is used</td><td>Your chats stay to read; it renews on the 1st. Ask your Atlys team if you need more</td></tr>
 <tr><td>"This answer reached the most one answer may use"</td><td>One answer may use only so much</td><td>Ask for less at once, or split the question</td></tr>
 <tr><td>A file is refused in JoeyAI Chat</td><td>Its kind or size isn't one JoeyAI Chat reads</td><td>Pictures, PDFs, Excel, Word and PowerPoint (<code>.xlsx</code>, <code>.xls</code>, <code>.docx</code>, <code>.pptx</code>) and text files, within their sizes; save an old <code>.doc</code> or <code>.ppt</code> in the newer form or as PDF</td></tr>
 <tr><td>"You're offline", or "Joey can't be reached just now"</td><td>Your connection dropped, or Joey is being updated for a moment</td><td>Wait for the connection; your question stays in the box to send again</td></tr>
@@ -716,14 +771,15 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <tr><td><code>joey_inquiry</code></td><td>Runs your company's generic inquiries (where your site allows them)</td></tr>
 <tr><td><code>joey_files</code></td><td>Lists and reads files attached to a record in your ERP: PDFs, Word and Excel documents, pictures</td></tr>
 <tr><td><code>joey_erp_help</code></td><td>Help with your ERP itself: where a screen is, what it does and how to do a task, with links on your own site</td></tr>
-<tr><td><code>joey_forecast</code></td><td>Where your company has it switched on: cash flow for the next 4, 8 or 13 weeks, what to reorder and how much, and a GST check for a period (for review; Joey never lodges a BAS). Every forecast says its assumptions</td></tr>
-<tr><td><code>joey_insights</code></td><td>Where switched on: what needs attention (overdue customers, bills due, stock under its reorder point, price rises, duplicate-looking or unusual bills and claims, journals that stand out, projects over budget), each with why and a link to the record; what a customer usually buys, what sells together and margins against cost</td></tr>
-<tr><td><code>joey_bill_check</code></td><td>Where switched on: checks a supplier invoice or receipt you give your assistant before anything is entered (the supplier, an invoice entered already, a matching purchase order, how past bills were coded) and prepares the bill on hold for you to confirm</td></tr>
+<tr><td><code>joey_forecast</code></td><td>Cash flow for the next 4, 8 or 13 weeks, what to reorder and how much, and a GST check for a period (for review; Joey never lodges a BAS). Every forecast says its assumptions</td></tr>
+<tr><td><code>joey_insights</code></td><td>What needs attention (overdue customers, bills due, stock under its reorder point, price rises, duplicate-looking or unusual bills and claims, journals that stand out, projects over budget), each with why and a link to the record; what a customer usually buys, what sells together and margins against cost</td></tr>
+<tr><td><code>joey_bill_check</code></td><td>Checks a supplier invoice or receipt you give your assistant before anything is entered (the supplier, an invoice entered already, a matching purchase order, how past bills were coded) and prepares the bill on hold for you to confirm</td></tr>
 <tr><td><code>joey_export</code></td><td>Makes a link to an Excel or CSV file of a long list. Open it within 10 minutes; your ERP asks who you are, and only you get the file</td></tr>
 <tr><td><code>joey_write_propose</code></td><td>Where write access is on: proposes a new record or an edit, with the record's ERP link (and a confirm link, with the reason, for a sensitive or large change). Nothing changes until you confirm</td></tr>
 <tr><td><code>joey_write_confirm</code></td><td>In your own AI app: makes an everyday write once you have said yes, or cancels it. JoeyAI Chat never uses it: you press Confirm on the card</td></tr>
 <tr><td><code>joey_write_status</code>, <code>joey_write_undo</code></td><td>What happened to a proposed write; putting back what a write replaced, within 24 hours</td></tr>
 <tr><td><code>joey_whoami</code>, <code>joey_status</code></td><td>Who you are connected as, and what your Session Memory holds</td></tr>
+<tr><td><code>joey_rules</code></td><td>Where write access is on: your own rules and digests, emailed only to you through your ERP's own email, set up once you confirm on Joey's page</td></tr>
 <tr><td><code>joey_warmup</code></td><td>Brings your Session Memory up to date with your ERP now ("Joey, warm up")</td></tr>
 <tr><td><code>joey_feedback</code></td><td>Sends your feedback to the Atlys team (without your figures)</td></tr>
 <tr><td><code>joey_sign_out</code></td><td>Ends your Joey connections and deletes your Session Memory (AI apps only; JoeyAI Chat has its own Sign out)</td></tr>
