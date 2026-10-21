@@ -396,7 +396,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <div class="table-wrap"><table>
 <tr><th></th><th>JoeyAI Chat</th><th>Your own AI app</th></tr>
 <tr><td><b>Where</b></td><td>Your company's chat page: your Joey address with <code>/chat</code> on the end</td><td>Claude, ChatGPT, Microsoft Copilot, Google Gemini, Cursor and other apps that take custom connectors</td></tr>
-<tr><td><b>You need</b></td><td>Your ERP login, nothing else</td><td>An AI app plan that allows custom connectors, and your ERP login</td></tr>
+<tr><td><b>You need</b></td><td>Your ERP login with the API licence (below), nothing else</td><td>An AI app plan that allows custom connectors, and your ERP login with the API licence (below)</td></tr>
 <tr><td><b>The AI</b></td><td>Comes with Joey, with a monthly allowance for your company</td><td>Your app's own, under your company's plan with that app</td></tr>
 <tr><td><b>Your conversations</b></td><td>Kept by Joey, encrypted for you alone, and <b>deleted when you sign out, or 30 days after you signed in at the latest</b></td><td>Kept by your AI app, as its settings and your company's plan say, until you delete them there</td></tr>
 <tr><td><b>Files</b></td><td>Attach pictures, PDFs, Excel, Word, PowerPoint and text files; ask for charts and Excel, Word, PowerPoint or PDF files back. All deleted with your chats, from the AI service's store too</td><td>As your AI app allows, kept by your AI app</td></tr>
@@ -461,8 +461,10 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <figure><img src="/assets/joey/guide/chat-card.4b119495f1.webp" alt="A change to a sales order on a card in JoeyAI Chat, with Confirm and Cancel" loading="lazy" width="1280" height="824">
 <figcaption>A change on a card: each field now and after, how long it waits, the record's link in your ERP, and Confirm or Cancel.</figcaption></figure>
 
+<p class="tip" id="api-licence"><b>Your ERP login needs the API licence.</b> Joey reads your ERP through its web services, so each person's ERP login needs your ERP's API licence as well as their usual licence and roles. In MYOB Acumatica that is the licence type <b class="ui">Full User (Full API)</b>, on the <b class="ui">Users</b> screen's <b class="ui">Licence Types</b> tab; your ERP administrator sets it. Without it you can still sign in, but every question is refused. Your roles still decide what you see.</p>
+
 <h2 id="connect">Joey in your own AI app</h2>
-<p>You need an AI app that can add a <b>custom connector</b> with its own sign-in: Claude, ChatGPT, Microsoft Copilot, Google Gemini, Cursor and others follow the standard; most need a paid or business plan, and on a company plan an administrator may add it for everyone first. You also need your ERP login and your company's Joey address from your Atlys team, such as <code>https://joey.atlystech.com.au/your-company</code> (nothing after the company's name). Open the address in a browser to check it: Joey says it is ready to be added as a connector.</p>
+<p>You need an AI app that can add a <b>custom connector</b> with its own sign-in: Claude, ChatGPT, Microsoft Copilot, Google Gemini, Cursor and others follow the standard; most need a paid or business plan, and on a company plan an administrator may add it for everyone first. You also need your ERP login with the <a href="#api-licence">API licence</a> and your company's Joey address from your Atlys team, such as <code>https://joey.atlystech.com.au/your-company</code> (nothing after the company's name). Open the address in a browser to check it: Joey says it is ready to be added as a connector.</p>
 <figure class="narrow"><img src="/assets/joey/guide/address-page.3c5ee044ec.webp" alt="Joey's page for a company address" loading="lazy" width="1184" height="1124">
 <figcaption>What your Joey address shows in a browser.</figcaption></figure>
 <p>You connect once in the AI app; after that Joey is there in every chat, and in most apps on your phone too.</p>
@@ -769,6 +771,7 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 <tr><td>"That code didn't work"</td><td>The code was typed wrong, has been used, or is over two minutes old</td><td>On your computer close the box and choose <b class="ui">Sign in on your phone</b> again for a new code</td></tr>
 <tr><td>The camera doesn't open on the scan page</td><td>JoeyAI isn't allowed to use the camera</td><td>Allow the camera for JoeyAI in your phone's settings, or type the code instead</td></tr>
 <tr><td>"MYOB denied" or "you don't have access"</td><td>Your ERP role doesn't allow that data</td><td>Ask your ERP administrator if you should have access. Joey can't widen it</td></tr>
+<tr><td>You can sign in, but every question is refused ("insufficient rights", "you don't have access")</td><td>Your ERP login doesn't have the API licence</td><td>Your ERP administrator adds the API licence to your login (in MYOB Acumatica <b class="ui">Full User (Full API)</b>, Users screen, Licence Types tab; see <a href="#api-licence">the API licence</a>)</td></tr>
 <tr><td>"MYOB is busy" or "unavailable"</td><td>Your ERP is slow or busy, or Joey is pacing requests to protect your ERP site</td><td>Ask again in a minute. A narrower period answers faster</td></tr>
 <tr><td>"Too large", or a slow first answer</td><td>The question covers more records than can be totalled live, or memory is still warming up</td><td>Add a period or a filter; <i>"What's in my Joey memory?"</i> shows progress</td></tr>
 <tr><td>"Changing records through Joey isn't switched on", or "Joey hasn't been set up to change … records at this site"</td><td>Write access isn't on here, or your site's review hasn't covered that kind of record</td><td>Make it in your ERP from the link given, and tell your Atlys team if you'd like it through Joey</td></tr>
@@ -791,6 +794,8 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 <p>Your company chooses one for its Joey address with your Atlys team, and both answer the same way from the same ERP. JoeyAI Chat needs no AI app of your own and keeps the least (see <a href="#two-ways">Two ways to use Joey</a>); your own AI app keeps Joey beside your other tools and conversations.</p>
 <h3>Where do I find this guide again?</h3>
 <p>Joey opens the latest edition for you: in JoeyAI Chat choose <b class="ui">User guide</b> under your name; in your own AI app ask <i>"Show me the Joey user guide"</i> and open the link Joey gives you.</p>
+<h3>What does my ERP login need?</h3>
+<p>Your usual licence and roles, plus your ERP's API licence (in MYOB Acumatica <b class="ui">Full User (Full API)</b>), because Joey reads through your ERP's web services. Your ERP administrator adds it on the Users screen. See <a href="#api-licence">the API licence</a>.</p>
 <h3>Can a colleague see my questions or my data?</h3>
 <p>No. Each person signs in with their own ERP login and gets their own memory and, in JoeyAI Chat, their own chats, encrypted for them alone. Joey's records of questions hold no values and are seen only by the Atlys team.</p>
 <h3>Does the AI learn my company's figures?</h3>
