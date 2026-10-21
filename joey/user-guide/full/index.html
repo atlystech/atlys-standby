@@ -202,8 +202,10 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
     .prose li { margin: .35em 0; color: inherit; }
     .prose a { text-decoration: underline; }
     .lead { font-size: 1.09rem; color: var(--muted); }
-    .hero-guide { display: grid; grid-template-columns: minmax(0, 1fr) 190px; gap: 24px; align-items: center; }
-    .hero-guide img { width: 100%; height: auto; }
+    .hero-guide { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; }
+    .lockup { display: flex; align-items: center; gap: 16px; }
+    .lockup img { width: auto; height: 92px; }
+    .lockup .rule { width: 1px; align-self: stretch; background: var(--border); }
     .prose figure { margin: 1.2em 0 1.8em; padding: 26px 24px 16px; border: 1px solid var(--border); border-radius: 16px; background: var(--shot); text-align: center; }
     .prose figure img { display: block; margin: 0 auto; width: 100%; max-width: 640px; height: auto; border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); background: #fff; }
     .prose figure.narrow img { max-width: 420px; }
@@ -269,7 +271,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
       .toc { position: static; margin-bottom: 12px; }
       .toc ol { display: none; }
       .hero-guide { grid-template-columns: 1fr; }
-      .hero-guide img { max-width: 150px; }
+      .lockup img { height: 68px; }
     }
     @media (max-width: 600px) {
       .prose figure { padding: 12px 10px 10px; border-radius: 12px; }
@@ -358,7 +360,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <p class="lead">Atlys Joey connects AI to your company's ERP site. You ask a question the way you would ask a colleague, and the answer comes with figures read from your ERP, as you, a moment ago. Use it in JoeyAI Chat, your company's own chat page, or in the AI app you already use.</p>
 <p style="font-size:15px;line-height:1.6;color:#3b5247;margin:4px 0 0;">Works with any ERP. Ready for an instant demo on <b style="color:#1A383F;">MYOB Acumatica</b> and <b style="color:#1A383F;">Acumatica</b>; for another ERP, ask us.</p>
 </div>
-<div><img src="/assets/joey/guide/atlys-joey-logo.4cbc94e057.webp" alt="" width="380" height="288"></div>
+<div class="lockup"><img src="/assets/atlys-logo-208.8d4c7d22fb.webp" alt="Atlys" width="208" height="180"><span class="rule"></span><img src="/assets/joey/guide/joey-logo.4f0e67187b.webp" alt="Joey" width="380" height="288"></div>
 </div>
 
 <h2 id="what">What Joey is</h2>
@@ -408,10 +410,10 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <p>JoeyAI Chat is your company's own chat page for Joey: your Joey address with <code>/chat</code> on the end, such as <code>https://joey.atlystech.com.au/your-company/chat</code>. Your Atlys team switches it on for your company and tells you. It works in any browser, and as an app on your phone (see <a href="#chat-phone">JoeyAI Chat on your phone</a>).</p>
 <ol class="steps">
 <li><b>Sign in.</b> Open the address and choose <b class="ui">Sign in with MYOB</b>. Your ERP's own page asks for your login, as always, and brings you back to the chat. Joey never sees your password.
-<figure class="narrow"><img src="/assets/joey/guide/chat-sign-in.8a6e8b8e38.webp" alt="JoeyAI Chat's sign-in page with Sign in with MYOB" loading="lazy" width="1280" height="824">
+<figure class="narrow"><img src="/assets/joey/guide/chat-sign-in.ac71695baa.webp" alt="JoeyAI Chat's sign-in page with Sign in with MYOB" loading="lazy" width="1280" height="824">
 <figcaption>JoeyAI Chat's own page for your company. The ERP's sign-in follows, then you are in the chat.</figcaption></figure></li>
 <li><b>Ask.</b> Type in the box at the bottom, or pick a suggestion. <b class="ui">Enter</b> sends; <b class="ui">Shift+Enter</b> starts a new line. Joey's steps show as it works, each with what it looked up (for example <i>Summary · Sales order, by status</i>), then the answer. Tables have <b class="ui">Copy table</b> and <b class="ui">CSV</b>, and every answer has <b class="ui">Copy</b>.
-<figure><img src="/assets/joey/guide/chat-answer.b903bcae5e.webp" alt="An answer in JoeyAI Chat with Joey's step and a table of sales orders by status" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-answer.3c033a1556.webp" alt="An answer in JoeyAI Chat with Joey's step and a table of sales orders by status" loading="lazy" width="1280" height="824">
 <figcaption>An answer in JoeyAI Chat: Joey's step with what it looked up, then a table to copy or save as CSV.</figcaption></figure></li>
 <li><b>Keep going.</b> Ask follow-ups in the same chat. The pencil beside a question edits it; <b class="ui">Ask again</b> under the last answer asks it once more. <b class="ui">New chat</b> starts another; you can keep up to 20, each named from its first answer. From a chat's <b class="ui">⋯</b> menu you can rename it, export it as Markdown, ask Joey for a Word or PDF copy of it (made like any file you ask for) or delete it.</li>
 </ol>
@@ -425,30 +427,30 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><b>Everyday questions too.</b> Joey takes every question as one about your business and your ERP first. Something unrelated, such as wording an email or a general question, it answers like any AI assistant, from the same allowance.</li>
 <li><b>Light or dark.</b> JoeyAI Chat opens light; the switch at the top changes it for that browser tab.</li>
 </ul>
-<figure><img src="/assets/joey/guide/chat-files.a89fd2a604.webp" alt="A chart made in JoeyAI Chat, with a CSV file attached in the box for the next question" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-files.40bb4c21a5.webp" alt="A chart made in JoeyAI Chat, with a CSV file attached in the box for the next question" loading="lazy" width="1280" height="824">
 <figcaption>A chart Joey made, shown in the answer with its file to download, and a price list attached for the next question.</figcaption></figure>
-<figure><img src="/assets/joey/guide/chat-panel.0767f518d6.webp" alt="A dashboard Joey made, open in a panel beside the chat, with Listen under the answer and the microphone in the box" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-panel.43fbfb784e.webp" alt="A dashboard Joey made, open in a panel beside the chat, with Listen under the answer and the microphone in the box" loading="lazy" width="1280" height="824">
 <figcaption>A dashboard Joey made, open beside the chat. Listen is under the answer and the microphone is in the box.</figcaption></figure>
 
 <h3 id="chat-phone">JoeyAI Chat on your phone</h3>
 <p>JoeyAI Chat works on your phone as an app, <b>Atlys JoeyAI</b>, added from your phone's browser: no app store needed. It is the same chat, with the same chats on your phone and your computer. You can be signed in on <b>one browser and one phone</b> at a time.</p>
 <ol class="steps">
 <li><b>Add it to your home screen.</b> Open your JoeyAI Chat address on your phone. On an iPhone, in Safari tap <b class="ui">Share</b>, then <b class="ui">Add to Home Screen</b>, and open <b>JoeyAI</b> from your home screen to sign in there (an iPhone keeps the app's sign-in separate from Safari's). On Android, choose <b class="ui">Add JoeyAI to your home screen</b> on the sign-in page, or <b class="ui">Install app</b> in the browser's menu.
-<figure class="narrow"><img src="/assets/joey/guide/chat-phone-sign-in.3088898f15.webp" alt="JoeyAI Chat's sign-in page on an iPhone, with the tip to add it to the home screen and the link to scan a code" loading="lazy" width="720" height="1207">
+<figure class="narrow"><img src="/assets/joey/guide/chat-phone-sign-in.ce4bdb447d.webp" alt="JoeyAI Chat's sign-in page on an iPhone, with the tip to add it to the home screen and the link to scan a code" loading="lazy" width="720" height="1207">
 <figcaption>The sign-in page on a phone: add it to your home screen, then sign in with your ERP or with a code from your computer.</figcaption></figure></li>
 <li><b>Sign in</b> one of two ways:
 <ul>
 <li><b>With your ERP login</b>, as on your computer: <b class="ui">Sign in with MYOB</b> and your ERP's own page.</li>
 <li><b>With a code from your computer</b>, if you're signed in to JoeyAI Chat there: on your computer choose your name, then <b class="ui">Sign in on your phone</b>. On your phone tap <i>Signed in on your computer? Scan its code instead</i>, then <b class="ui">Scan the code</b> (the camera opens inside JoeyAI) or type the ten letters and numbers shown. Your computer then asks <i>Allow your iPhone to use JoeyAI Chat?</i>: choose <b class="ui">Allow</b> only if it's your phone in your hand. No ERP password is typed on the phone. A code lasts two minutes and works once.</li>
 </ul>
-<figure><img src="/assets/joey/guide/chat-phone-code.b8a277ab90.webp" alt="Sign in on your phone in JoeyAI Chat on a computer, with a QR code and a code to type" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-phone-code.5acfbe4987.webp" alt="Sign in on your phone in JoeyAI Chat on a computer, with a QR code and a code to type" loading="lazy" width="1280" height="824">
 <figcaption>On your computer: the code to scan or type, for two minutes.</figcaption></figure>
-<figure class="narrow"><img src="/assets/joey/guide/chat-phone-scan.f5e0deef61.webp" alt="The phone's page to scan the code or type it" loading="lazy" width="720" height="1207">
+<figure class="narrow"><img src="/assets/joey/guide/chat-phone-scan.38b3b61048.webp" alt="The phone's page to scan the code or type it" loading="lazy" width="720" height="1207">
 <figcaption>On your phone: scan the code, or type it.</figcaption></figure>
-<figure><img src="/assets/joey/guide/chat-phone-allow.9e8e79ea89.webp" alt="JoeyAI Chat on a computer asking to allow an iPhone" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-phone-allow.a53626961a.webp" alt="JoeyAI Chat on a computer asking to allow an iPhone" loading="lazy" width="1280" height="824">
 <figcaption>Back on your computer: Allow your phone. Nothing signs in until you do.</figcaption></figure></li>
 <li><b>Use it.</b> Your chats are behind the menu button at the top left; Enter starts a new line and the arrow sends. Your name's menu shows where you're signed in.
-<figure class="narrow"><img src="/assets/joey/guide/chat-phone-menu.14b26b10ec.webp" alt="The account menu on a phone, listing the iPhone and the computer" loading="lazy" width="720" height="1207">
+<figure class="narrow"><img src="/assets/joey/guide/chat-phone-menu.08d90121fd.webp" alt="The account menu on a phone, listing the iPhone and the computer" loading="lazy" width="720" height="1207">
 <figcaption>Signed in on your phone and your computer, with Sign out for each.</figcaption></figure></li>
 </ol>
 <ul>
@@ -458,14 +460,14 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <li><b>Links to your ERP and printed forms</b> open in your phone's browser. Your ERP asks you to sign in there the first time, then opens them straight away; Joey never hands its ERP sign-in to a browser.</li>
 </ul>
 <p><b>Changes on a card.</b> Where your company has switched on changes in JoeyAI Chat, a change Joey proposes shows as a card with each field now and after and the record's link. Nothing changes until you press <b class="ui">Confirm</b>; <b class="ui">Cancel</b> drops it. Typing "yes" doesn't confirm a change. A sensitive or large one shows <b class="ui">Open Joey's page</b> instead (see <a href="#write">Write access</a>).</p>
-<figure><img src="/assets/joey/guide/chat-card.4b119495f1.webp" alt="A change to a sales order on a card in JoeyAI Chat, with Confirm and Cancel" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-card.8e4f4a46b3.webp" alt="A change to a sales order on a card in JoeyAI Chat, with Confirm and Cancel" loading="lazy" width="1280" height="824">
 <figcaption>A change on a card: each field now and after, how long it waits, the record's link in your ERP, and Confirm or Cancel.</figcaption></figure>
 
 <p class="tip" id="api-licence"><b>Your ERP login needs the API licence.</b> Joey reads your ERP through its web services, so each person's ERP login needs your ERP's API licence as well as their usual licence and roles. In MYOB Acumatica that is the licence type <b class="ui">Full User (Full API)</b>, on the <b class="ui">Users</b> screen's <b class="ui">Licence Types</b> tab; your ERP administrator sets it. Without it you can still sign in, but every question is refused. Your roles still decide what you see.</p>
 
 <h2 id="connect">Joey in your own AI app</h2>
 <p>You need an AI app that can add a <b>custom connector</b> with its own sign-in: Claude, ChatGPT, Microsoft Copilot, Google Gemini, Cursor and others follow the standard; most need a paid or business plan, and on a company plan an administrator may add it for everyone first. You also need your ERP login with the <a href="#api-licence">API licence</a> and your company's Joey address from your Atlys team, such as <code>https://joey.atlystech.com.au/your-company</code> (nothing after the company's name). Open the address in a browser to check it: Joey says it is ready to be added as a connector.</p>
-<figure class="narrow"><img src="/assets/joey/guide/address-page.3c5ee044ec.webp" alt="Joey's page for a company address" loading="lazy" width="1184" height="1124">
+<figure class="narrow"><img src="/assets/joey/guide/address-page.1a08c52941.webp" alt="Joey's page for a company address" loading="lazy" width="1184" height="1240">
 <figcaption>What your Joey address shows in a browser.</figcaption></figure>
 <p>You connect once in the AI app; after that Joey is there in every chat, and in most apps on your phone too.</p>
 <ol class="steps">
@@ -473,7 +475,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <figure><div class="mock" aria-hidden="true"><div class="bar">Add custom connector</div><div class="body"><div class="field">Name</div><div class="input">Atlys Joey</div><div class="field"><span class="ui">Remote MCP server URL</span></div><div class="input">https://joey.atlystech.com.au/your-company</div><div class="btns"><span class="btn">Cancel</span><span class="btn go">Add</span></div></div></div>
 <figcaption>An illustration: each app's own screen looks a little different and changes over time.</figcaption></figure></li>
 <li><b>Connect.</b> Choose <b class="ui">Connect</b> (or <b class="ui">Sign in</b>) next to Atlys Joey. Joey's own page opens, naming the app and your ERP site. Check the site is your company's and choose <b class="ui">Continue to MYOB sign-in</b>.
-<figure><img src="/assets/joey/guide/consent.3f59daa14e.webp" alt="Joey's page asking you to connect your AI app to your ERP login" loading="lazy" width="1184" height="1520">
+<figure><img src="/assets/joey/guide/consent.3fb715fe60.webp" alt="Joey's page asking you to connect your AI app to your ERP login" loading="lazy" width="1184" height="1520">
 <figcaption>Joey's connect page. It names the app and the ERP site, and says Joey only sees what your ERP account can see.</figcaption></figure></li>
 <li><b>Sign in to your ERP</b> on your site's own sign-in page, as always. Your password goes into your ERP, never into Joey or your AI app.
 <figure><img src="/assets/joey/guide/myob-sign-in.279f3790fc.webp" alt="Your ERP's own sign-in page, here MYOB Acumatica" loading="lazy" width="936" height="704">
@@ -482,7 +484,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <figure><img src="/assets/joey/guide/myob-consent.3d63dd49e6.webp" alt="MYOB Acumatica asking whether Atlys Joey may use your login" loading="lazy" width="1280" height="1172">
 <figcaption>Your ERP asks you to allow Atlys Joey.</figcaption></figure></li>
 <li><b>Back to your AI app.</b> Joey finishes the sign-in (you see Joey hop for a few seconds) and the app shows Atlys Joey as connected.
-<figure><img src="/assets/joey/guide/finishing.8da713d331.webp" alt="Joey finishing the ERP sign-in" loading="lazy" width="1184" height="1042">
+<figure><img src="/assets/joey/guide/finishing.e951cd0d55.webp" alt="Joey finishing the ERP sign-in" loading="lazy" width="1184" height="994">
 <figcaption>Joey finishing your ERP sign-in before it returns you to your AI app.</figcaption></figure></li>
 </ol>
 <p class="tip">To check it worked, start a new chat and ask: <i>"Which ERP company am I connected to through Joey?"</i></p>
@@ -532,7 +534,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <p>Together they are 31% of the period's sales. Would you like their month-by-month trend?</p></div>
 <p class="small muted">An illustration. The small labels show the Joey tools used; JoeyAI Chat shows them as its steps.</p>
 </div>
-<figure><img src="/assets/joey/guide/chat-answer.b903bcae5e.webp" alt="The same kind of question answered in JoeyAI Chat" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-answer.3c033a1556.webp" alt="The same kind of question answered in JoeyAI Chat" loading="lazy" width="1280" height="824">
 <figcaption>The same kind of question in JoeyAI Chat: Joey's step shows what it looked up, and the table can be copied or saved.</figcaption></figure>
 <p>The assistant often reads <code>joey_guide</code> first: the Atlys team's notes on what business words mean in your ERP (debtors, overdue, open orders, stock on hand) and plans that answer common questions well.</p>
 
@@ -550,7 +552,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 </div>
 <p class="note">Not sure where to start? Ask <i>"What can I ask Joey?"</i> or <i>"Starter questions for accounts payable"</i> (or sales, warehouse, management, a new starter, construction and the like). In an AI app that lists prompts, Joey's starter questions are there too. In JoeyAI Chat they are on the welcome screen, by role and then by industry (and under <b>Starter questions</b> in the menu with your name). You see only questions your own ERP login can answer.</p>
 <p>Your ERP may also have generic inquiries (saved enquiry screens). Ask <i>"Which inquiries can I use through Joey?"</i> and then <i>"Run the one about open orders for this week."</i></p>
-<figure><img src="/assets/joey/guide/chat-welcome.7cf409a293.webp" alt="JoeyAI Chat's first page with starter questions in tabs by role and industry, the Sales tab open" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-welcome.4e19620ef8.webp" alt="JoeyAI Chat's first page with starter questions in tabs by role and industry, the Sales tab open" loading="lazy" width="1280" height="824">
 <figcaption>A new chat in JoeyAI Chat starts with starter questions by role and industry, only those your login can answer; pick one or ask your own.</figcaption></figure>
 
 <h2 id="erp-help">Help with your ERP itself</h2>
@@ -562,7 +564,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <p>Open Invoices and Memos · MYOB's help page · MYOB's article "To Create a Credit Memo"</p></div>
 <p class="small muted">An illustration on MYOB Acumatica. In a real answer the last line holds links that open on your own ERP site.</p>
 </div>
-<figure><img src="/assets/joey/guide/chat-help.6d6b5c1d01.webp" alt="JoeyAI Chat answering how to raise a credit note, with the steps, the screen's place on MYOB's menu and links to MYOB's help" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-help.2b730aa744.webp" alt="JoeyAI Chat answering how to raise a credit note, with the steps, the screen's place on MYOB's menu and links to MYOB's help" loading="lazy" width="1280" height="824">
 <figcaption>The same kind of question in JoeyAI Chat: the steps, the screen and where it is on the ERP's menu, whether your role opens it, and your ERP's own help.</figcaption></figure>
 <ul>
 <li><b>Where things are, and how to do it:</b> the screen, where it sits on the ERP's menu and a link that opens it on your site, with the Atlys team's steps and what to watch out for. Where your company has its own screens or its own way, the Atlys team adds it at your site's review and Joey gives that first.</li>
@@ -589,7 +591,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <p>Shall I show the overdue customers' invoices?</p></div>
 <p class="small muted">An illustration with made-up records. In a real answer each item links to the record in your ERP.</p>
 </div>
-<figure><img src="/assets/joey/guide/chat-watch.99246deb2b.webp" alt="Joey Watch in JoeyAI Chat: overdue customers, stock under its reorder point and projects over budget, each linked to its record" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-watch.926286b5e0.webp" alt="Joey Watch in JoeyAI Chat: overdue customers, stock under its reorder point and projects over budget, each linked to its record" loading="lazy" width="1280" height="824">
 <figcaption>Joey Watch in JoeyAI Chat: each check that found something, the reason, and a link to the record in your ERP.</figcaption></figure>
 <p class="note">Try: <i>"What needs my attention today?"</i>, <i>"What does our cash flow look like for the next 13 weeks?"</i>, <i>"What should we reorder?"</i>, <i>"Check this supplier invoice before I enter it"</i> (with the PDF) or <i>"What does customer C000123 usually buy?"</i></p>
 <ul>
@@ -623,11 +625,11 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
 <ol class="steps">
 <li><b>Joey proposes.</b> You see the change (each field and line before and after) and the record's link in your ERP. Nothing has changed yet.</li>
 <li><b>An everyday change: you confirm in the chat.</b> In your own AI app you say yes (<i>"No"</i> cancels it); in JoeyAI Chat you press <b class="ui">Confirm</b> or <b class="ui">Cancel</b> on the card. Joey makes exactly that change in your ERP as you, reads the record back and tells you what your ERP saved.
-<figure><img src="/assets/joey/guide/chat-card.4b119495f1.webp" alt="A change waiting on a card in JoeyAI Chat" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-card.8e4f4a46b3.webp" alt="A change waiting on a card in JoeyAI Chat" loading="lazy" width="1280" height="824">
 <figcaption>In JoeyAI Chat an everyday change waits on a card until you press Confirm or Cancel.</figcaption></figure></li>
 <li><b>A sensitive or large change: you confirm on Joey's page.</b> You get a <b>confirm link</b> with the reason. Your ERP checks it is you, and the page shows every change waiting for you from Joey's own record, under a <b>SANDBOX</b> or <b>LIVE</b> banner. You press Confirm (or Cancel).</li>
 </ol>
-<figure class="narrow"><img src="/assets/joey/guide/confirm-page.7998105b88.webp" alt="Joey's page for confirming a change in your ERP" loading="lazy" width="1184" height="2306">
+<figure class="narrow"><img src="/assets/joey/guide/confirm-page.d57e66c048.webp" alt="Joey's page for confirming a change in your ERP" loading="lazy" width="1184" height="2214">
 <figcaption>Joey's confirm page for a sensitive change: which ERP site it is (SANDBOX or LIVE), each field now and after, a link to the record in your ERP, the number to type, and Confirm or Cancel.</figcaption></figure>
 
 <h3>Where you confirm</h3>
@@ -713,7 +715,7 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 <li><b>Build on the last answer,</b> by code or name: "and their three biggest orders?"</li>
 <li><b>If a figure looks wrong, say so.</b> "That looks wrong, tell the Atlys team" sends feedback through Joey (<code>joey_feedback</code>), without your figures.</li>
 </ul>
-<figure><img src="/assets/joey/guide/chat-ask-back.f5476cc9c3.webp" alt="JoeyAI Chat asking which period a question about sales means" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-ask-back.3025d8a693.webp" alt="JoeyAI Chat asking which period a question about sales means" loading="lazy" width="1280" height="824">
 <figcaption>A question with no period: Joey asks which one, and says which answer quickly from memory.</figcaption></figure>
 
 <h2 id="memory">Speed and Session Memory</h2>
@@ -727,7 +729,7 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 </ul>
 <p class="note">Ask <i>"What's in my Joey memory?"</i> to see which data is ready and whether the warm-up has finished (<code>joey_status</code>).</p>
 <p class="note">Before a meeting or a busy stretch, say <i>"Joey, warm up"</i> (or pick <b>Joey warm up</b>, <code>/joeywarmup</code>, where your AI app lists prompts). Joey brings your memory up to date with your ERP straight away, in the background, and tells you what it is reading and roughly how long; ask again to see how far it has got. Your own questions still go first, and it can run once every 10 minutes (<code>joey_warmup</code>).</p>
-<figure><img src="/assets/joey/guide/chat-memory.d2e3bb06c5.webp" alt="JoeyAI Chat listing what the Session Memory holds: each kind of record, its state, how many and which months" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-memory.c515b2b892.webp" alt="JoeyAI Chat listing what the Session Memory holds: each kind of record, its state, how many and which months" loading="lazy" width="1280" height="824">
 <figcaption>What a Session Memory holds: each kind of record, whether it is ready, how many and from which month.</figcaption></figure>
 
 <h2 id="safe">Your data and your rights</h2>
@@ -743,13 +745,13 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 <li><b>Payroll stays in your ERP.</b> Joey never reads pays, payslips, leave or superannuation, for anyone, so no one's pay can reach another person through Joey.</li>
 <li><b>Bank and card details stay in your ERP too.</b> Bank account numbers, BSBs, payment instructions and card numbers are never passed to your AI assistant. Your company's administrator can allow them for chosen people, who then see only what your ERP lets them see.</li>
 </ul>
-<figure><img src="/assets/joey/guide/chat-refused.1a944d80d7.webp" alt="JoeyAI Chat refusing to show payslips, because Joey never reads payroll" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-refused.ab82fe1915.webp" alt="JoeyAI Chat refusing to show payslips, because Joey never reads payroll" loading="lazy" width="1280" height="824">
 <figcaption>Asked for payslips, Joey says it doesn't read payroll, for anyone, and points to your ERP's own payroll screens.</figcaption></figure>
 
 <h2 id="sign-out">Signing out</h2>
 <ul>
 <li><b>JoeyAI Chat:</b> choose <b class="ui">Sign out</b> under your name at the top right. When it's your only device, your chats and every file you attached or got back are deleted at once, from the AI service's store too; signed in on your phone as well, <b class="ui">Sign out on this device</b> signs out only there and your chats stay on the other (the menu's list signs out the other one). Your AI apps stay connected. While Joey is still answering, making a change or uploading a file, Sign out waits: stop the answer or let it finish first. To keep a chat, <b class="ui">Export</b> it first.
-<figure class="narrow"><img src="/assets/joey/guide/chat-sign-out.bf30756d3a.webp" alt="JoeyAI Chat's account menu with Sign out" loading="lazy" width="630" height="390">
+<figure class="narrow"><img src="/assets/joey/guide/chat-sign-out.60d1222965.webp" alt="JoeyAI Chat's account menu with Sign out" loading="lazy" width="630" height="600">
 <figcaption>Your name's menu in JoeyAI Chat, with Sign out.</figcaption></figure></li>
 <li><b>Your own AI app:</b> ask <i>"Sign me out of Joey."</i> (<code>joey_sign_out</code>). It ends every connection you have to this Joey address, JoeyAI Chat included, hands the ERP's key back and deletes your Session Memory. To use Joey again, choose <b class="ui">Connect</b> on the connector. Removing the connector in your AI app doesn't tell Joey; your ERP login through Joey then runs out 30 days after you signed in.</li>
 </ul>
@@ -783,7 +785,7 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 <tr><td>"MYOB refused a new API sign-in", or "Your MYOB login type doesn't allow API requests"</td><td>Your ERP login or your site's licence has no API sign-in free, or none at all</td><td>Ask again in a minute; if it keeps happening, your ERP administrator can change it on the Users screen</td></tr>
 <tr><td>A figure you think is wrong</td><td>A different reading of the question (which orders count, which currency), or a problem to fix</td><td>Ask which records were counted; say "tell the Atlys team" to send feedback</td></tr>
 </table></div>
-<figure><img src="/assets/joey/guide/chat-file-refused.b06c469d6d.webp" alt="An old Word file refused in JoeyAI Chat's box, with the reason" loading="lazy" width="1280" height="824">
+<figure><img src="/assets/joey/guide/chat-file-refused.65c666fe0c.webp" alt="An old Word file refused in JoeyAI Chat's box, with the reason" loading="lazy" width="1280" height="824">
 <figcaption>A file JoeyAI Chat doesn't read is refused in the box with the reason, before anything is asked.</figcaption></figure>
 
 <h2 id="tools">Joey's tools</h2>
@@ -804,7 +806,7 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 <p>The second time it usually comes from your Session Memory, after a quick check with your ERP for anything that changed.</p>
 <h3>Does it work on my phone?</h3>
 <p>Yes. JoeyAI Chat works as an app on your phone, Atlys JoeyAI, added to your home screen from its browser (see <a href="#chat-phone">JoeyAI Chat on your phone</a>), or simply in the browser. In your own AI app it depends on the app: in Claude, for example, once connected on the web or desktop Atlys Joey is in the mobile app too.</p>
-<figure class="narrow"><img src="/assets/joey/guide/chat-phone.401cf00141.webp" alt="JoeyAI Chat on a phone, with an answer and its table" loading="lazy" width="780" height="1688">
+<figure class="narrow"><img src="/assets/joey/guide/chat-phone.92535d2bd7.webp" alt="JoeyAI Chat on a phone, with an answer and its table" loading="lazy" width="780" height="1688">
 <figcaption>JoeyAI Chat on a phone.</figcaption></figure>
 <h3>Who do I ask for help?</h3>
 <p>Your Atlys team: they set up your company's Joey and can see how it is running (never your data).</p>
