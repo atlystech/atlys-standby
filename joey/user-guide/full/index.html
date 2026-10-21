@@ -719,9 +719,9 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 <ul>
 <li><b>First answers come live</b> from your ERP while your memory warms up; a whole-table question on a very large company can take a minute or two the first time.</li>
 <li><b>It holds what you can see:</b> up to two years of every kind of record your ERP role can read (payroll is never read through Joey), filled in the background, most asked first, and older months when you ask about them. Small inquiries your administrator protects with an access list are kept too.</li>
-<li><b>It stays current.</b> Before answering from memory Joey reads what changed in your ERP since it last looked, as you; it re-checks what you've been asking about every few minutes, each night from 3 am (your site's time), and in full from midnight on Saturday night.</li>
+<li><b>It stays current.</b> Before answering from memory Joey reads what changed in your ERP since it last looked, as you, and keeps what you've been asking about up to date in the background.</li>
 <li><b>When your ERP is busy</b>, or Joey is reading more of your data into memory just then (older months, more fields), Joey answers from memory at once and says how fresh the answer is ("checked 12 minutes ago").</li>
-<li><b>It is only yours, and it ends.</b> It lasts as long as your connection: signing out of Joey, your ERP login ending (30 days after you signed in), or a change to your ERP access deletes it at once. It is brought up to date every night while you have used Joey in the last 4 days, and read again in full on Saturday night while you have used it in the last 7.</li>
+<li><b>It is only yours, and it ends.</b> It lasts as long as your connection: signing out of Joey, your ERP login ending (30 days after you signed in), or a change to your ERP access deletes it at once.</li>
 </ul>
 <p class="note">Ask <i>"What's in my Joey memory?"</i> to see which data is ready and whether the warm-up has finished (<code>joey_status</code>).</p>
 <p class="note">Before a meeting or a busy stretch, say <i>"Joey, warm up"</i> (or pick <b>Joey warm up</b>, <code>/joeywarmup</code>, where your AI app lists prompts). Joey brings your memory up to date with your ERP straight away, in the background, and tells you what it is reading and roughly how long; ask again to see how far it has got. Your own questions still go first, and it can run once every 10 minutes (<code>joey_warmup</code>).</p>
@@ -784,32 +784,7 @@ Anything Joey isn't sure of (two customers with that name, an item it can't matc
 <figcaption>A file JoeyAI Chat doesn't read is refused in the box with the reason, before anything is asked.</figcaption></figure>
 
 <h2 id="tools">Joey's tools</h2>
-<p>The assistant chooses these itself; you never need to call them by name. They are listed so you know what it is doing when it shows one (JoeyAI Chat shows them as its steps).</p>
-<div class="table-wrap"><table>
-<tr><th>Tool</th><th>What it does</th></tr>
-<tr><td><code>joey_guide</code></td><td>The Atlys team's notes: what business words mean in your ERP and plans that answer common questions well</td></tr>
-<tr><td><code>joey_schema</code></td><td>Which ERP entities (customers, sales orders, stock items and so on) you can read, and their fields</td></tr>
-<tr><td><code>joey_get</code></td><td>Reads records: one by its key, or a filtered, sorted list of up to 100 (500 as a table), each with a link that opens it in your ERP, and printable documents with links to their printed forms</td></tr>
-<tr><td><code>joey_summary</code></td><td>Counts and totals, grouped by any field or by day, month or year, from memory when it can</td></tr>
-<tr><td><code>joey_inquiry</code></td><td>Runs your company's generic inquiries (where your site allows them)</td></tr>
-<tr><td><code>joey_files</code></td><td>Lists and reads files attached to a record in your ERP: PDFs, Word and Excel documents, pictures</td></tr>
-<tr><td><code>joey_erp_help</code></td><td>Help with your ERP itself: where a screen is, what it does and how to do a task, with links on your own site</td></tr>
-<tr><td><code>joey_forecast</code></td><td>Cash flow for the next 4, 8 or 13 weeks, what to reorder and how much, and a GST check for a period (for review; Joey never lodges a BAS). Every forecast says its assumptions</td></tr>
-<tr><td><code>joey_insights</code></td><td>What needs attention (overdue customers, bills due, stock under its reorder point, price rises, duplicate-looking or unusual bills and claims, journals that stand out, projects over budget), each with why and a link to the record; what a customer usually buys, what sells together and margins against cost</td></tr>
-<tr><td><code>joey_bill_check</code></td><td>Checks a supplier invoice or receipt you give your assistant before anything is entered (the supplier, an invoice entered already, a matching purchase order, how past bills were coded) and prepares the bill on hold for you to confirm</td></tr>
-<tr><td><code>joey_document_check</code></td><td>Checks a customer's purchase order, a delivery docket, a remittance advice, a supplier's credit note or order confirmation before anything is entered, and prepares the sales order, receipt, payment, debit adjustment or order changes (on hold) for you to confirm</td></tr>
-<tr><td><code>joey_export</code></td><td>Makes a link to an Excel or CSV file of a long list. Open it within 10 minutes; your ERP asks who you are, and only you get the file</td></tr>
-<tr><td><code>joey_write_propose</code></td><td>Where write access is on: proposes a new record or an edit, with the record's ERP link (and a confirm link, with the reason, for a sensitive or large change). Nothing changes until you confirm</td></tr>
-<tr><td><code>joey_write_confirm</code></td><td>In your own AI app: makes an everyday write once you have said yes, or cancels it. JoeyAI Chat never uses it: you press Confirm on the card</td></tr>
-<tr><td><code>joey_write_status</code>, <code>joey_write_undo</code></td><td>What happened to a proposed write; putting back what a write replaced, within 24 hours</td></tr>
-<tr><td><code>joey_whoami</code>, <code>joey_status</code></td><td>Who you are connected as, and what your Session Memory holds</td></tr>
-<tr><td><code>joey_rules</code></td><td>Where write access is on: your own rules and digests, emailed only to you through your ERP's own email, set up once you confirm on Joey's page</td></tr>
-<tr><td><code>joey_warmup</code></td><td>Brings your Session Memory up to date with your ERP now ("Joey, warm up")</td></tr>
-<tr><td><code>joey_feedback</code></td><td>Sends your feedback to the Atlys team (without your figures)</td></tr>
-<tr><td><code>joey_sign_out</code></td><td>Ends your Joey connections and deletes your Session Memory (AI apps only; JoeyAI Chat has its own Sign out)</td></tr>
-</table></div>
-<figure><img src="/assets/joey/guide/chat-answer.b903bcae5e.webp" alt="Joey's step in JoeyAI Chat, Summary of sales orders by status" loading="lazy" width="1280" height="824">
-<figcaption>In JoeyAI Chat each tool shows as a step in plain words (here <i>Summary · Sales order, by status</i> for <code>joey_summary</code>).</figcaption></figure>
+<p>Your assistant picks Joey's tools itself; you never need to name them, and JoeyAI Chat shows each one as a step in plain words. To see them all and what each does, type <i>joey_tools</i> in your chat.</p>
 
 <h2 id="faq">Questions people ask</h2>
 <h3>Should I use JoeyAI Chat or my own AI app?</h3>
