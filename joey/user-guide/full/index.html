@@ -295,7 +295,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
     /* Read on screen only: no selecting text, no printing (see /assets/guide-view.7f17ddd512.js). */
     main.guide { -webkit-user-select: none; user-select: none; }
     main.guide img { -webkit-user-drag: none; pointer-events: none; }
-    .g-edition { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; font-size: 13px; color: var(--muted); margin: -16px 0 28px; }
+    .g-edition { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: flex-end; font-size: 13px; color: var(--muted); margin: -16px 0 28px; }
     .g-edition a { color: var(--green); }
     @media print {
       body > * { display: none !important; }
@@ -324,7 +324,7 @@ dc-if{display:contents}dc-if[hidden]{display:none!important}
     </div>
     <a class="g-cta scp1" href="/joey">Explore Joey →</a>
   </div>
-  <p class="g-edition"><span>For reading on screen. Share the link; the guide itself isn't printed or downloaded.</span><a href="/joey/user-guide">← Getting started</a></p>
+  <p class="g-edition"><a href="/joey/user-guide">← Getting started</a></p>
   <div class="chapter">
 <aside class="toc" aria-label="On this page">
 <div class="eyebrow">User guide</div>
